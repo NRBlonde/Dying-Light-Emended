@@ -1,8 +1,8 @@
 # Languages
   `English` 
-  `Español` _Latam Y Europe_
-  `Français` _Européen_
-  `Português` _Europeu e Brasileiro_
+  `Español` [_Latam Y Europe_]
+  `Français` [_Européen_]
+  `Português` [_Europeu e Brasileiro_]
   `Polski`
   `Русский`
   `Deutsche`
