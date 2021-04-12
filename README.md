@@ -11,6 +11,6 @@
 #
 
 # English
-## Dying Light Emdended is a version of the [Dying Light game](https://dyinglightgame.com/dyinglight/) created by [Techland](https://techland.net/).
+*Dying Light Emdended is a version of the [Dying Light game](https://dyinglightgame.com/dyinglight/) created by [Techland](https://techland.net/).*
 _This is a version of Dying Light built on [Vulkan](https://www.khronos.org/vulkan/) using [Proton made by Valve](https://github.com/ValveSoftware/Proton/)._
 ##
