@@ -12,6 +12,7 @@
   `Dansk`
   `Svenska`
   `Nederlands`
+  `Türkçe`
   `中文(简体) | Zhoungwén (Jianti)`
   `日本語 | Nihongo`
   `한국어 | Hangug-eo`
@@ -84,6 +85,10 @@ _DLE är utformad för [Proton](https://www.github.com/ValveSoftware/Proton/). O
 _DLE is ontworpen vor [Proton](https://www.github.com/ValveSoftware/Proton/). Maar niet-ondersteunde besturingssystemen [DXVK](https://www.github.com/doitsujin/dxvk) gebruiken._
 ##
 
+# Türkçe
+*Dying Light Emended, [Techland tarafından yapılan](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/)'ın bir versiyonudur.*
+_DLE, [Proton](https://www.github.com/ValveSoftware/Proton/) için tasarlanmıştır. Ancak desteklenmeyen işletim sistemleri [DXVK](https://www.github.com/doitsujin/dxvk/) kullanabilir._
+##
 # 中文(简体) | Zhoungwén (Jianti)
 *Dying Light Emended 是[由Techland制作](https://www.techland.net/)的[Dying Light](https://www.dyinglightgame.com/dyinglight/)版本。*
 _DLE是由[Proton](https://www.github.com/ValveSoftware/Proton/)设计的。但一些不支持的操作系统可能会使用[DXVK](https://www.github.com/doitsujin/dxvk/)。_ | *Dying Light Emended shì [yóu Techland zhìzuò](https://www.techland.net) de [Dying Light](https://www.dyinglightgame.com/dyinglight/) banben.* _DLE shì wèi [Proton](https://www.github.com/ValveSoftware/Proton/) shèjì de. Dàn yixie bù zhichí de caozuò xìtong kenéng huì shìyong [DXVK](https://www.github.com/doitsujin/dxvk/)._
