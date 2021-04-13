@@ -1,10 +1,14 @@
 #
 
+###
+ ### This contains every language that Dying Light has and an extra.
+###
+
 ## Languages
   `English` 
   `Español`
   `Français`
-  `Português` [_Europeu e Brasileiro_]
+  `Português` *Europeu e Brasileiro*
   `Italiano`
   `Polski`
   `Čeština`
