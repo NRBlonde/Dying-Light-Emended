@@ -12,6 +12,7 @@
   `Svenska`
   `中文(简体) | Zhoungwén (Jianti)`
   `日本語 | Nihongo`
+  `한국어 | Hangug-eo`
 #
 
 # English
@@ -78,4 +79,9 @@ _DLE是由[Proton](https://www.github.com/ValveSoftware/Proton/)设计的。但�
 # 日本語 | Nihongo
 *Dying Light Emendedは、[Techland社が制作した](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) のバージョンです。*
 _DLEは[Proton]用に設計されています。 しかし、サポートされていないOSでは、[DXVK](https://www.github.com/doitsujin/dxvk/)を使用する場合があります。_ | *Dying Light Emended wa, [Techland-sha ga seisaku shita](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) no baajondesu.* _DLE wa [Proton](https://www.github.com/ValveSoftware/Proton/)-yoo ni sekkei sa rete imasu. Shikashi, sapouto sa rete inai OSde wa, [DXVK](https://www.github.com/doitsujin/dxvk/) o shiyoo suru baai ga arimasu._ 
+##
+
+# 한국어 | Hangug-eo
+*Dying Light Emended는 [Techland가 만든](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) 버전입니다.*
+_DLE는 [Proton](https://www.github.com/ValveSoftware/Proton/)을 위해 설계되었습니다. 그러나 지원되지 않는 운영 체제는 [DXVK](https://www.github.com/doitsujin/dxvk/)를 사용할 수 있습니다._
 ##
