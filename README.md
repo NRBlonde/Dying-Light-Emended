@@ -1,7 +1,7 @@
 #
 
 ###
- ### This contains every language that Dying Light has and an extra.
+ ### This contains every language that Dying Light has and some extras.
 ###
 
 ## Languages
