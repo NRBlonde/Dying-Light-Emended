@@ -13,6 +13,7 @@
   `中文(简体) | Zhoungwén (Jianti)`
   `日本語 | Nihongo`
   `한국어 | Hangug-eo`
+  `ไทย | Thiy`
 #
 
 # English
@@ -85,3 +86,7 @@ _DLEは[Proton]用に設計されています。 しかし、サポートされ�
 *Dying Light Emended는 [Techland가 만든](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) 버전입니다.*
 _DLE는 [Proton](https://www.github.com/ValveSoftware/Proton/)을 위해 설계되었습니다. 그러나 지원되지 않는 운영 체제는 [DXVK](https://www.github.com/doitsujin/dxvk/)를 사용할 수 있습니다._ | *Dying Light Emended [Techland mandeun](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) beojeon-ibnida.* _DLE-neun [Proton](https://www.github.com/ValveSoftware/Proton/)eul wihae seolgyedoeeossseubnida. geuleona jiwondoeji anhneun un-yeong chejeneun [DXVK](https://www.github.com/doitsujin/dxvk/) leul sayonghal su issseubnida._
 ##
+
+# ไทย | Thiy
+*Dying Light Emended เป็นเวอร์ชันของ [Dying Light](https://www.dyinglightgame.com/dyinglight/) [ที่ผลิตโดย Techland](https://www.techland.net/).*
+_DLE ออกแบบมาสำหรับ [Proton](https://www.github.com/ValveSoftware/Proton/). แต่ระบบปฏิบัติการที่ไม่รองรับอาจใช้ [DXVK](https://www.github.com/doitsujin/dxvk/)._ | *Dying Light Emended pen hnang khxng [Dying Light](https://www.dyinglightgame.com/dyinglight/) [thi phlit doy Techland](https://www.techland.net/).* _DLE xxkbæb ma sah rab [Proton] (https://Www.Github.Com/ValveSoftware/Proton/) tæ rabb pt ibatikar thi mi xac chi [DXVK] (https://Www.Github.Com/doitsujin/dxvk/)._
