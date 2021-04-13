@@ -107,7 +107,7 @@ _DLEは[Proton]用に設計されています。 しかし、Proton（*Windows*�
 
 # 한국어 | Hangug-eo
 *Dying Light Emended는 [Techland가 만든](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) 버전입니다.*
-_DLE는 [Proton](https://www.github.com/ValveSoftware/Proton/)을 위해 설계되었습니다. 그러나 지원되지 않는 운영 체제는 [DXVK](https://www.github.com/doitsujin/dxvk/)를 사용할 수 있습니다._ | *Dying Light Emended [Techland mandeun](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) beojeon-ibnida.* _DLE-neun [Proton](https://www.github.com/ValveSoftware/Proton/)eul wihae seolgyedoeeossseubnida. geuleona jiwondoeji anhneun un-yeong chejeneun [DXVK](https://www.github.com/doitsujin/dxvk/) leul sayonghal su issseubnida._
+_DLE는 [Proton](https://www.github.com/ValveSoftware/Proton/)을 위해 설계되었습니다. 그러나 Proton (*Windows*)을 실행할 수없는 운영 체제는 여전히 [DXVK](https://www.github.com/doitsujin/dxvk/)사용할 수 있습니다. _ | *Dying Light Emended [Techland mandeun](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) beojeon-ibnida.* _DLE-neun [Proton](https://www.github.com/ValveSoftware/Proton/)eul wihae seolgyedoeeossseubnida. Geuleona Proton (*Windows*) eul silhaenghal sueobsneun un-yeong chejeneun yeojeonhi [DXVK](https://www.github.com/doitsujin/dxvk/) leul sayonghal su issseubnida.._
 #
 
 # ไทย | Thiy
