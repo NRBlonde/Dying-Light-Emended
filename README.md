@@ -12,5 +12,9 @@
 
 # English
 *Dying Light Emdended is a version of the [Dying Light game](https://dyinglightgame.com/dyinglight/) created by [Techland](https://techland.net/).*
-_This is a version of Dying Light built on [Vulkan](https://www.khronos.org/vulkan/) using [Proton made by Valve](https://github.com/ValveSoftware/Proton/)._
+_DLE is designed for [Proton made by Valve](https://github.com/ValveSoftware/Proton/). But for non-supprted platforms they may also use [DXVK](https://www.github.com/doitsujin/dxvk)._
+##
+
+# Español
+*Dying Light Emdended es una versión del [juego Dying Light](https://dyinglightgame.com/dyinglight/) creada por [Techland](https://techland.net/).*
 ##
