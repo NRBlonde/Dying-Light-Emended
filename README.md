@@ -112,7 +112,7 @@ _DLE는 [Proton](https://www.github.com/ValveSoftware/Proton/)을 위해 설계�
 
 # ไทย | Thiy
 *Dying Light Emended เป็นเวอร์ชันของ [Dying Light](https://www.dyinglightgame.com/dyinglight/) [ที่ผลิตโดย Techland](https://www.techland.net/).*
-_DLE ออกแบบมาสำหรับ [Proton](https://www.github.com/ValveSoftware/Proton/). แต่ระบบปฏิบัติการที่ไม่รองรับอาจใช้ [DXVK](https://www.github.com/doitsujin/dxvk/)._ | *Dying Light Emended pen hnang khxng [Dying Light](https://www.dyinglightgame.com/dyinglight/) [thi phlit doy Techland](https://www.techland.net/).* _DLE xxkbæb ma sah rab [Proton](https://www.github.com/ValveSoftware/Proton/) tæ rabb pt ibatikar thi mi xac chi [DXVK](https://www.Github.com/doitsujin/dxvk/)._
+_DLE ออกแบบมาสำหรับ [Proton](https://www.github.com/ValveSoftware/Proton/). แต่ระบบปฏิบัติการที่ไม่สามารถรัน Proton (*Windows*) อาจยังคงใช้ [DXVK](https://www.github.com/doitsujin/dxvk/).ได้ _ | *Dying Light Emended pen hnang khxng [Dying Light](https://www.dyinglightgame.com/dyinglight/) [thi phlit doy Techland](https://www.techland.net/).* _DLE xxkbæb ma sah rab [Proton](https://www.github.com/ValveSoftware/Proton/) Tæ rabb pt ibatikar thi mi samarth ran Proton (*Windows*) xac yang khng chi [DXVK](https://www.Github.com/doitsujin/dxvk/). di_
 #
 
 #
