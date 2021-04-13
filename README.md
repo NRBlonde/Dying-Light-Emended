@@ -60,7 +60,7 @@ Jednak systemy operacyjne, które nie mogą uruchomić Proton (*Windows*) mogą 
 #
 
 # Čeština
-*Dying Light Emended je verze hry [Dying Light](https://www.dyinglightgame.com/dyinglight/) [od společnosti Techland](https://www.techland.net/)*
+*Dying Light Emended je verze hry [Dying Light](https://www.dyinglightgame.com/dyinglight/) [od společnosti Techland](https://www.techland.net/).*
 _DLE je určen pro společnost [Proton](https://www.github.com/ValveSoftware/Proton/). Operační systémy, na kterých nelze spustit Proton (*Windows*), však mohou stále používat [DXVK](https://www.github.com/doitsujin/dxvk/)._
 #
 
