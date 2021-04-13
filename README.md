@@ -1,11 +1,12 @@
 ##
 # Languages
   `English` 
-  `Español` [_Latam Y Europe_]
-  `Français` [_Européen_]
+  `Español`
+  `Français`
   `Português` [_Europeu e Brasileiro_]
   `Italiano`
   `Polski`
+  `Čeština`
   `Русский | Russkiy`
   `Deutsche`
   `Dansk`
@@ -50,6 +51,11 @@ _DLE è progettato per [Proton](https://www.github.com/ValveSoftware/Proton/). M
 # Polski
 *Dying Light Emended to wersja gry [stworzonej przez studio Techland](https://www.techland.net/).* _DLE jest przeznaczony do użycia razem z [Proton](https://www.github.com/ValveSoftware/proton/)em.
 Jednak nieobsługiwane systemy operacyjne powinny być w stanie używania [DXVK](https://www.github.com/doitsujin/dxvk/)._
+##
+
+# Čeština
+*Dying Light Emended je verze hry [Dying Light](https://www.dyinglightgame.com/dyinglight/) [od společnosti Techland](https://www.techland.net/)*
+_DLE je určen pro společnost [Proton](https://www.github.com/ValveSoftware/Proton/). Nepodporované operační systémy však mohou používat [DXVK](https://www.github.com/doitsujin/dxvk/)._
 ##
 
 # Русский | Russkiy
