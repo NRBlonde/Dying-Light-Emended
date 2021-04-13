@@ -55,3 +55,8 @@ _DLE ist für [Proton](https://www.github.com/ValveSoftware/Proton/) konzipiert.
 # Dansk
 *Dying Light Emended er en version af [Dying Light](https://www.dyinglightgame.com/dyinglight/) [der er lavet af Techland](https://www.techland.net/).*
 _DLE er udviklet til [Proton](https://www.github.com/ValveSoftware/Proton/). Men styrestemer, der ikke understøttes, kan bruge [DXVK](https://www.github.com/doitsujin/dxvk)._
+##
+
+# Svenska
+*Dying Light Emended är en version av [Dying Light](https://www.dyinglightgame.com/dyinglight/) [från Techland](https://www.techland.net/).*
+_DLE är utformad för [Proton](https://www.github.com/ValveSoftware/Proton/). Operativsystem som inte stöds kan dock använda [DXVK](https://www.github.com/doitsujin/dxvk)._
