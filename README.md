@@ -31,7 +31,7 @@ _DLE is designed for [Proton](https://github.com/ValveSoftware/Proton/). But ope
 
 # Español
 *Dying Light Emdended es una versión de [Dying Light](https://www.dyinglightgame.com/dyinglight/) [creada por Techland](https://www.techland.net/).*
-_DLE está diseñado para [Proton](https://www.github.com/ValveSoftware/Proton/). Pero los sistemos operativos no compatibles pueden utillizar [DXVK](https://www.github.com/doitsujin/dxvk)._
+_DLE está diseñado para [Proton](https://www.github.com/ValveSoftware/Proton/). Pero los sistemas operativos que no pueden ejecutar Proton pueden seguir utilizando [DXVK](https://www.github.com/doitsujin/dxvk)._
 #
 
 # Français
