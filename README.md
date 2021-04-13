@@ -9,6 +9,7 @@
   `Deutsche`
   `Dansk`
   `Svenska`
+  `中文(简体) | Zhoungwén (Jianti)`
 #
 
 # English
@@ -60,4 +61,9 @@ _DLE er udviklet til [Proton](https://www.github.com/ValveSoftware/Proton/). Men
 # Svenska
 *Dying Light Emended är en version av [Dying Light](https://www.dyinglightgame.com/dyinglight/) [från Techland](https://www.techland.net/).*
 _DLE är utformad för [Proton](https://www.github.com/ValveSoftware/Proton/). Operativsystem som inte stöds kan dock använda [DXVK](https://www.github.com/doitsujin/dxvk)._
+##
+
+# 中文(简体) | Zhoungwén (Jianti)
+*Dying Light Emended 是[由Techland制作](https://www.techland.net/)的[Dying Light](https://www.dyinglightgame.com/dyinglight/)版本。 *
+_DLE是为[Proton](https://www.github.com/ValveSoftware/Proton/)设计的。但一些不支持的操作系统可能会使用[DXVK](https://www.github.com/doitsujin/dxvk/)。_ | Dying Light Emended shì yóu Techland zhìzuò de Dying Light banben. DLE shì wèi Proton shèjì de. Dàn yiixiee bù zhiichí de caaozuò xìtong kenéng huì shiyong DXVK
 ##
