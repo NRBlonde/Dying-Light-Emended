@@ -26,17 +26,17 @@
 
 # English
 *Dying Light Emdended is a version of [Dying Light](https://dyinglightgame.com/dyinglight/) [made by Techland](https://techland.net/).*
-_DLE is designed for [Proton](https://github.com/ValveSoftware/Proton/). But operating systems that cannot run Proton may still use [DXVK](https://www.github.com/doitsujin/dxvk)._
+_DLE is designed for [Proton](https://github.com/ValveSoftware/Proton/). But operating systems that cannot run Proton (*Windows*) may still use [DXVK](https://www.github.com/doitsujin/dxvk)._
 #
 
 # Español
 *Dying Light Emdended es una versión de [Dying Light](https://www.dyinglightgame.com/dyinglight/) [creada por Techland](https://www.techland.net/).*
-_DLE está diseñado para [Proton](https://www.github.com/ValveSoftware/Proton/). Pero los sistemas operativos que no pueden ejecutar Proton pueden seguir utilizando [DXVK](https://www.github.com/doitsujin/dxvk)._
+_DLE está diseñado para [Proton](https://www.github.com/ValveSoftware/Proton/). Pero los sistemas operativos que no pueden ejecutar Proton (*Windows*) pueden seguir utilizando [DXVK](https://www.github.com/doitsujin/dxvk)._
 #
 
 # Français
 *Dying Light Emended est une version de [Dying Light](https://www.dyinglightgame.com/dyinglight/) [créée par Techland](https://www.techland.net/).*
-_DLE est conçu pour [Proton](https://www.github.com/ValveSoftware/Proton/). Mais les systèmes déxploitation non pris en charge peuvent utilliser [DXVK](https://www.github.com/doitsujin/dxvk)._
+_DLE est conçu pour [Proton](https://www.github.com/ValveSoftware/Proton/). But operating systems that cannot run Proton (*Windows*) may still use [DXVK](https://www.github.com/doitsujin/dxvk)._
 #
 
 # Português (Europeu)
