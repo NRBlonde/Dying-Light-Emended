@@ -71,5 +71,5 @@ _DLE是由[Proton](https://www.github.com/ValveSoftware/Proton/)设计的。但�
 
 # 日本語 | Nihongo
 *Dying Light Emendedは、[Techland社が制作した](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) のバージョンです。*
-_DLEは[Proton]用に設計されています。 しかし、サポートされていないOSでは、[DXVK](https://www.github.com/doitsujin/dxvk/)を使用する場合があります。_ | *Dying Light Emended wa, Techland-sha ga seisaku shita [Dying Light](https://www.dyinglightgame.com/dyinglight/) no baajondesu.* _DLE wa [Proton](https://www.github.com/ValveSoftware/Proton/)-yoo ni sekkei sa rete imasu. Shikashi, sapouto sa rete inai OSde wa, [DXVK](https://www.github.com/doitsujin/dxvk/) o shiyoo suru baai ga arimasu._ 
+_DLEは[Proton]用に設計されています。 しかし、サポートされていないOSでは、[DXVK](https://www.github.com/doitsujin/dxvk/)を使用する場合があります。_ | *Dying Light Emended wa, [Techland-sha ga seisaku shita](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) no baajondesu.* _DLE wa [Proton](https://www.github.com/ValveSoftware/Proton/)-yoo ni sekkei sa rete imasu. Shikashi, sapouto sa rete inai OSde wa, [DXVK](https://www.github.com/doitsujin/dxvk/) o shiyoo suru baai ga arimasu._ 
 ##
