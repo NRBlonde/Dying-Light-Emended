@@ -1,0 +1,59 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+// Align      |                                     |                                           |  |     |   |     |   |  |
+
+// Track 0 - Ambiences, Room Tones
+
+AmbientSound( "Global",                             "msa_global_weather",                       0, 0100, -1, 1.00, 1,  5  )
+AmbientSound( "Coast",                              "msa_coastline_weather",             		0, 0200, -1, 1.00, 1,  5  )
+AmbientSound( "Alley",                              "msa_global_weather",                       0, 0200, -1, 1.00, 1,  5  )
+AmbientSound( "Rooftops",                           "msa_rooftop_weather",                      0, 0300, -1, 1.00, 1,  5  )
+AmbientSound( "Arcades",                            "msa_corridor_weather",                     0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Balcony",                            "msa_global_weather",                       0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Basement",                           "ambience_ot_int_corridor_quiet.ogg",       0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Corridor",                           "msa_corridor_weather",                     0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Kiosk",                              "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Patio",                              "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Patio_Stairs",                       "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Pharmacy",                           "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Reception",                          "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Room",                               "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Room_Flooded",                       "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Workshop",                           "msa_room_weather",                         0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Tower_Middle",                       "msa_tower_medium_weather",                 0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Tower_High",                         "msa_tower_high_weather",                   0, 0400, -1, 1.00, 1,  5  )
+AmbientSound( "Bathroom",                           "msa_room_weather",                         0, 0500, -1, 1.00, 1,  5  )
+AmbientSound( "Elevator",                           "elevator_room_tone.wav",                   0, 0500, -1, 1.00, 1,  5  )
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",           0, 9999, -1, 1.00, 1,  1  )
+
+
+
+
+AmbientSound( "Courtyard",                          "ambience_ot_courtyard.ogg",                0, 0100, -1, 0.70, 0,  5  )
+AmbientSound( "OldTown_Alley_Day",                  "ambience_oldtown_backalleys_day_00.ogg",   0, 0030, -1, 1.00, 0,  1  )
+AmbientSound( "OldTown_Building_Interior_Day",      "msa_room_weather",                         0, 0040, -1, 1.00, 0,  1  )
+AmbientSound( "OldTown_Corridor_Balcony_Day",       "ambience_oldtown_backalleys_day_00.ogg",   0, 0030, -1, 1.00, 0,  1  )
+AmbientSound( "OldTown_Corridor_Day",               "ambience_oldtown_backalleys_day_00.ogg",   0, 0030, -1, 1.00, 0,  1  )
+AmbientSound( "Passage_Concrete",                   "ambience_ot_courtyard.ogg",                0, 1100, -1, 1.00, 1,  5  )
+
+AmbientSound( "ScavHub_Bars",                       "ambience_ot_int_corridor_windy.ogg",       0, 1200, -1, 1.00, 1,  5  )
+AmbientSound( "ScavHub_Corridors",                  "ambience_ot_int_corridor_windy.ogg",       0, 1200, -1, 1.00, 1,  5  )
+AmbientSound( "ScavHub_MainHall",                   "ambience_ot_int_corridor_windy.ogg",       0, 1200, -1, 1.00, 1,  5  )
+AmbientSound( "ScavHub_Rooms",                      "ambience_ot_int_room.ogg",                 0, 1200, -1, 1.00, 1,  5  )
+AmbientSound( "ScavHub_Staircases",                 "ambience_ot_int_corridor_windy.ogg",       0, 1200, -1, 1.00, 1,  5  )
+AmbientSound( "ScavHub_Storage",                    "ambience_ot_int_room.ogg",                 0, 1200, -1, 1.00, 1,  5  )
+AmbientSound( "Staircase",                          "msa_room_weather",                         0, 1200, -1, 1.00, 1,  5  )
+
+
+// Track 1 - Winds, Additional Room Tones
+
+// Track 2 - Sfx
+
+AmbientSound( "FanZone_AmbienceMusic",              "DL_Fan_Zone_Quest_Streets.ogg",            2, 0100, -1, 1.00, 16, 16 )

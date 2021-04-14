@@ -1,0 +1,5 @@
+import "common_night_horde.scr"
+
+//Warning: 
+// 1. Common settings should be moved to common_night_horde.scr script file!
+// 2. Only map specific params can be added here.

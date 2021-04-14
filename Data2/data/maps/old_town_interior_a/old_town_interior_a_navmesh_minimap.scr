@@ -1,0 +1,26 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{
+	Mesh("intr_bay_03_c_l_?.msh");
+	Mesh("intr_bay_03_c_r_?.msh");
+	Mesh("intr_bay_03_c_n_?.msh");
+	Mesh("t2_vertical_blind_?.msh");
+	Mesh("ot_office_window.msh");
+	Mesh("slums_house_?_roof_?.msh");
+	Mesh("t2_grating_?.msh");
+	Mesh("t2_grating_?_half.msh");
+}
+
+sub ExcludedMeshes()
+{
+    // Mesh("excluded_mesh.msh");
+}
+
+

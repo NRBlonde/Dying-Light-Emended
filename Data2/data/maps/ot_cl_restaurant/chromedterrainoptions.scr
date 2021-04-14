@@ -1,0 +1,33 @@
+sub main()
+{
+	Tool("RaiseLowerTerrain")
+	{
+		AddBrush("round.png");
+		AddBrush("roundhard.png");
+		AddBrush("noise.png");
+	}
+	Tool("RelativeHeight")
+	{
+		AddBrush("round.png");
+		AddBrush("roundhard.png");
+		AddBrush("noise.png");
+	}
+	Tool("SetHeight")
+	{
+		AddBrush("round.png");
+		AddBrush("roundhard.png");
+		AddBrush("noise.png");
+	}
+	Tool("Smooth")
+	{
+		AddBrush("round.png");
+		AddBrush("roundhard.png");
+		AddBrush("noise.png");
+	}
+	Tool("MaterialPainting")
+	{
+		AddBrush("round.png");
+		AddBrush("roundhard.png");
+		AddBrush("noise.png");
+	}
+}

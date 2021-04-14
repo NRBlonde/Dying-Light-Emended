@@ -1,0 +1,19 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+AmbientSound(   "School_Interior",              "ambience_slums_school_corridor.ogg",       0,  100, -1, 1,  1,  5 )
+AmbientSound(   "School_Cellar",                "ambience_slums_school_basement.ogg",       0,  100, -1, 1,  1,  5 )
+AmbientSound(   "School_Classroom",             "ambience_slums_school_corridor.ogg",       0,  200, -1, 1,  1,  5 )
+AmbientSound(   "School_Bathroom",              "ambience_slums_day_room_00.ogg",           0,  200, -1, 1,  1,  5 )
+AmbientSound(   "School_SmallRoom",             "ambience_slums_day_room_00.ogg",           0,  200, -1, 1,  1,  5 )
+
+AmbientSound(   "HelicopterLanding",            "helicopter_landing_away_roof.ogg",         2,  100,  1, 1,  0,  20 )
+AmbientSound(   "WatterDropping",               "flooded_corridor_going_down.ogg",          2,  200,  1, 1,  0,  20 )
+

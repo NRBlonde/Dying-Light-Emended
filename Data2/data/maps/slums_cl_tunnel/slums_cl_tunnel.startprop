@@ -1,0 +1,31 @@
+!include("startprop.def")
+!include( "musicpresets_loading.scr" )
+
+Map("slums_cl_tunnel")
+{
+    ParentMap("slums")
+
+    LevelName("&ChallengeDZName_Railway&")
+    LoadingMusic( LOADING_MUSIC_SLUMS_CL_TUNNEL )
+    LoadingBackground("loading_01c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+    LoadingForceObjectiveText("&Loading_slums_cl_tunnel_Objective&")
+    LoadingForceObjectiveDescText("&Loading_slums_cl_tunnel_ObjectiveDesc&")
+//  StartWeapon("Melee_Fists")
+    MapInfo("slums_cl_tunnel", 4096, 4096, 256, 256, "", 0, 1)
+//  Exploration()
+    XlastId(CONTEXT_SP_MAP_SLUMS_CL_TUNNEL)
+    VirtualMemPrealloc(52)
+    Texts("SlumsTexts.bin")
+    CrossLevelPack("common_slums", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+    Replayable()
+}

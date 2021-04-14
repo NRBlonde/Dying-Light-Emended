@@ -1,0 +1,99 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+// Align      |                                     |                                           |  |     |   |     |   |  |
+
+// Track 0 - Ambiences, Room Tones - RADIO
+
+AmbientSound( "Sewers",                             "ambience_sewers_corridor_loop.ogg",        0, 0100, -1, 1.00, 2,  6  )
+AmbientSound( "Corridors_Basement",                 "ambience_ot_int_corridor_windy.ogg",       0, 0200, -1, 1.00, 2,  6  )
+AmbientSound( "Offices",                            "ambience_ot_int_office.ogg",               0, 0200, -1, 1.00, 2,  6  )
+AmbientSound( "Patio",                              "ambience_ot_int_courtyard.ogg",            0, 0300, -1, 1.00, 2,  6  )
+AmbientSound( "Staircase",                          "ambience_ot_int_office_corridor_loop.ogg", 0, 0300, -1, 1.00, 2,  6  )
+
+// Track 0 - Ambiences, Room Tones - SEWERS
+
+AmbientSound( "Corridors",                          "ambience_sewers_corridor_loop.ogg",     		0, 0100, -1, 1.0, 01, 05 )
+AmbientSound( "Pipe",                               "ambience_sewers_pipe.ogg",                 0, 0200, -1, 1.0, 01, 05 )
+AmbientSound( "Pipe_Underwater",                    "ambience_sewers_pipe_underwater.ogg",      0, 0300, -1, 1.0, 01, 05 )
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",           0, 0300, -1, 1.0, 01, 05 )
+
+// Whatever
+
+AmbientSound( "DW_SLUMS_AMBIENT_DAY",             "ambience_slums_day_global_loop.ogg",        0, 100, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_NIGHT",           "ambience_slums_night_global.ogg",      0, 100, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_NIGHT_PAINS",     "ambience_night_humans_pain.ogg ",      0, 100, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_DEMOLITION",      "ambience_demolition_exterior.ogg",     0, 100, -1, 0.8, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_00_GLOBAL",  "dw_city_ambient_00.ogg",               0, 100, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_00_MEDIUM",  "dw_city_ambient_00.ogg",               0, 100, -1, 0.5, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_00_SILENT",  "dw_city_ambient_00.ogg",               0, 100, -1, 0.2, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_01_GLOBAL",  "dw_city_ambient_01.ogg",               0, 110, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_01_MEDIUM",  "dw_city_ambient_01.ogg",               0, 110, -1, 0.5, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_01_SILENT",  "dw_city_ambient_01.ogg",               0, 110, -1, 0.2, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_02_GLOBAL",  "dw_city_ambient_02.ogg",               0, 120, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_02_MEDIUM",  "dw_city_ambient_02.ogg",               0, 120, -1, 0.5, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_02_SILENT",  "dw_city_ambient_02.ogg",               0, 120, -1, 0.2, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_03_GLOBAL",  "dw_city_ambient_03.ogg",               0, 130, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_03_MEDIUM",  "dw_city_ambient_03.ogg",               0, 130, -1, 0.5, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_CITY_03_SILENT",  "dw_city_ambient_03.ogg",               0, 130, -1, 0.2, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_SILENCE",         "dw_city_ambient_03.ogg",               0, 200, -1, 0.0, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_TREES",      "10_wind_trees.ogg",                    1, 300, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_PRZESMYK",   "01_wind_city_metal_przesmyk.ogg",      1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_METAL",      "02_wind_city_metal.ogg",               1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_SAND",       "03_wind_sand.ogg",                     1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_DEBRIS",     "04_wind_debris.ogg",                   1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_STRONG",     "06_wind_strong.ogg",                   1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_DELICATE",   "08_wind_delicate.ogg",                 1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_SCARY",      "09_wind_scary.ogg",                    1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_INT_SCARY",  "07_wind_interior_scary.ogg",           1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_INT_METAL",  "05_wind_interior_metal.ogg",           1, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_WIND_CITY_HEAVY", "wind_city_heavy.ogg",                  1, 310, -1, 1.0, 3, 3 )
+
+AmbientSound( "DW_SLUMS_AMBIENT_NEAR_SEA",        "ambience_slums_near_sea.ogg",          2, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_NEAR_SEA_WAVES",  "sea_waves_heavy.ogg",                  2, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_HIGHRISE_ROOM",   "ambience_slums_highrise_room.ogg",     2, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_HIGHRISE_BASEMENT","ambience_slums_highrise_basement.ogg", 2, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_PARK",            "ambience_slums_day_park.ogg",          2, 310, -1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_AMBIENT_SEWERS_BUILDINGS", "DW_Ambient_02.ogg",                   2, 310, -1, 1.0, 3, 3 )
+
+
+AmbientSound( "DW_WANTED_LEVEL",                  "dw_wanted_level.ogg",                  0, 320, -1, 1.0, 3, 3 )
+AmbientSound( "DW_Attack_02",                     "DW_Attack_02.ogg",                     0, 320, -1, 1.0, 3, 3 )
+AmbientSound( "DW_Attack_05_Night_Suspence",      "DW_Attack_05_Night_Suspence.ogg",      0, 320, -1, 1.0, 3, 3 )
+
+AmbientSound(   "TEMP_Sewers_Staircase",        "ambience_test_audio.ogg",                      0, 1020, -1,   1,  3,  3     )
+AmbientSound(   "TEMP_Sewers_Courtyard",        "ambience_ot_courtyard.ogg",               		0, 1010, -1,   1,  1,  3     )
+AmbientSound(   "TEMP_Sewers_Room",             "ambience_slums_day_house_inside_00.ogg",       0, 1010, -1,   1,  1,  3     )
+AmbientSound(   "TEMP_Sewers_Balcony_Day",      "ambience_oldtown_backalleys_day_00",           0, 1010, -1,   1,  3,  3     )
+AmbientSound(   "TEMP_Sewers_Balcony_Night",    "ambience_demolition_exterior.ogg",             0, 1010, -1,   1,  3,  3     )
+AmbientSound(   "TEMP_Sewers_Rooftop_Day",      "ambience_oldtown_roof_buildings.ogg",          0, 1000, -1,   1,  3,  3     )
+AmbientSound(   "TEMP_Sewers_Rooftop_Night",    "ambience_oldtown_mainstreet_night_00.ogg",     0, 1000, -1,   1,  3,  3     )
+
+AmbientSound(   "Sewers_GlobalAmbience",        "ambience_sewers_global.ogg",                   0, 300,  -1, 0.8,  3,  3    )
+AmbientSound(   "Sewers_BurningFlat",           "ambience_sewers_restaurant_fire.ogg",          0, 100,  -1, 0.8, 3,  3    )
+AmbientSound(   "Sewers_Hall",                  "ambience_sewers_hall.ogg",                     0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Room",                  "ambience_sewers_room.ogg",                     0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Vents",                 "ambience_sewers_room.ogg",                     0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Patio",                 "ambience_ot_courtyard.ogg",               		0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Basement",              "ambience_slums_school_basement.ogg",           0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Flat",                  "ambience_slums_highrise_room.ogg",             0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Staircase",             "ambience_slums_highrise_corridor.ogg",         0, 100, -1, 0.8, 3, 3    )
+AmbientSound(   "Sewers_Underwater",            "ambience_sewers_underwater.ogg",               0, 100, -1, 0.8, 3, 3    )
+
+
+// Track 1 - Winds, Additional Room Tones
+
+// Track 2 - Sfx
+

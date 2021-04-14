@@ -1,0 +1,23 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+// AmbientSound(          sId,                   sFileName,                   nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut)
+// AmbientSound( "DW_SLUMS_AMBIENT_DAY", "ambience_slums_day_global.ogg",        0,       100,     -1,      0.8,      3,       3 )
+
+//do not remove lines above
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+AmbientSound( "SlumsCS_GlobalAmbience",           	"ambience_slums_global_day_loop.ogg",         			0,  100, -1, 1.0, 2, 5 )
+AmbientSound( "SlumsCS_Arena",                		"ambience_slums_cs_arena.ogg",              			0,  200, -1, 1.0, 2, 5 )
+AmbientSound( "SlumsCS_Tower",                  	"ambience_slums_tower_room_concrete_windy_loop.ogg",	0, 	300, -1, 1.0, 1, 3 )
+AmbientSound( "SlumsCS_ParkingLot",               	"ambience_slums_cs_parking.ogg",            			0,  350, -1, 1.0, 1, 3 )
+AmbientSound( "SlumsCS_Sewers",         			"ambience_sewers_corridor_loop.ogg",         			0,  500, -1, 1.0, 1, 3 )
+AmbientSound( "SlumsCS_Pipe",           			"ambience_sewers_pipe_loop.ogg",         				0,  600, -1, 1.0, 1, 3 )
+
+AmbientSound( "Crowd",                              "ambience_slums_cs_arena_crowd.ogg",        			1,  100, -1, 1.0, 0, 0 )
+
+AmbientSound( "SlumsCS_Roof",                       "ambience_slums_tower_roof_loop.ogg",       			1, 	900, -1, 1.0, 5, 5 )
+AmbientSound( "SlumsCS_Crane",                      "ambience_wind_very_high_loop.ogg",         			1, 	950, -1, 0.2, 5, 5 )
+

@@ -1,0 +1,28 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("old_town")
+{
+    AvailableAlwaysAfterUnlock()
+
+    LevelName("&Old_Town_Name&")
+    LoadingMusic(LOADING_MUSIC_OLD_TOWN)
+    LoadingBackground("loading_02c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+    MapInfo("old_town_map", 2048, 2048, 256, 256, "", 1, 1)
+    MapExtents(-190.144897, -17.625278, -420.467041, 1050.115479, 91.680817, 819.793335)
+    Exploration()
+    AllowBeTheZombieMode()
+    XlastId(CONTEXT_SP_MAP_OLDTOWN)
+    VirtualMemPrealloc(52)
+    Texts("OldTownTexts.bin")
+    CrossLevelPack("common_old_town", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    
+    
+}

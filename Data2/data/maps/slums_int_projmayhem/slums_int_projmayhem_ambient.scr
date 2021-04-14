@@ -1,0 +1,34 @@
+!include("AmbientSounds.def")
+!AmbientVolume( fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume, fTrack03Volume )
+!AmbientSound( sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut ) // note - you can use tracks numbers from 0 to 3, as default priority use 100
+
+AmbientVolume( 1, 1, 1, 1, 1 )
+
+// Sewers    |                                     |                                           |  |     |   |     |   |  |
+
+AmbientSound( "Sewers_Corridor",                    "ambience_sewers_corridor_loop.ogg",        0, 0100, -1, 1.0,  1,  3  )
+AmbientSound( "Sewers_Pipe",                        "ambience_sewers_pipe_loop.ogg",            0, 0200, -1, 1.0,  1,  3  )
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",           0, 1000, -1, 1.0,  1,  4  )
+
+//Tower
+
+AmbientSound( "Corridors",                          "ambience_s_int_tower_corridor_loop.ogg",   0, 0200, -1, 1.0,  1,  4  )
+AmbientSound( "Elevator_Shaft",                     "ambience_ot_dz_hotel_elevator_shaft.ogg",  0, 0300, -1, 1.0,  1,  4  )
+AmbientSound( "Room",                               "ambience_s_int_tower_apartment_loop.ogg",  0, 0300, -1, 1.0,  1,  4  )
+AmbientSound( "Basement",                           "ambience_s_int_tower_basement_loop.ogg",	0, 0300, -1, 1.0,  1,  4  )
+AmbientSound( "Staircase",                          "ambience_s_int_tower_staircase_loop.ogg",  0, 0300, -1, 1.0,  1,  4  )
+AmbientSound( "Bathroom",                           "ambience_s_int_tower_apartment_loop.ogg",  0, 0400, -1, 1.0,  1,  4  )
+AmbientSound( "Elevator",                           "elevator_room_tone.wav",                   0, 0400, -1, 1.0,  1,  4  )
+
+// SFX
+
+AmbientSound( "ScreamersCry",                       "screamer_crying_interior_far.ogg",         1, 0100, -1, 1.0,  1,  1  )
+AmbientSound( "Sewers_Corridor_Flooded",            "ambience_sewers_corridor_flooded_loop.ogg",1, 0100, -1, 1.0,  2,  4  )
+AmbientSound( "Sewers_Frighten_00",            		"ambience_sewers_frighten_00.ogg",			1, 0100, 1, 1.0,  2,  4  )
+
+AmbientSound( "Tower_Zombies_Demolition_Apartment",  "msa_zombies_demolition_apartment",		2, 0100, -1, 1.0,  5,  10  )
+
+// Stingers
+
+AmbientSound( "Stinger_01",                    		"dl_stinger_01.ogg",         				3, 1000, 1, 1.0,  0,  1  )
+AmbientSound( "Stinger_FlyBy02",                    "DL_FlyBye_Stinger_02.ogg",         		3, 1000, 1, 1.0,  0,  1  )

@@ -1,0 +1,27 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("old_town_outposts_museum")
+{
+    ParentMap("old_town")
+
+    LevelName("&Old_Town_Outposts_Museum_Name&")
+    LoadingMusic(LOADING_MUSIC_OLD_TOWN_OUTPOSTS_MUSEUM)
+    LoadingMaterial("loadingscreen.mat")
+    LoadingBackground("loading_01c", 1024, 1024)
+    MapInfo("act2a_map", 4096, 4096, 256, 256, "", 0, 1)
+//  Exploration()
+    XlastId(CONTEXT_SP_MAP_OLDTOWN_OUTPOSTS_MUSEUM)
+    VirtualMemPrealloc(52)
+    Texts("OldTownTexts.bin")
+    CrossLevelPack("common_old_town", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+}

@@ -1,0 +1,25 @@
+!include("startprop.def")
+
+Map("old_town_townhall")
+{
+    ParentMap("old_town")
+
+    LevelName("&Old_Town_Town_Hall_Name&")
+    LoadingMusic("DW_Loading_Demo_E3.ogg")
+    LoadingBackground("loading_01c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+    MapInfo("act2a_map", 4096, 4096, 256, 256, "", 0, 1)
+    XlastId(CONTEXT_SP_MAP_OLD_TOWN_TOWN_HALL)
+    VirtualMemPrealloc(52)
+    Texts("OldTownTexts.bin")
+    CrossLevelPack("common_old_town", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+}

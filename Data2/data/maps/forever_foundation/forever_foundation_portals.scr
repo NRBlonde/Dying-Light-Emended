@@ -1,0 +1,4 @@
+sub portals_forever_foundation()
+{
+    Portal("portal_ForeverFoundation_TO_OldTown", "forever_foundation", "old_town", "sp_portal_ForeverFoundation_TO_OldTown");
+}

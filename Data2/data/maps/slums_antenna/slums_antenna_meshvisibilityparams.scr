@@ -1,0 +1,3823 @@
+sub main()
+{
+	mesh("aigroup.msh")
+	{
+		vrng(1000.005005);
+	}
+	mesh("air_conditioning_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("air_conditioning_c.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("alarm_lamp_a.msh")
+	{
+		vrng(750.000000);
+	}
+	mesh("anim_flag_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("anim_slums_block_fronts_curtain_b.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("anim_slums_door_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("anim_ve_van_a_full_door.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 60.000000, 80.000000);
+	}
+	mesh("antenna_b.msh")
+	{
+		vrng(82.516502);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("antenna_c.msh")
+	{
+		vrng(82.500000);
+	}
+	mesh("barrel_a.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("barrel_b.msh")
+	{
+		vrng(97.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("barrel_c.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("barricade_board_a.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("barricade_concrete_block_a.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("barricade_pipe_a.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("barricade_plate_b.msh")
+	{
+		vrng(90.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("barricade_plate_c.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("barricade_wood_a.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("barrier.msh")
+	{
+		vrng(1500.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("barrier_box.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("barrier_wooden_a.msh")
+	{
+		vrng(97.500000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("black_hole_a.msh")
+	{
+		vrng(112.500000);
+	}
+	mesh("black_hole_b.msh")
+	{
+		vrng(20.000000);
+	}
+	mesh("blood_basic_circular_a_r.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_circular_b_r.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_droplets_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_hand_a_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_hand_a_r.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_puddle_a_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_puddle_b_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_puddle_b_r.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_rorschach_a_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_rorschach_b_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_rorschach_c_r.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("blood_basic_rorschach_d.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("blood_basic_shoe_b_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_shoe_b_r.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_shot_a_r.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("blood_basic_smear_b_l.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("blood_basic_smear_c_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_wedge_b_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("blood_basic_wedge_b_r.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("blood_basic_wedge_e_l.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("board_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("bollard_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("book_a.msh")
+	{
+		vrng(16.500000);
+	}
+	mesh("bottle_trash_a.msh")
+	{
+		vrng(15.000000);
+		glod(7.500000, 45.000000, 60.000000);
+	}
+	mesh("bottle_trash_d.msh")
+	{
+		vrng(51.435001);
+	}
+	mesh("bowl_a.msh")
+	{
+		vrng(22.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("bowl_b.msh")
+	{
+		vrng(22.500000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("box_plastic.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("box_plastic_closed.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("box_plastic_top.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("bridge_a.msh")
+	{
+		vrng(300.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("bridge_a_base.msh")
+	{
+		vrng(90.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("bridge_a_pillar.msh")
+	{
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("bucket_a.msh")
+	{
+		vrng(2250.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("bucket_b.msh")
+	{
+		vrng(52.500000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("building_module_wall_a.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("bunk_a_blanket_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("bunk_a_mattress_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("bunk_a_pillow_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("cable_20m.msh")
+	{
+		vrng(120.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("cable_20m_b.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("candle_b.msh")
+	{
+		vrng(30.000006);
+	}
+	mesh("canister_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("cardboard_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("cargo_ramp_a.msh")
+	{
+		vrng(225.000000);
+	}
+	mesh("carton_box_a.msh")
+	{
+		vrng(45.000000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("carton_box_b.msh")
+	{
+		vrng(67.500000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("carton_box_c.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("carton_box_d.msh")
+	{
+		vrng(67.500000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("carton_box_e.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("carton_box_f.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("carton_box_g.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("carton_box_h.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("carton_flat_a.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("carton_flat_b.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("catwalk_4m_a.msh")
+	{
+		vrng(135.000000);
+	}
+	mesh("catwalk_barrier_2m_a.msh")
+	{
+		vrng(45.000000);
+		glod(15.000000, 60.000000, 80.000000);
+	}
+	mesh("catwalk_barrier_4m_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("catwalk_barrier_8m_a.msh")
+	{
+		vrng(135.000000);
+	}
+	mesh("catwalk_hang_h3m_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("catwalk_hang_h4m_one_a.msh")
+	{
+		vrng(275.000000);
+	}
+	mesh("cave_barrier_lamp_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("cement_bag_pile_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("chain_a.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("chain_e.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("chaparral_a.msh")
+	{
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("chest_loot_big_anm.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("circuit_box_a_no_switch.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("circuit_box_b.msh")
+	{
+		vrng(97.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("circuit_box_d.msh")
+	{
+		vrng(67.500000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("circuit_box_panel_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("cloth_stack_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("cocopalm_a.msh")
+	{
+		vrng(210.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("cocopalm_b.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("cocopalm_c.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("color_decal_plane_e.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("computer_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("concrete_tube.msh")
+	{
+		vrng(165.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("concrete_wall_a.msh")
+	{
+		vrng(165.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("concrete_wall_e.msh")
+	{
+		vrng(165.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("construction_bar_a.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("container_base_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_ceciling_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_door_left_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_door_right_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_front_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_front_b.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_office_door_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_wall_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_wall_b.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("container_wall_c.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("control_helper.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("crane_b.msh")
+	{
+		vrng(1500.000000);
+	}
+	mesh("crate_a.msh")
+	{
+		vrng(90.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("crate_b.msh")
+	{
+		vrng(90.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("crate_c.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("crate_destr_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("crate_full_a.msh")
+	{
+		vrng(67.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("crate_full_b.msh")
+	{
+		vrng(67.500000);
+	}
+	mesh("cube_spawner.msh")
+	{
+		vrng(3000.000000);
+	}
+	mesh("dead_bird_pigeon_a.msh")
+	{
+		vrng(22.500000);
+	}
+	mesh("dead_bird_pigeon_f.msh")
+	{
+		vrng(22.500000);
+	}
+	mesh("dead_body_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("dead_body_b.msh")
+	{
+		vrng(135.000000);
+	}
+	mesh("dead_body_d.msh")
+	{
+		vrng(135.000000);
+	}
+	mesh("dead_body_f.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_g.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_h.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_i.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_j.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_k.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_l.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("dead_body_z.msh")
+	{
+		vrng(45.000000);
+		glod(15.000000, 60.000000, 80.000000);
+	}
+	mesh("decal_sprayed_i.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("decal_trash_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("door_prison_a.msh")
+	{
+		vrng(105.000000);
+	}
+	mesh("dummy_box.msh")
+	{
+		vrng(300.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("dummybox_ai.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("dummybox_ar.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("dynamiclight_env_probe.msh")
+	{
+		vrng(750.000000);
+	}
+	mesh("dynamiclight_omni.msh")
+	{
+		vrng(29.578501);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("electric_switch_box_a.msh")
+	{
+		vrng(30.000000);
+		glod(15.000000, 60.000000, 80.000000);
+	}
+	mesh("electrical_substation_a.msh")
+	{
+		vrng(300.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("electrical_substation_b.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("electrical_substation_c.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("fan_ceiling_b.msh")
+	{
+		vrng(67.500000);
+	}
+	mesh("farm_barn_cow_barrier_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("fence_concrete_panel_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("fence_construction_gate.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("fence_construction_gate_anim.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("fence_construction_panel_l.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("fence_construction_panel_s.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("fence_old_a.msh")
+	{
+		vrng(375.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("fence_wire_barbed_wire.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("fence_wire_barbed_wire_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("fence_wire_gate_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("fence_wire_panel_l.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("fence_wire_panel_l_des.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("fence_wire_panel_s.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("fence_wire_post.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("fern_b.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("files_a.msh")
+	{
+		vrng(22.500000);
+		glod(7.500000, 45.000000, 60.000000);
+	}
+	mesh("film_frame.msh")
+	{
+		vrng(225.000000);
+	}
+	mesh("fireplace_a.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("fisherman_boat_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("flat_rock_a.msh")
+	{
+		vrng(225.000000);
+	}
+	mesh("flat_rock_b.msh")
+	{
+		vrng(225.000000);
+	}
+	mesh("foliage_paper_a.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("foliage_paper_c.msh")
+	{
+		vrng(52.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("foliage_paper_d.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("foliage_trash_b.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("foliage_trash_bottle_a.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("foliage_trash_bottle_b.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("foliage_trash_cigarete_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("foliage_trash_cigarete_b.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("foliage_trash_d.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("foliage_trash_e.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("foliage_trash_juicebox_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("foliage_trash_juicebox_b.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("food_cans_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("footbridge_wood_b.msh")
+	{
+		vrng(180.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("fuel_can.msh")
+	{
+		vrng(225.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("furniture_chair_office_a.msh")
+	{
+		vrng(67.500000);
+	}
+	mesh("furniture_shelf_a.msh")
+	{
+		vrng(75.011993);
+	}
+	mesh("furniture_shelf_a_hanging_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("fxemitter.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("garbage_bag_a.msh")
+	{
+		vrng(52.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("garbage_bag_b.msh")
+	{
+		vrng(52.500000);
+		glod(15.000000, 30.000000, 60.000000);
+	}
+	mesh("garbage_can_a_open.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("garbage_can_top_a.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("gas_cylinder_a.msh")
+	{
+		vrng(67.500000);
+	}
+	mesh("gas_cylinder_b_ho.msh")
+	{
+		vrng(67.500000);
+	}
+	mesh("generator_portable.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("halogen_lamp_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("halogen_lamp_tripod_base.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("hand_pallet_truck_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("helper_box_a.msh")
+	{
+		vrng(750.000000);
+	}
+	mesh("hero_logan.msh")
+	{
+		vrng(300.000000);
+		defglod();
+	}
+	mesh("highway_a_bridge_a_collapsed_b.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("highway_bridge_a_pillar_b.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("highway_sign_c.msh")
+	{
+		vrng(225.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("horizon_antenna_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_mountain_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_smoke_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_smoke_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_town_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_town_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_town_c.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_trees_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_billboard_trees_b.msh")
+	{
+		vrng(2250.000000);
+	}
+	mesh("horizon_building_high_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_building_high_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_building_high_c.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_favela_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_favela_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_favela_c.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_favela_d.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_group_h.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_highrise_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_buildings_highrise_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_island_bush.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_mountain_a_p01.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_mountain_a_p02.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_mountain_b_p01.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_mountain_far_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_mountain_far_c_p01.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_quarantine_wall_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_quarantine_wall_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_quarantine_wall_c.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_stadium_b.msh")
+	{
+		vrng(2250.000000);
+	}
+	mesh("horizon_tower_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_town_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_town_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_town_c.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_tree_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_tree_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_tree_c.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("horizon_tree_group_b.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("int_fan_b.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("int_high_midle_floor_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_high_midle_floor_half_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_high_midle_floor_half_b.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_lamp_b.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("int_low_midle_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("int_low_midle_ceiling_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("int_low_midle_half_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("int_low_stairs_bottom.msh")
+	{
+		vrng(300.000000);
+	}
+	mesh("int_low_stairs_mid.msh")
+	{
+		vrng(300.000000);
+	}
+	mesh("int_low_stairs_top.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("int_low_wall_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_a_emp.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("int_low_wall_corner_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_corner_a_emp.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_corner_b.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_door_sm_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_door_sm_corner_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_door_sm_corner_c.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_half_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_half_a_emp.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("int_low_wall_half_door_sm_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("int_low_wall_half_door_sm_a_emp.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("interior_pipe_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("interior_pipe_b.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("interior_pipe_c.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("interior_pipe_d.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("interior_pipe_e.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("interior_pipe_f.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("ivy_a.msh")
+	{
+		vrng(67.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("karimat_flat_a.msh")
+	{
+		vrng(97.500000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("karimat_roll_a.msh")
+	{
+		vrng(30.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("keyboard_a.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("kitchen_pot_a.msh")
+	{
+		vrng(22.500000);
+	}
+	mesh("kitchen_pot_b.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("lab_cable_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("lab_cablle_b.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("ladder_c.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("ladder_metal_c.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("lamp_a.msh")
+	{
+		vrng(75.000000);
+		glod(7.500000, 45.000008, 60.000000);
+	}
+	mesh("lamp_glow_a.msh")
+	{
+		vrng(225.000000);
+	}
+	mesh("lamp_maintance_a.msh")
+	{
+		vrng(90.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("lamp_street_a.msh")
+	{
+		vrng(150.000000);
+		glod(22.500004, 45.000008, 60.000000);
+	}
+	mesh("lamp_workbench_a.msh")
+	{
+		vrng(2250.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("light_shaft_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("lod_icon.msh")
+	{
+		vrng(555.000000);
+	}
+	mesh("manhole_a.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("marker.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("market_food_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("mattress_a.msh")
+	{
+		vrng(135.000000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("mattress_b.msh")
+	{
+		vrng(135.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("medical_scrap_b.msh")
+	{
+		vrng(7.500000);
+	}
+	mesh("metal_aircraft_a.msh")
+	{
+		vrng(3000.000000);
+	}
+	mesh("metal_door_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("military_box_a_anm.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("monitor_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("mpc_laundryhanger.msh")
+	{
+		vrng(30.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("navmesh_connector.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("newspaper_a.msh")
+	{
+		vrng(26.695501);
+	}
+	mesh("newspaper_b.msh")
+	{
+		vrng(26.581499);
+	}
+	mesh("nomesh.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("npc_life_place.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("ot_planks_deco_a.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("pallet_a.msh")
+	{
+		vrng(2250.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("pallet_bricks_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("pcv_pipe_a.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("plate_b.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("player_man_01_fpp.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("plug_net.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("plug_power.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("plug_switch.msh")
+	{
+		vrng(15.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("pole_climb_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("pole_electric_box_a.msh")
+	{
+		vrng(37.500000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("pole_hanger_a.msh")
+	{
+		vrng(120.000000);
+	}
+	mesh("pole_hanger_b.msh")
+	{
+		vrng(225.000000);
+	}
+	mesh("pole_transformator_set_a.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("portable_toilet_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("posters_a.msh")
+	{
+		vrng(90.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("radio_b.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("radio_cb_a.msh")
+	{
+		vrng(27.000000);
+	}
+	mesh("rock_climb_shelf_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("rock_podium.msh")
+	{
+		vrng(600.000000);
+	}
+	mesh("rock_shelf_base_a.msh")
+	{
+		vrng(675.000000);
+	}
+	mesh("rock_shelf_base_a_a.msh")
+	{
+		vrng(675.000000);
+		glod(29.999996, 45.000000, 59.999992);
+	}
+	mesh("rock_shelf_base_c.msh")
+	{
+		vrng(675.000000);
+		glod(30.000000, 120.000000, 300.000000);
+	}
+	mesh("rock_shelf_base_d.msh")
+	{
+		vrng(450.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("rock_shelf_big_b.msh")
+	{
+		vrng(900.000000);
+		glod(29.999996, 45.000000, 59.999992);
+	}
+	mesh("rock_shelf_mid_a.msh")
+	{
+		vrng(450.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("rock_shelf_mid_b.msh")
+	{
+		vrng(450.000000);
+	}
+	mesh("roof_water_tank_a.msh")
+	{
+		vrng(82.500000);
+	}
+	mesh("rope_d.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("rough_rock_a.msh")
+	{
+		vrng(75.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("rough_rock_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("rough_rock_d.msh")
+	{
+		vrng(90.000000);
+		glod(7.500000, 45.000000, 60.000000);
+	}
+	mesh("rounded_rock_a.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("rounded_rock_b.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("rounded_rock_c.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("rubble_a.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("rubble_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("school_chair_a.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("school_table_a.msh")
+	{
+		vrng(97.500000);
+	}
+	mesh("sensorbox.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("sensorcylinder.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("sewer_door_a.msh")
+	{
+		vrng(67.500000);
+	}
+	mesh("sewer_pipe_cover_end_a.msh")
+	{
+		vrng(7.500000);
+	}
+	mesh("sewer_segment_l.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("sewer_segment_l_mirr.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("shapepoint.msh")
+	{
+		vrng(499.995026);
+	}
+	mesh("shoe_b.msh")
+	{
+		vrng(15.000000);
+		glod(7.500000, 45.000000, 60.000000);
+	}
+	mesh("shoping_cart_b.msh")
+	{
+		vrng(45.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-1x15.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-1x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-1x24.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-1x25.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-1x26.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-1x27.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_-2x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-2x15.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-2x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-2x24.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-2x25.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-2x26.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-2x27.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_-3x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-3x15.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-3x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-3x24.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-3x25.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-3x26.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-3x27.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_-4x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-4x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-4x15.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-4x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-4x24.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-4x25.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-4x26.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-4x27.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_-5x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-5x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-5x15.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_-5x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-5x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-5x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-5x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-6x15.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_-6x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-6x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-6x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-6x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-7x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-7x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-7x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-7x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-8x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-8x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-8x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_-8x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_0x15.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_0x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_0x24.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_0x25.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_0x26.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_0x27.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_0x28.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_10x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x21.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_10x22.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_10x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_10x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x21.msh")
+	{
+		vrng(500.000000);
+		glod(150.000000, 300.000000, 450.000000);
+	}
+	mesh("slums_antenna_11x22.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_11x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_11x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_12x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_1x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_1x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_1x27.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_1x28.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_2x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_2x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_2x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_2x27.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_2x28.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_3x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_3x14.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_3x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_3x27.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_3x28.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_4x12.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_4x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_4x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_4x27.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_5x11.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_5x12.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_5x13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_5x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_5x27.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_6x10.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_6x11.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_6x12.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_6x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_6x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x10.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_7x11.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_7x12.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_7x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x20.msh")
+	{
+		vrng(500.000000);
+		glod(180.000000, 360.000000, 540.000000);
+	}
+	mesh("slums_antenna_7x21.msh")
+	{
+		vrng(500.000000);
+		glod(180.000000, 360.000000, 540.000000);
+	}
+	mesh("slums_antenna_7x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_7x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x10.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_8x11.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_8x12.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_8x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x21.msh")
+	{
+		vrng(500.000000);
+		glod(180.000000, 360.000000, 540.000000);
+	}
+	mesh("slums_antenna_8x22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_8x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x13.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x14.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x18.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x19.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x20.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x21.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_9x22.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_9x23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x24.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_9x26.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_0.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_1.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_10.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_11.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_12.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_buildterrain_13.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_14.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_buildterrain_15.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_16.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_17.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_18.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_19.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_buildterrain_2.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_buildterrain_20.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_21.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_22.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_23.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_24.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_buildterrain_25.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_26.msh")
+	{
+		vrng(500.000000);
+		glod(180.000000, 360.000000, 540.000000);
+	}
+	mesh("slums_antenna_buildterrain_27.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_28.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_29.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_3.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_30.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_31.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_32.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_33.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_buildterrain_34.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_buildterrain_35.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_36.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_37.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_38.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_39.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_4.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_40.msh")
+	{
+		vrng(500.000000);
+		glod(200.000000, 400.000000, 600.000000);
+	}
+	mesh("slums_antenna_buildterrain_41.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_42.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_5.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_buildterrain_6.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_7.msh")
+	{
+		vrng(750.000000);
+		glod(120.000000, 240.000000, 360.000000);
+	}
+	mesh("slums_antenna_buildterrain_8.msh")
+	{
+		vrng(500.000000);
+		glod(80.000000, 160.000000, 240.000000);
+	}
+	mesh("slums_antenna_buildterrain_9.msh")
+	{
+		vrng(500.000000);
+		glod(20.000000, 40.000000, 60.000000);
+	}
+	mesh("slums_antenna_cable_10_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("slums_armchair_a.msh")
+	{
+		vrng(82.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_bed_a.msh")
+	{
+		vrng(52.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_block_b_balcony_roof.msh")
+	{
+		vrng(150.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_block_b_frame.msh")
+	{
+		vrng(75.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_block_frame_pillar.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_block_frame_pillar_int.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_block_fronts_b.msh")
+	{
+		vrng(105.000000);
+	}
+	mesh("slums_block_fronts_b_int.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_block_fronts_curtain_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_chair_a.msh")
+	{
+		vrng(52.500000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_concrete_barrier_3m_a.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("slums_concrete_barrier_a.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("slums_concrete_barrier_b.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_concrete_barrier_e.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("slums_concrete_barrier_f.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("slums_debris_a.msh")
+	{
+		vrng(75.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_glass_a.msh")
+	{
+		vrng(7.500000);
+	}
+	mesh("slums_glass_b.msh")
+	{
+		vrng(7.500000);
+	}
+	mesh("slums_ground_plane_3m.msh")
+	{
+		vrng(750.000000);
+	}
+	mesh("slums_highrise_decal_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("slums_highrise_decal_b.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("slums_highrise_decal_d.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("slums_house_c_brick_wall_a_ext.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_house_c_brick_wall_a_int.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_house_c_brick_wall_b.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_house_c_brick_wall_c.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_house_c_brick_wall_d.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_house_c_brick_wall_d_int.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_house_c_roof_g.msh")
+	{
+		vrng(60.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_house_wall_c_brick_wall_b_int.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_laundry_a.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_manhole_a_anm.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_metal_barrier_a.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_metal_barrier_b.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_metal_barrier_c.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_metal_barrier_d.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_metal_base_a.msh")
+	{
+		vrng(30.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_metal_base_b.msh")
+	{
+		vrng(105.000000);
+	}
+	mesh("slums_pipe_a.msh")
+	{
+		vrng(285.000000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_pipe_b.msh")
+	{
+		vrng(285.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_pipe_c.msh")
+	{
+		vrng(285.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_pipe_grating_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("slums_plank_b.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("slums_plank_c.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("slums_plank_d.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("slums_plank_e.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("slums_plate_a.msh")
+	{
+		vrng(135.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_puddle_big_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("slums_retaining_wall_a.msh")
+	{
+		vrng(390.000000);
+	}
+	mesh("slums_sewer_wall_a.msh")
+	{
+		vrng(187.500000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_sewer_wall_c.msh")
+	{
+		vrng(187.500000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_small_road_a.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_stairs_3m.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("slums_stairs_platform_a.msh")
+	{
+		vrng(250.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_table_a.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_table_c.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("slums_tunnel_front.msh")
+	{
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("slums_tunnel_front_rocks.msh")
+	{
+		vrng(300.000000);
+	}
+	mesh("slums_tunnel_straight_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_tunnel_straight_b.msh")
+	{
+		vrng(270.000000);
+	}
+	mesh("slums_tunnel_turn.msh")
+	{
+		vrng(150.000000);
+		glod(75.000000, 120.000000, 135.000000);
+	}
+	mesh("slums_vent_duct_end_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("slums_window_a.msh")
+	{
+		vrng(105.000000);
+	}
+	mesh("soundemitter.msh")
+	{
+		vrng(3000.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("spawner.msh")
+	{
+		vrng(1500.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("steel_locker_single_door_a_loot_anm.msh")
+	{
+		vrng(7.500000);
+	}
+	mesh("steel_locker_single_open.msh")
+	{
+		vrng(7.500000);
+	}
+	mesh("steel_lockers.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("street_stand_b.msh")
+	{
+		vrng(90.000000);
+	}
+	mesh("string_200_a.msh")
+	{
+		vrng(450.000000);
+	}
+	mesh("string_hook_a.msh")
+	{
+		vrng(15.000000);
+		glod(7.500000, 45.000000, 60.000000);
+	}
+	mesh("string_hook_b.msh")
+	{
+		vrng(15.000000);
+		glod(7.500000, 45.000000, 60.000000);
+	}
+	mesh("sunblind_a.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("sunblind_h.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("surv_camera_a.msh")
+	{
+		vrng(22.500000);
+	}
+	mesh("surv_camera_holder_a.msh")
+	{
+		vrng(22.500000);
+	}
+	mesh("survivor_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("survivor_kids.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("t2_catwalk_metal_cross_a.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("t2_grating_b.msh")
+	{
+		vrng(45.000000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("t2_grating_e.msh")
+	{
+		vrng(30.000000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("t2_lift_ladder_3m.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("t2_pipe_end_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("t2_pipe_end_b.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("t2_pipe_middle.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("t2_pipe_valve_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("t2_pipe_valve_plug_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("t2_s1_pipe_c.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("t2_s1_pipe_in_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("t5_road_12x6_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("t5_road_24x8_a_sidewalk.msh")
+	{
+		vrng(450.000000);
+	}
+	mesh("t5_road_cross_small_a.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("t5_road_cross_small_b.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("t5_road_turn24x8_a_sidewalk.msh")
+	{
+		vrng(450.000000);
+	}
+	mesh("t5_road_turn_12x6_b.msh")
+	{
+		vrng(250.000000);
+	}
+	mesh("teddy_bear_a.msh")
+	{
+		vrng(18.000000);
+	}
+	mesh("tin_basin_a.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("tir_lorry_a.msh")
+	{
+		vrng(135.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("tir_trailer_medical_a.msh")
+	{
+		vrng(135.000000);
+	}
+	mesh("tir_trailer_medical_door_a.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("tire_a.msh")
+	{
+		vrng(120.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("toilet_element_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("toilet_mirror.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("toilet_soap_a.msh")
+	{
+		vrng(37.500000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("tools_box_a_anm.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("tools_box_b.msh")
+	{
+		vrng(30.000000);
+		glod(7.500000, 45.000008, 60.000000);
+	}
+	mesh("towel_b.msh")
+	{
+		vrng(61.455002);
+	}
+	mesh("towel_hanger_a.msh")
+	{
+		vrng(15.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("train_electric_pillar_b.msh")
+	{
+		vrng(120.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("trap_spikes_a.msh")
+	{
+		vrng(67.500000);
+		glod(9.000000, 45.000008, 60.000000);
+	}
+	mesh("trash_bag_b.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("trash_bin_a.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("trash_bin_a_flap.msh")
+	{
+		vrng(45.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("trash_container_a_new.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("trash_stock_a.msh")
+	{
+		vrng(127.500000);
+	}
+	mesh("trashbag_a.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("travel_bag_e_anm.msh")
+	{
+		vrng(22.500000);
+		glod(15.000000, 30.000000, 60.000000);
+	}
+	mesh("tree_high_ulmus.msh")
+	{
+		vrng(105.000023);
+		glod(52.500011, 54.000011, 55.500011);
+	}
+	mesh("tree_maple_a.msh")
+	{
+		glod(105.000000, 106.500000, 108.000000);
+	}
+	mesh("tree_maple_b.msh")
+	{
+		glod(105.000000, 106.500000, 108.000000);
+	}
+	mesh("tree_maple_c.msh")
+	{
+		glod(105.000000, 106.500000, 108.000000);
+	}
+	mesh("tree_maple_e.msh")
+	{
+		glod(105.000000, 106.500000, 108.000000);
+	}
+	mesh("tv_old.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("ve_sedan_a_boot.msh")
+	{
+		glod(45.000000, 46.500000, 150.000000);
+	}
+	mesh("ve_sedan_b.msh")
+	{
+		vrng(150.000000);
+		glod(42.000000, 75.000000, 76.500000);
+	}
+	mesh("ve_sedan_b_boot.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("ve_sedan_b_door_lf.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("ve_sedan_b_door_lr.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("ve_sedan_b_door_rf.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("ve_sedan_b_door_rr.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("ve_van_a.msh")
+	{
+		vrng(150.000000);
+	}
+	mesh("ve_van_a_full_door_rl.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("ve_van_a_full_door_rr.msh")
+	{
+		vrng(75.000000);
+	}
+	mesh("ve_van_a_tire_a.msh")
+	{
+		vrng(30.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("ve_wheel_b.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("ve_wheel_c.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("village_wood_painted_decal_a.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("virtualswitch.msh")
+	{
+		vrng(150.134995);
+	}
+	mesh("wall_addons_c.msh")
+	{
+		vrng(22.500000);
+	}
+	mesh("wall_transition_a_3m.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("wall_transition_a_6m.msh")
+	{
+		vrng(15.000000);
+	}
+	mesh("warehouse_shelf_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("warning_sign.msh")
+	{
+		vrng(43.500000);
+	}
+	mesh("warning_tape_a.msh")
+	{
+		vrng(52.500000);
+	}
+	mesh("warning_tape_b.msh")
+	{
+		vrng(60.000000);
+	}
+	mesh("water_bottle_a.msh")
+	{
+		vrng(30.000000);
+		glod(15.000000, 45.000008, 60.000000);
+	}
+	mesh("water_box_a.msh")
+	{
+		vrng(22500.000000);
+	}
+	mesh("water_dispenser_bottle_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("waypoint.msh")
+	{
+		vrng(150.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("window_grating_a.msh")
+	{
+		vrng(112.500000);
+	}
+	mesh("wl_traffic_sign_a.msh")
+	{
+		vrng(45.000000);
+	}
+	mesh("wn_log_a.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("wn_log_b.msh")
+	{
+		vrng(30.000000);
+	}
+	mesh("wn_pipe_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("wn_shotgun_a.msh")
+	{
+		vrng(37.500000);
+	}
+	mesh("wooden_box_a.msh")
+	{
+		vrng(120.000000);
+		glod(15.000000, 45.000000, 60.000000);
+	}
+	mesh("wooden_box_b.msh")
+	{
+		vrng(120.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("wooden_box_c.msh")
+	{
+		vrng(120.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("wooden_bridge_a.msh")
+	{
+		vrng(135.000000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("wooden_construction_b.msh")
+	{
+		vrng(105.000000);
+		glod(30.000000, 45.000008, 60.000000);
+	}
+	mesh("wooden_fence_b.msh")
+	{
+		vrng(97.500000);
+		glod(30.000000, 45.000000, 60.000000);
+	}
+	mesh("zombie_man_a.msh")
+	{
+		vrng(90.000000);
+	}
+}

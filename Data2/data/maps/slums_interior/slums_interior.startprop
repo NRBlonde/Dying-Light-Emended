@@ -1,0 +1,20 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("slums_interior")
+{
+    ParentMap("slums")
+    AvailableAlwaysAfterUnlock()
+
+    LevelName("&The_Tower_Name&")
+    LoadingMusic(LOADING_MUSIC_SLUMS_INTERIOR)
+    LoadingBackground("loading_03c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+    MapInfo("act2a_map", 4096, 4096, 256, 256, "", 0, 1)
+//  Exploration()
+    XlastId(CONTEXT_SP_MAP_SLUMS_INTERIOR)
+    Texts("SlumsTexts.bin")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    
+}

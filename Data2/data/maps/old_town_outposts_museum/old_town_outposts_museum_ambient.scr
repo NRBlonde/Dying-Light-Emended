@@ -1,0 +1,34 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume, fTrack03Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 3, as default priority use 100
+
+//do not remove lines above
+
+
+//test values below
+AmbientVolume(1, 1, 1, 1, 1)
+
+// Align      |                                     |                                               |  |     |   |     |   |  |
+AmbientSound( "Street_Gate",                        "msa_corridor_quiet",           				0, 0001, -1, 1.0,  1,  2  )
+AmbientSound( "Corridor",                           "msa_corridor_quiet",          					0, 0100, -1, 1.0,  1,  2  )
+AmbientSound( "Shaft_Flooded",                      "msa_shaft_flooded",                           	0, 0150, -1, 1.0,  1,  2  )
+AmbientSound( "Corridor_Flooded",                   "msa_corridor_flooded",           				0, 0200, -1, 1.0,  1,  2  )
+AmbientSound( "Room_Flooded_Quiet",                 "msa_room_flooded_quiet",           			0, 0201, -1, 1.0,  1,  2  )
+AmbientSound( "Corridor_Weather",                   "msa_corridor_scaffolding",             		0, 0250, -1, 1.0,  1,  2  )
+AmbientSound( "Yard",                               "msa_patio_no_roof",                           	0, 0300, -1, 1.0,  1,  2  )
+AmbientSound( "Glasshouse",                         "msa_patio_roof",                            	0, 0300, -1, 1.0,  1,  2  )
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",               0, 9999, -1, 1.0,  1,  2  )
+
+
+// Copied from map Dream
+AmbientSound( "Dream_zipline_wind",                 "dream_building_whoosh_loop.wav",               1, 100, -1, 1.5, 0.6, 0.85)
+AmbientSound( "ambience_dream_corridor_01",         "ambience_dream_corridor_01.ogg",               1, 100, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dream_corridor_02",         "ambience_dream_corridor_02.ogg",               1, 100, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dream_corridor_03",         "ambience_dream_corridor_03.ogg",               1, 100, -1, 1, 0.95, 3)
+
+
+AmbientSound("Dream_global_psychoambience", 		"dream_global_psychoambience.ogg", 				0, 100, -1, 0.65, 3, 3)
+AmbientSound("DI_Dream_highschool_exterior", 		"ambience_dream_highschool.ogg", 				2, 100, -1, 1, 3, 8)
+AmbientSound("DI_Dream_highschool_interior", 		"ambience_dream_highschool_interior.ogg", 		2, 100, -1, 1, 3, 8)
+AmbientSound("DI_Dream_antena", 					"ambience_dream_antenna.ogg", 					2, 100, -1, 1, 3, 8)
+AmbientSound("DI_Dream_highway", 					"ambience_dream_highway.ogg", 					2, 100, -1, 1, 3, 8)

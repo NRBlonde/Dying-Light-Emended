@@ -1,0 +1,8 @@
+sub main()
+{
+    mesh("wall_str_06_l0_dc_a.msh");
+    mesh("desert_bush_d.msh");
+    mesh("roof_bush_b.msh");
+    mesh("zombie_a.msh");
+    mesh("survivor_kids.msh");
+}

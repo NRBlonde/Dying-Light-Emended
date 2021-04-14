@@ -1,0 +1,241 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{   
+    
+    Mesh("intr_window_plug_a.msh");
+    Mesh("intr_window_plug_b.msh");
+    Mesh("intr_window_plug_c.msh");
+    Mesh("intr_window_plug_d.msh");
+    Mesh("ot_intr_trans_a.msh");
+    Mesh("staircase_bottom_ot.msh");
+    Mesh("staircase_mid_ot_a.msh");
+    Mesh("staircase_ot_barier_a.msh");
+    Mesh("staircase_ot_barier_b.msh");
+    Mesh("staircase_ot_barier_c.msh");
+    Mesh("staircase_ot_barier_d.msh");
+    Mesh("staircase_ot_plug.msh");
+    Mesh("staircase_top_ot.msh");
+    Mesh("staircase_top_ot_roof_plug.msh");
+    Mesh("ot_office_window.msh");
+ 
+
+    Mesh("pave_con_0303_a.msh");
+    Mesh("pave_con_0606_a.msh");
+    Mesh("pave_end_0303_a.msh");
+    Mesh("pave_end_0606_a.msh");
+    Mesh("pave_one_0303_a.msh");
+    Mesh("pave_one_0303_manhole_a.msh");
+    Mesh("pave_one_0603_a.msh");
+    Mesh("pave_one_0606_a.msh");
+    Mesh("pave_one_0606_a_museum.msh");
+    Mesh("pave_one_0903_a.msh");
+    Mesh("pave_one_0906_a.msh");
+    Mesh("pave_one_0909_a.msh");
+    Mesh("pave_one_1203_a.msh");
+    Mesh("pave_one_1212_a.msh");
+    Mesh("pave_one_1503_a.msh");
+    Mesh("pave_pth_0303_a.msh");
+    Mesh("pave_pth_0603_a.msh");
+    Mesh("pave_pth_0903_a.msh");
+    Mesh("pave_pth_1203_a.msh");
+    Mesh("pave_sqr_0303_a.msh");
+    Mesh("pave_sqr_0603_a.msh");
+    Mesh("pave_sqr_0606_a.msh");
+    Mesh("pave_sqr_0903_a.msh");
+    Mesh("pave_sqr_1203_a.msh");
+    Mesh("pave_step_pth_1206_a.msh");
+    Mesh("pave_str_0303_a.msh");
+    Mesh("pave_str_0603_a.msh");
+    Mesh("pave_str_0606_a.msh");
+    Mesh("pave_str_0903_a.msh");
+    Mesh("pave_str_1203_a.msh");
+ 
+
+    Mesh("arc_crs_0303_wall.msh");
+    Mesh("arc_crs_0606_ot_a.msh");
+    Mesh("arc_str_0303_ot_b.msh");
+    Mesh("arc_str_0606_ot_a.msh");
+    Mesh("arc_str_0606_ot_b.msh");
+    Mesh("arc_str_0606_ot_c.msh");
+    Mesh("arc_street_wall_a.msh");
+
+
+    Mesh("arc_tunnel_stairs_0303.msh");
+    Mesh("arc_tunnel_stairs_0606.msh");
+    Mesh("arc_crs_0303_ot_a.msh");
+    Mesh("arc_crs_0303_ot_l1_a.msh");
+    Mesh("arc_crs_0303_wall.msh");
+    Mesh("arc_crs_0606_ot_a.msh");
+    Mesh("arc_str_0303_ot_a.msh");
+    Mesh("arc_str_0303_ot_c.msh");
+    Mesh("arc_str_0303_ot_d.msh");
+    Mesh("arc_str_0303_ot_door_a.msh");
+    Mesh("arc_str_0303_ot_b.msh");
+    Mesh("arc_str_0303_ot_l1_a.msh");
+    Mesh("arc_str_0606_ot_a.msh");
+    Mesh("arc_str_0606_ot_b.msh");
+    Mesh("arc_str_0606_ot_c.msh");
+    Mesh("arc_street_wall_a.msh");
+    Mesh("ot_gate_bars_03_a.msh");
+    Mesh("ot_gate_bars_03_b.msh");
+    Mesh("ot_gate_bars_03_c.msh");
+    Mesh("ot_gate_bars_06_a.msh");
+    Mesh("ot_gate_bars_06_a_b.msh");
+    Mesh("ot_gate_bars_06_a_b_arc.msh");
+    Mesh("ot_gate_bars_06_b.msh");
+    Mesh("ot_gate_bars_06_c.msh");
+    Mesh("ot_gate_bars_06_c_b.msh");
+    Mesh("ot_gate_bars_06_c_b_arc.msh");
+    Mesh("ot_gate_bars_06_d.msh");
+    Mesh("kiosk_round_a.msh");
+    Mesh("house_church_a_occl.msh");
+    Mesh("house_church_a_proj.msh");
+    Mesh("house_council_a_occl.msh");
+    Mesh("house_historic_c_occl.msh");
+    Mesh("house_kiosk_b_occl.msh");
+    Mesh("house_street_a_occl.msh");
+    Mesh("house_street_a_proj.msh");
+    Mesh("raise_2l_a_skew_e_l_r_frame_b_occl.msh");
+    Mesh("raise_skew_3x6s_road_a_occl.msh");
+    Mesh("metal_parts_a.msh");
+    Mesh("atrium_l0_cor.msh");
+    Mesh("atrium_l0_cor_office.msh");
+    Mesh("atrium_l0_str.msh");
+    Mesh("atrium_l0_str_office.msh");
+    Mesh("atrium_l1_cor.msh");
+    Mesh("atrium_l1_str.msh");
+    Mesh("atrium_l2_sqr.msh");
+    // Mesh("museum_atrium_l0_cor.msh");
+    // Mesh("museum_atrium_l0_str.msh");
+    Mesh("ot_broken_glass_a.msh");
+    Mesh("ot_broken_glass_b.msh");
+    Mesh("ot_broken_glass_c.msh");
+    Mesh("strs_str_0303_ot_a.msh");
+    Mesh("strs_str_0606_ot_a.msh");
+    Mesh("strs_str_wall_0303_ot_l_a.msh");
+    Mesh("strs_str_wall_0303_ot_l_b.msh");
+    Mesh("strs_str_wall_0303_ot_r_a.msh");
+    Mesh("strs_str_wall_0303_ot_r_b.msh");
+    Mesh("roof_cor_0303_ot_t.msh");
+    Mesh("roof_cut_0303_ot_t.msh");
+    Mesh("roof_str_0303_ot_t.msh");
+    Mesh("roof_str_0303_ot_t_b.msh");
+    Mesh("roof_str_0303_ot_t_destr.msh");
+    Mesh("ot_twisted_building_a.msh");
+    Mesh("ot_twisted_building_b.msh");
+    Mesh("ot_twisted_building_c.msh");
+    Mesh("wall_cut_0303_l0_c_a.msh");
+    Mesh("wall_cut_0303_l1_c_a.msh");
+    Mesh("wall_cut_0303_l1_c_w_a.msh");
+    Mesh("wall_cut_06_l0_cc_shop_a.msh");
+    Mesh("wall_cut_06_l1_cc_shop_a.msh");
+    Mesh("wall_cut_06_l2_cc_shop_a.msh");
+    Mesh("wall_skw_1x3s_l_l0_a.msh");
+    Mesh("wall_skw_1x3s_l_l1_a.msh");
+    Mesh("wall_skw_2x3s_r_l0_a.msh");
+    Mesh("wall_skw_2x3s_r_l1_a.msh");
+    Mesh("wall_skw_3x6s_l_l0_a.msh");
+    Mesh("wall_skw_3x6s_l_l1_a.msh");
+    Mesh("wall_str_03_l0_c_a.msh");
+    Mesh("wall_str_03_l0_c_b.msh");
+    Mesh("wall_str_03_l0_c_d_a.msh");
+    Mesh("wall_str_03_l0_c_sc_a.msh");
+    Mesh("wall_str_03_sc_lamp_a.msh");
+    Mesh("wall_str_03_l0_c_w_a.msh");
+    Mesh("wall_str_03_l1_c_a.msh");
+    Mesh("wall_str_03_l1_c_d_a.msh");
+    Mesh("wall_str_03_l1_c_sc_a.msh");
+    Mesh("wall_str_03_l1_c_w_a.msh");
+    Mesh("wall_str_03_l1_c_w_b.msh");
+    Mesh("wall_str_03_l1_c_w_c.msh");
+    Mesh("wall_str_03_l1_d_a.msh");
+    Mesh("wall_str_03_l1_w_a.msh");
+    Mesh("wall_str_03_l2_c_sc_a.msh");
+    Mesh("arc_cut_0606_glass_a.msh");
+    Mesh("arc_str_0106_glass_a.msh");
+    Mesh("wall_cut_0306_cc_glass_a.msh");
+    Mesh("wall_cut_0309_cc_glass_a.msh");
+    Mesh("wall_cut_0606_glass_entrance.msh");
+    Mesh("wall_cut_1206_glass_a.msh");
+    Mesh("wall_str_0306_cc_glass_a.msh");
+    Mesh("wall_str_1206_glass_a.msh");
+    Mesh("wall_str_06_l0_cc_a.msh");
+    Mesh("wall_str_06_l0_cc_b.msh");
+    Mesh("wall_str_06_l0_cc_dd_a.msh");
+    Mesh("str_06_l0_d_shop_tech_a.msh");
+    Mesh("wall_str_06_l0_cc_h.msh");
+    Mesh("wall_str_06_l0_cc_shop_a.msh");
+    Mesh("wall_str_06_l0_cc_shop_c.msh");
+    Mesh("wall_str_06_l0_cc_shop_b.msh");
+    Mesh("wall_str_06_l0_dc_shop_b.msh");
+    Mesh("wall_str_06_l0_cc_wd_a.msh");
+    Mesh("wall_str_06_l0_cc_ww_a.msh");
+    Mesh("wall_str_06_l0_d_shop_a.msh");
+    Mesh("wall_str_06_l0_d_shop_door_a.msh");
+    Mesh("wall_str_06_l0_d_shop_door_glass_a.msh");
+    Mesh("wall_str_06_l0_d_shop_int_a.msh");
+    Mesh("wall_str_06_l0_dc_a.msh");
+    Mesh("intr_wall_06_shop_a.msh");
+    Mesh("wall_str_06_l0_dd_a.msh");
+    Mesh("wall_str_06_l0_dd_a_door.msh");
+    Mesh("wall_str_06_l0_dd_a_door_glass.msh");
+    Mesh("wall_str_06_l0_dd_a_glass.msh");
+    Mesh("wall_str_06_l0_ww_a.msh");
+    Mesh("wall_str_06_l1_cc_a.msh");
+    Mesh("wall_str_06_l1_cc_cw_a.msh");
+    Mesh("wall_str_06_l1_cc_dw_a.msh");
+    Mesh("wall_str_06_l1_cc_shop_a.msh");
+    Mesh("wall_str_06_l1_cc_shop_b.msh");
+    Mesh("wall_str_06_l1_cc_wc_a.msh");
+    Mesh("wall_str_06_l1_cc_ww_a.msh");
+    Mesh("wall_str_06_l1_cc_ww_b.msh");
+    Mesh("wall_str_06_l1_cc_ww_c.msh");
+    Mesh("wall_str_06_l1_cc_ww_d.msh");
+    Mesh("wall_str_06_l1_dd_a.msh");
+    Mesh("wall_str_06_l1_wc_a.msh");
+    Mesh("wall_str_06_l1_ww_a.msh");
+    Mesh("wall_str_06_l2_cc_shop_a.msh");
+    Mesh("wall_str_06_l2_cc_shop_b.msh");
+    Mesh("wall_cut_0301_a.msh");
+    Mesh("wall_cut_0301_l0_c_a.msh");
+    Mesh("wall_slope_0106_a.msh");
+    Mesh("wall_slope_0109_a.msh");
+    Mesh("wall_slope_0206_a.msh");
+    Mesh("wall_slope_0209_a.msh");
+    Mesh("wall_str_0301_a.msh");
+    Mesh("wall_str_0301_e.msh");
+    Mesh("wall_str_0301_l0_c_b.msh");
+    Mesh("wall_str_0304_l0_c_d_a.msh");
+    Mesh("wall_str_0601_a.msh");
+    Mesh("wall_str_0601_e.msh");
+    Mesh("wall_str_0601_l0_c_a.msh");
+    Mesh("wall_str_0601_l0_c_b.msh");
+    Mesh("wall_str_0602_a.msh");
+
+	Mesh("ot_flowerbed_con_a.msh");
+	Mesh("ot_flowerbed_str_a.msh");
+	Mesh("ot_flowerbed_cor_a.msh");
+	Mesh("roof_str_0303_ot_t_historic.msh");
+	
+	Mesh("bailey_str_0?_?.msh");
+	Mesh("bailey_con_0?_?.msh");
+	
+	Mesh("museum_glass_floor.msh");
+	
+	Mesh("footbridge_wood_?.msh");
+	
+	Mesh("maingate_*_?.msh");
+}
+
+sub ExcludedMeshes()
+{
+    // Mesh("excluded_mesh*.msh");");
+}
+

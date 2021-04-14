@@ -1,0 +1,14 @@
+import "remove_at_build.scr"
+
+sub main()
+{
+
+    use remove_at_build();
+    
+    //MaxExtentsSize(1.7);
+    //ForcedMesh("wooden_bridge_a.msh");
+    //ForcedMesh("concrete_wall_a.eds");
+    //Eds("bailey_top_str_12_a_full.eds");
+    
+    RemoveOldPlatformObjects();
+}

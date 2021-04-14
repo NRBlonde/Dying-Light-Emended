@@ -1,0 +1,27 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{
+	// Mesh("mesh.msh");
+	Mesh("cargo_ramp_a.msh");
+	Mesh("cargo_ramp_b.msh");
+	Mesh("wasteland_tracks_am.msh");
+	//Mesh("slums_train_platform_a.msh");
+	//Mesh("slums_train_wagon_a.msh");
+	
+	//walls
+	Mesh("slums_tunnel_straight_a.msh");
+}
+
+sub ExcludedMeshes()
+{
+    Mesh("int_low_wall_dest_*.msh");
+}
+
+

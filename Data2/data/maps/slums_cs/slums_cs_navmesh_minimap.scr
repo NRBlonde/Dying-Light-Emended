@@ -1,0 +1,20 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{
+	Mesh("slums_cs_*x*.msh");
+}
+
+sub ExcludedMeshes()
+{
+    // Mesh("excluded_mesh.msh");
+}
+
+
+

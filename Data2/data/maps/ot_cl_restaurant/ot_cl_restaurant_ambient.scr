@@ -1,0 +1,69 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+
+// Align      |                                     |                                           |  |     |   |     |   |  |
+
+// Track 0 - Ambiences, Room Tones
+
+AmbientSound( "ParkingLot",                         "ambience_ot_dz_parking.ogg",        		0, 1000, -1, 1.0,  2,  6  )
+AmbientSound( "Interior",                           "ambience_ot_dz_hotel_corridor.ogg",        0, 1100, -1, 1.0,  2,  6  )
+AmbientSound( "Bathroom",                           "ambience_ot_dz_hotel_room.ogg",       		0, 1200, -1, 1.0,  2,  6  )
+
+AmbientSound( "Basement",                           "ambience_ot_dz_hotel_corridor.ogg",        0, 1000, -1, 1.0,  2,  6  )
+AmbientSound( "Room",                               "ambience_ot_dz_hotel_room.ogg",          	0, 1100, -1, 1.0,  2,  6  )
+AmbientSound( "Corridor",                           "ambience_ot_dz_hotel_corridor.ogg",        0, 1200, -1, 1.0,  2,  6  )
+AmbientSound( "Staircase",                          "ambience_ot_dz_hotel_corridor.ogg",        0, 1300, -1, 1.0,  2,  6  )
+AmbientSound( "Shaft",                              "ambience_ot_dz_hotel_elevator_shaft.ogg", 	0, 1300, -1, 1.0,  2,  6  )
+AmbientSound( "Apartment_Corridor",                 "ambience_ot_dz_apartment_corridor.ogg", 	0, 1300, -1, 1.0,  2,  6  )
+AmbientSound( "Apartment_Room",		                "ambience_ot_dz_apartment_room.ogg", 	    0, 1300, -1, 1.0,  2,  6  )
+
+AmbientSound( "SewerCorridors",                     "ambience_sewers_corridor.ogg",             0, 1000, -1, 1.0,  2,  6  )
+AmbientSound( "SewerPipe",                          "ambience_sewers_pipe.ogg",                 0, 1100, -1, 1.0,  2,  6  )
+AmbientSound( "SewerPipeUnderwater",                "ambience_sewers_pipe_underwater.ogg",      0, 1200, -1, 1.0,  2,  6  )
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",           0, 1200, -1, 1.0,  2,  6  )
+
+// Track 1 - Winds, Additional Room Tones
+
+// Track 2 - Sfx
+
+// Old Stuff
+
+AmbientSound( "Police_parking_dead_zone",                   Police_parking_dead_zone,               1, 100, -1, 1, 3, 3)
+// AmbientSound( "Apartment_OT_dead_zone",                     Apartment_OT_dead_zone,                 1, 100, -1, 1, 3, 3)
+AmbientSound( "OldTown_Cleansing_BasementAmbience",         "ambience_slums_highrise_basement.ogg", 0, 1000, -1,  1,  9,  9     )
+AmbientSound( "OldTown_Cleansing_RestaurantAmbience",       "ambience_ot_int_global.ogg",           0, 1000, -1,  1,  9,  9     )
+AmbientSound( "OldTown_Cleansing_StairsAmbience",           "ambience_ot_hotel_staircase.ogg",      0, 1000, -1,  1,  9,  9     )
+AmbientSound( "OldTown_Cleansing_HotelCorridorAmbience",    "ambience_ot_hotel_corridor.ogg",       0, 1000, -1,  1,  9,  9     )
+
+// Restaurant
+
+AmbientSound( "ambience_dz_ot_restaurant_basement",                   "ambience_dz_ot_restaurant_basement.ogg",               1, 100, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dz_ot_restaurant_elevator_inside",                   "ambience_dz_ot_restaurant_elevator_inside.ogg",               1, 100, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dz_ot_restaurant_elevator_shaft",                   "ambience_dz_ot_restaurant_elevator_shaft.ogg",               1, 100, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dz_ot_restaurant_glass_room",                   "ambience_dz_ot_restaurant_glass_room.ogg",               1, 50, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dz_ot_restaurant_office",                   "ambience_dz_ot_restaurant_office.ogg",               1, 50, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dz_ot_restaurant_toilets",                   "ambience_dz_ot_restaurant_toilets.ogg",               1, 50, -1, 1, 0.95, 3)
+AmbientSound( "ambience_dz_ot_restaurant_wooden_room",                   "ambience_dz_ot_restaurant_wooden_room.ogg",               1, 50, -1, 1, 0.95, 3)
+AmbientSound( "ambience_zombie_wardrobe_wake_up",                   "ambience_zombie_wardrobe_wake_up.ogg",               2, 100, 1, 1.5, 0, 3)
+
+// HOTEL
+
+AmbientSound( "ambience_ot_dz_hotel_corridor",                   "ambience_ot_dz_hotel_corridor.ogg",               1, 100, -1, 1, 3, 3)
+AmbientSound( "ambience_ot_dz_hotel_room",                   "ambience_ot_dz_hotel_room.ogg",               1, 100, -1, 1, 3, 3)
+AmbientSound( "ambience_ot_dz_hotel_elevator_inside",                   "ambience_ot_dz_hotel_elevator_inside.ogg",               1, 100, -1, 1, 3, 3)
+AmbientSound( "ambience_ot_dz_hotel_elevator_shaft",                   "ambience_ot_dz_hotel_elevator_shaft.ogg",               1, 50, -1, 1, 3, 3)
+
+
+//PARKING
+
+AmbientSound( "ambience_dz_ot_parking_entrance",                   "ambience_dz_ot_parking_entrance.ogg",               1, 100, -1, 1, 3, 3)
+AmbientSound( "ambience_dz_ot_parking_room_last",                   "ambience_dz_ot_parking_room_last.ogg",               1, 100, -1, 1, 3, 3)
+AmbientSound( "ambience_dz_ot_parking_room_main",                   "ambience_dz_ot_parking_room_main.ogg",               1, 100, -1, 1, 3, 3)

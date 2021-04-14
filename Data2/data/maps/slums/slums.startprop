@@ -1,0 +1,24 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("slums")
+{
+    AvailableAlwaysAfterUnlock()
+
+    LevelName("&Slums_Name&")
+    LoadingMusic(LOADING_MUSIC_SLUMS)
+    LoadingBackground("loading_02c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+//  StartWeapon("Melee_Fists")
+    MapInfo("slums_map.dds", 4096, 4096, 512, 512, "", 1, 0) 
+    MapExtents(-171.43,96.44,-180.54, 902.18, 279.85, 817.49)
+    Exploration()
+    XlastId(CONTEXT_SP_MAP_SLUMS)
+    AllowBeTheZombieMode()
+    VirtualMemPrealloc(32)
+    Texts("SlumsTexts.bin")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+
+    }

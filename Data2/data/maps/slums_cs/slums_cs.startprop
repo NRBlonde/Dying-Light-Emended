@@ -1,0 +1,29 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("slums_cs")
+{
+    ParentMap("slums")
+
+    LevelName("&Rais_Base_Name&")
+    LoadingMusic(LOADING_MUSIC_SLUMS_CS)
+    LoadingBackground("loading_01c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+//  StartWeapon("Melee_Fists")
+    MapInfo("slums_cs_map.dds", 4096, 4096, 512, 512, "", 1, 4)
+    MapExtents(0.493202, -185.855621, -18.770065, 226.925293, 277.246857, 186.338562)
+    Exploration()
+    XlastId(CONTEXT_SP_MAP_SLUMS_CONSTRUCTION)
+    VirtualMemPrealloc(52)
+    Texts("SlumsTexts.bin")
+    CrossLevelPack("common_slums", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+}

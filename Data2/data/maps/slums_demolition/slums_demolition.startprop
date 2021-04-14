@@ -1,0 +1,28 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("slums_demolition")
+{
+    ParentMap("slums")
+
+    LevelName("&Slums_Demolition_Zone_Name&")
+    LoadingMusic(LOADING_MUSIC_SLUMS_DEMOLITION)
+    LoadingBackground("loading_01c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+//  StartWeapon("Melee_Fists")
+    MapInfo("slums_demolition_map.dds", 4096, 4096, 512, 512, "", 1, 5)
+    MapExtents(468.500122, 130.891876, 382.097076, 659.518066, 268.932098, 528.748474)
+//  Exploration()
+    XlastId(CONTEXT_SP_MAP_SLUMS_DEMOLITION)
+    VirtualMemPrealloc(52)
+    Texts("SlumsTexts.bin")
+    CrossLevelPack("common_slums", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+}

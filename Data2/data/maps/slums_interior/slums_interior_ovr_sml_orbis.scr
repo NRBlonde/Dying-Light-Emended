@@ -1,0 +1,31 @@
+sub skip_mip_levels()
+{
+    res("spc_def") { skipmiplevels(0); }
+    res("speaker_a_nrm") { skipmiplevels(1); }
+    res("hotel_key_shelf_nrm") { skipmiplevels(1); }
+    res("hand_pallet_truck_nrm") { skipmiplevels(1); }
+    res("crane_weight_nrm") { skipmiplevels(1); }
+    res("brecken_head_blood_nrm") { skipmiplevels(1); }
+    res("air_conditioning_c_nrm") { skipmiplevels(1); }
+    res("armored_helmet_clr") { skipmiplevels(1); }
+    res("armored_helmet_nrm") { skipmiplevels(1); }
+    res("armored_helmet_spc") { skipmiplevels(1); }
+    res("books_plugin_furniture_int_s_no_sticks_nrm") { skipmiplevels(1); }
+    res("books_plugin_furniture_int_s_nrm") { skipmiplevels(1); }
+    res("bowl_c_nrm") { skipmiplevels(1); }
+    res("electric_kettle_a_nrm") { skipmiplevels(1); }
+    res("flowerpot_b_flowers_a_nrm") { skipmiplevels(1); }
+    res("flowerpot_b_nrm") { skipmiplevels(1); }
+    res("flowerpot_a_nrm") { skipmiplevels(1); }
+    res("furniture_mk_nrm") { skipmiplevels(1); }
+    res("kid_cart_a_nrm") { skipmiplevels(1); }
+    res("ot_wardrobe_b_nrm") { skipmiplevels(1); }
+    res("outposts_armchair_a_nrm") { skipmiplevels(1); }
+    res("parking_concrete_a_nrm") { skipmiplevels(1); }
+    res("teddy_bear_toy_star_nrm") { skipmiplevels(1); }
+    res("to_plstic_bags_a_nrm") { skipmiplevels(1); }
+
+
+
+    default() { skipmiplevels(0); }
+}

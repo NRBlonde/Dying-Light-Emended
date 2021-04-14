@@ -1,0 +1,109 @@
+!Map(s) //Map name
+!LevelName(s) //Level localization identifier
+!LoadingForceObjectiveText(s) // Some maps can have some static text defined, that is always dispayed instead of objective on loading screen.
+!LoadingForceObjectiveDescText(s) // Additional text that will be displayed as additional info about objective.
+!CrossLevelPack(s,s) // Addiotional rpack, kept in memory when transitioning to a map with the same cross level pack. Second paramater are supported platforms i.e "PC,XBOX,PS3,DURANGO,ORBIS", empty string means all platforms
+!LoadingMusic(s) //music file played on loading screen
+!LoadingSpeech(s) //speech file played on loading screen
+!LoadingBackground(s, i, i) //loading background picture
+!StartWeapon(s) //weapons given to player on start
+!StartCash(i) //cash given to player on start
+!MapInfo(s, i, i, i, i, s, i, i) //MenuMap image(s) (name without .dds), width, height, tile_width, tile_height, info text, 0/1 given level is "exploration": compass will have no 'up' or 'donw' arrows, unique map id
+!MapExtents(f, f, f, f, f, f) //Extents of map if MapInfo is present
+!CharacterLevel(i) //starting level when map played via New Game
+!LearnSkillsOnStart(i) //auto learning "i" skills (from available) when starting
+!LearnAllSkillsOnStart() //auto learning all the available skills when starting
+!Exploration() //given level is "exploration": compass will have no 'up' or 'donw' arrows - 0/1 - yes/no
+!LoadingMaterial(s) //material used on the background image
+!DlcID(i) // define if map belongs to dlc of specified id
+!LoadingTimePS3(f)
+!LoadingTime(f)
+// PS3: virtual memory to preallocate (in MBs)
+!VirtualMemPrealloc(i)
+!XlastId(i) //id of the map to be set in xlast game properties
+!AllowBeTheZombieMode() //Enables Be the Zombie Mode on this map.
+!RandomlyAppearingObjects(i) // defines objects that are randomly spawned
+!Mesh(s) // define mesh that is included in drawing pool
+!Staircases() //defines what Mesh(s) will be displayed as "staircase location" on map and radar
+!HudRadarDisabled() //disables the hud radar
+!HudRadarYRange(f, f) //defines height bounding box of navmesh radar calculated from player eye position (up, down) default 0.6, 2.0 [m]
+!Texts(s) //loads special .bin texts for map
+!NoChallenges() // disables challenges
+!ParentMap(s)	// name of a map from which we enter the map and to which it logically belongs
+!AvailableAlwaysAfterUnlock()	// indicates that this map stays available to the player once it's been unlocked
+!Replayable() // This map contains replayable story. Containers won't save theirs state
+!ExclusiveLoadingHints() // only hints matching level name will be shown
+!HideHUD() // hides all HUD components on a particular map
+!HideHUDComponent(i) // hides "i" HUD component on a particular map (see: EHudElements in Enums.h file)
+!HideHUDExcept(i) // reenables "i" HUD component on a particular map, especially usefull when HideHUD() is used (see: EHudElements in Enums.h file)
+!DisableHUDRadarUpdate() // disables generating minimap from minimap's navmesh
+// official maps
+$CONTEXT_SP_MAP_OLDTOWN_FOREVER					(i, 0)
+$CONTEXT_SP_MAP_OLDTOWN							(i, 1)
+$CONTEXT_SP_MAP_OLD_TOWN_INT_HOTEL				(i, 2)
+$CONTEXT_SP_MAP_OLDTOWN_INTERIOR_A				(i, 3)
+$CONTEXT_SP_MAP_OLDTOWN_OUTPOSTS				(i, 4)
+$CONTEXT_SP_MAP_OLDTOWN_OUTPOSTS_MUSEUM 		(i, 5)
+$CONTEXT_SP_MAP_OLDTOWN_OUTPOSTS_RADIO 			(i, 6)
+$CONTEXT_SP_MAP_OLD_TOWN_TOWN_HALL				(i, 7)
+$CONTEXT_SP_MAP_OLD_TOWN_CLEANSING_APARTMENTS 	(i, 8)
+$CONTEXT_SP_MAP_OLD_TOWN_CLEANSING_HOTEL 		(i, 9)
+$CONTEXT_SP_MAP_OLD_TOWN_CLEANSING_PARKING 		(i, 10)
+$CONTEXT_SP_MAP_OLD_TOWN_CLEANSING_RESTAURANT 	(i, 11)
+$CONTEXT_SP_MAP_SEWERS							(i, 12)
+$CONTEXT_SP_MAP_SEWERS_SAVIORS					(i, 13)
+$CONTEXT_SP_MAP_SLUMS							(i, 14)
+$CONTEXT_SP_MAP_SLUMS_ANTENNA					(i, 15)
+$CONTEXT_SP_MAP_SLUMS_BTZ_TUTORIAL				(i, 16)
+$CONTEXT_SP_MAP_SLUMS_CL_FLATS					(i, 17)
+$CONTEXT_SP_MAP_SLUMS_CL_HANGAR					(i, 18)
+$CONTEXT_SP_MAP_SLUMS_CL_MARKET					(i, 19)
+$CONTEXT_SP_MAP_SLUMS_CL_PARKING				(i, 20)
+$CONTEXT_SP_MAP_SLUMS_CL_SIDETRACK				(i, 21)
+$CONTEXT_SP_MAP_SLUMS_CL_TUNNEL					(i, 22)
+$CONTEXT_SP_MAP_SLUMS_CONSTRUCTION				(i, 23)
+$CONTEXT_SP_MAP_SLUMS_DEMOLITION				(i, 24)
+$CONTEXT_SP_MAP_SLUMS_INT_PROJECT_MAYHEM		(i, 25)
+$CONTEXT_SP_MAP_SLUMS_INT_SCHOOL				(i, 26)
+$CONTEXT_SP_MAP_SLUMS_INT_WAREHOUSE				(i, 27)
+$CONTEXT_SP_MAP_SLUMS_INTERIOR					(i, 28)
+$CONTEXT_SP_MAP_SLUMS_INTERIOR_A				(i, 29)
+
+// unofficial maps
+$CONTEXT_SP_MAP_CUSTOM29						(i, 30)
+$CONTEXT_SP_MAP_CUSTOM30						(i, 31)
+$CONTEXT_SP_MAP_CUSTOM31						(i, 32)
+$CONTEXT_SP_MAP_CUSTOM32						(i, 33)
+$CONTEXT_SP_MAP_CUSTOM33						(i, 34)
+$CONTEXT_SP_MAP_SLUMS_KIOSK						(i, 35)
+$CONTEXT_SP_MAP_EPILOG							(i, 36)
+$CONTEXT_SP_MAP_SLUMS_CLEANSING					(i, 37)
+$CONTEXT_SP_MAP_METRO							(i, 38)
+$CONTEXT_SP_MAP_OLD_TOWN_CLEANSING				(i, 39)
+$CONTEXT_SP_MAP_MYKORIAN_CITY					(i, 40)
+$CONTEXT_SP_MAP_CUSTOM19						(i, 41)
+$CONTEXT_SP_MAP_MOTEL							(i, 42)
+$CONTEXT_SP_MAP_OLDTOWN_INTERIOR				(i, 43)
+$CONTEXT_SP_MAP_CUSTOM28						(i, 44)
+$CONTEXT_SP_MAP_CUSTOM25						(i, 45)
+$CONTEXT_SP_MAP_CUSTOM26						(i, 46)
+$CONTEXT_SP_MAP_CUSTOM27						(i, 47)
+$CONTEXT_SP_MAP_STADIUM							(i, 48)
+$CONTEXT_SP_MAP_BTZ_LOBBY 						(i, 49)
+$CONTEXT_SP_MAP_BTZ_LOBBY_TUTORIAL 				(i, 50)
+$CONTEXT_SP_MAP_CAVE			 				(i, 51)
+$CONTEXT_SP_MAP_DREAM							(i, 52)
+$CONTEXT_SP_MAP_TESTMAP_QA						(i, 53)
+$CONTEXT_SP_MAP_OLD_TOWN_HISTORIC				(i, 54)
+$CONTEXT_SP_MAP_STADIUM_EXTERIOR				(i, 55)
+$CONTEXT_SP_MAP_SEWERS_PROFESSOR				(i, 56)
+$CONTEXT_SP_MAP_SEWERS_STADIUM					(i, 57)
+$CONTEXT_SP_MAP_TOURIST_CAVE					(i, 58)
+$CONTEXT_SP_MAP_CUSTOM23						(i, 59)
+$CONTEXT_SP_MAP_WASTELAND						(i, 60)
+$CONTEXT_SP_MAP_TESTMAP_MAIN					(i, 61)
+$CONTEXT_SP_MAP_TESTMAP_SMALL					(i, 62)
+$CONTEXT_SP_MAP_TESTMAP_WASTELAND				(i, 63)
+$CONTEXT_SP_MAP_PRISON							(i, 64)
+$CONTEXT_SP_MAP_HELLRAID						(i, 65)
+$CONTEXT_SP_MAP_HEAD							(i, 234)

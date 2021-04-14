@@ -1,0 +1,28 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("forever_foundation")
+{
+    ParentMap("old_town")
+
+    LevelName("&Clinic_Name&")
+    LoadingMusic(LOADING_MUSIC_FOREVER_FOUNDATION)
+    LoadingBackground("loading_01c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+//  StartWeapon("Melee_Fists")
+    MapInfo("forever_foundation", 4096, 4096, 256, 256, "", 0, 1)
+//  Exploration()
+    XlastId(CONTEXT_SP_MAP_OLDTOWN_FOREVER)
+    VirtualMemPrealloc(52)
+    Texts("OldTownTexts.bin")
+    CrossLevelPack("common_old_town", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+}

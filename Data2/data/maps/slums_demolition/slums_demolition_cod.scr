@@ -1,0 +1,19 @@
+
+sub slums()
+{
+     MeshToRequestOnDemand("jade.msh", 0); //set on level
+     MeshToRequestOnDemand("tahir.msh", 0); //problem with hierarchy on level - should be disabled
+     MeshToRequestOnDemand("survivor_dr_zaebo_a.msh", 0); //problem with HumanAI standing with that mesh
+     MeshToRequestOnDemand("rakim.msh", 0); //problem with hierarchy on level - should be disabled
+
+     MeshToRequestOnDemand("tir_lorry_a.msh", 1); //set on level correctly
+     MeshToRequestOnDemand("bus_c_shell.msh", 1); //set on level correctly
+
+     MeshToRequestOnDemand("armored.msh", 2);
+     MeshToRequestOnDemand("suicider.msh", 2);
+     MeshToRequestOnDemand("zombie_suit_a.msh", 2);
+     MeshToRequestOnDemand("zombie_spitter.msh", 2);
+     MeshToRequestOnDemand("zombie_screamer.msh", 2);
+
+     MeshToRequestOnDemand("man_zombie_test.msh", 2);
+}

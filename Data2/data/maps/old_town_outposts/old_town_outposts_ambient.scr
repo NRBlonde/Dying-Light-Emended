@@ -1,0 +1,37 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+// Align      |                                     |                                           |  |     |   |     |   |  |
+
+// Track 0 - Ambiences, Room Tones
+
+AmbientSound( "Courtyard",                          "ambience_ot_int_courtyard.ogg",         	0, 0100, -1, 1.00, 1,  5  )
+AmbientSound( "Cellar",                             "ambience_sewers_corridor.ogg",         	0, 0200, -1, 1.00, 1,  5  )
+AmbientSound( "Shaft_Stone",                        "ambience_ot_int_courtyard.ogg",         	0, 0200, -1, 1.00, 1,  5  )
+
+AmbientSound( "Office_Corridor",                    "ambience_ot_int_office.ogg", 				0, 0100, -1, 1.00, 1,  2  )
+AmbientSound( "Office_Room",                        "ambience_ot_int_office_room_big_loop.ogg", 0, 0200, -1, 1.00, 1,  2  )
+AmbientSound( "Office_Staircase",                   "ambience_ot_int_office.ogg",       		0, 0300, -1, 1.00, 1,  2  )
+AmbientSound( "Elevator_Shaft",                     "ambience_ot_int_elevator_shaft_loop.ogg", 	0, 1500, -1, 1.00, 2,  2  )
+AmbientSound( "Elevator",                     		"elevator_room_tone.wav", 					0, 1600, -1, 1.00, 2,  2  )
+
+AmbientSound( "Balcony_Day",                        "msa_global_weather",       				0, 0100, -1, 1.00, 2,  6  )
+AmbientSound( "Balcony_Night",                      "ambience_ot_global_night.ogg",         	0, 0100, -1, 1.00, 2,  6  )
+AmbientSound( "Sewers",                             "ambience_sewers_corridor.ogg",         	0, 0100, -1, 1.00, 2,  6  )
+AmbientSound( "Bathroom",                           "ambience_slums_day_room_00.ogg",           0, 1010, -1, 1.00, 2,  6  )
+AmbientSound( "Room",                               "ambience_ot_int_room.ogg",   				0, 1010, -1, 1.00, 2,  6  )
+AmbientSound( "Corridor",                           "ambience_ot_int_corridor_quiet.ogg",       0, 1020, -1, 1.00, 2,  6  )
+AmbientSound( "Passage_Concrete",                   "ambience_ot_int_corridor_quiet.ogg",     	0, 1100, -1, 1.00, 2,  6  )
+
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",           0, 9999, -1, 1.00, 2,  6  )
+
+// Track 1 - Winds, Additional Room Tones
+
+// Track 2 - Sfx
+

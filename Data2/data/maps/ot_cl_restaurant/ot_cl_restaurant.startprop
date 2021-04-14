@@ -1,0 +1,32 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("ot_cl_restaurant")
+{
+    ParentMap("old_town")
+
+    LevelName("&ChallengeDZName_Restaurant&")
+    LoadingMusic(LOADING_MUSIC_OT_CL_RESTAURANT)
+    LoadingBackground("loading_01c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+    LoadingForceObjectiveText("&Loading_ot_cl_restaurant_Objective&")
+    LoadingForceObjectiveDescText("&Loading_ot_cl_restaurant_ObjectiveDesc&")
+//  StartWeapon("Melee_Fists")
+    MapInfo("ot_cl_restaurant", 4096, 4096, 256, 256, "", 0, 1)
+//  Exploration()
+    XlastId(CONTEXT_SP_MAP_OLD_TOWN_CLEANSING_RESTAURANT)
+    DlcID(2)
+    VirtualMemPrealloc(52)
+    Texts("OldTownTexts.bin")
+    CrossLevelPack("common_old_town", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+    Replayable()
+}

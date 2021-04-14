@@ -1,0 +1,62 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{
+	Mesh("slums_house_?_roof_?.msh");
+	Mesh("highrise_top_?.msh");
+	Mesh("pillar_support_l7m_?.msh");
+	Mesh("pillar_support_l5m_?.msh");
+	Mesh("int_low_wall_?_luxfer_?.msh");
+	Mesh("int_low_wall_half_window_?.msh");
+	Mesh("int_low_wall_bathroom_?.msh");
+	Mesh("highrise_tut_cei_a_a.msh");
+	Mesh("highrise_tut_cei_a_b.msh");
+	Mesh("highrise_tut_cei_a_c.msh");
+	Mesh("highrise_tut_cei_a_d.msh");
+	Mesh("highrise_tut_cei_b_a.msh");
+	Mesh("highrise_tut_cei_b_b.msh");
+	Mesh("highrise_tut_cei_b_c.msh");
+	Mesh("highrise_tut_cei_b_d.msh");
+	Mesh("highrise_tut_cei_cd_a.msh");
+	Mesh("highrise_tut_cei_cd_b.msh");
+	Mesh("highrise_tut_cei_cd_c.msh");
+	Mesh("highrise_tut_cei_cd_d.msh");
+	Mesh("highrise_tut_cei_e.msh");
+	Mesh("highrise_tut_cei_s_c_a.msh");
+	Mesh("highrise_tut_cei_s_c_b.msh");
+	Mesh("highrise_tut_cei_s_f.msh");
+	Mesh("highrise_tut_cei_s_l.msh");
+	Mesh("highrise_tut_cei_s_r.msh");
+	Mesh("highrise_tut_door_a.msh");
+	Mesh("highrise_tut_door_win_a.msh");
+	Mesh("highrise_tut_elevator_shaft_a.msh");
+	Mesh("highrise_tut_pillar_a.msh");
+	Mesh("highrise_tut_pillar_b.msh");
+	Mesh("highrise_tut_stairs_a.msh");
+	Mesh("highrise_tut_stairs_b.msh");
+	Mesh("highrise_tut_support_a.msh");
+	Mesh("highrise_tut_wall_a.msh");
+	Mesh("highrise_tut_wall_b.msh");
+	Mesh("highrise_tut_win_a.msh");
+	Mesh("highrise_tut_win_b.msh");
+	Mesh("slums_pipe_b.msh");
+	Mesh("slums_ground_plane_3m.msh");
+	Mesh("cargo_ramp_a.msh");
+	Mesh("slums_train_wagon_a.msh");
+	Mesh("catwalk_stairs_h3m_a.msh");
+	Mesh("slums_demolition_*x*.msh");
+}
+
+sub ExcludedMeshes()
+{
+    // Mesh("excluded_mesh.msh");
+}
+
+
+

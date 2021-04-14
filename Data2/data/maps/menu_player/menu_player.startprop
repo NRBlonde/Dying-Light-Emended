@@ -1,0 +1,12 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("menu_player")
+{
+    LevelName("Menu Player")
+    LoadingMusic(LOADING_MUSIC_MENU_PLAYER)
+//  LoadingBackground("static_temp_loading", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+    MapInfo("menu_player", 4096, 4096, 256, 256, "", 1, 1)
+    Exploration()
+}

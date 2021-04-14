@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{
+	// Mesh("mesh.msh");
+	Mesh("roof_str_0303_ot_t_historic.msh");
+	Mesh("strs_str_0303_ot_a.msh");
+}
+
+sub ExcludedMeshes()
+{
+    // Mesh("excluded_mesh.msh");
+}
+
+

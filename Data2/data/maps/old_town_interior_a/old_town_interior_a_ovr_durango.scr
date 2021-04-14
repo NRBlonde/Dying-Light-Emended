@@ -1,0 +1,8 @@
+import "skip_gct_meshes.scr"
+import "old_town_interior_a_ovr_sml_durango.scr"
+
+sub main()
+{
+    use skip_gct_meshes();
+    use skip_mip_levels();
+}

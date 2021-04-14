@@ -1,0 +1,21 @@
+///////////////////////////////////////////////////////////////////////////////////////////////////
+// include/exclude these meshes in navmesh minimap build process
+// use exact name or *, ? wildcards
+// if no mesh is defined or this script doesn't exist for given map, minimap navmesh will not be generated
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+import "common_minimap_meshes.scr"
+
+sub AllowedMeshes()
+{
+	Mesh("int_low_ceiling_hole_b.msh");
+	Mesh("int_low_ceiling_hole.msh");
+}
+
+sub ExcludedMeshes()
+{
+    // Mesh("excluded_mesh.msh");
+}
+
+
+

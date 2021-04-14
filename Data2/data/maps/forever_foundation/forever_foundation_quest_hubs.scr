@@ -1,0 +1,222 @@
+!QuestHub(s)        //name
+!NotPresentOnMap()
+!Position(f, f, f)  //position (x,y,z)
+!Dir(f, f, f)       //dir (x,y,z)
+!SpawnerName(s)     //spawner_name
+!Description(s)     //description
+!Image(s)           //image
+!SaveGames()
+!FastTravel()
+!Respawn()
+!Join()
+!DLCDependency(i)
+!InitialAvailability()
+!SpawnPoint(s)
+!LocationName(s)
+!LocationPicture(s)
+!MapPortal(s)       //name
+!TargetSpawnPoint(s)
+!MapLayerTransform(i, s)
+
+QuestHub("qh_ForeveFoundation_01")
+{
+    Position(94.599449, 36.185177, 19.566216)
+    Dir(-1.000000, 0.000000, 0.000000)
+    SpawnerName("")
+    Description("")
+    Image("")
+
+}
+
+SpawnPoint("sp_Clinic_Warehouse_B")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_Clinic_Generator_Room")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MapStart")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_Clinic_Warehouse_A")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_fake_goto_OfficesRoom_A")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_FakeDestination_Offices")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_Clinic_SecurityRoom")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_TESTtest")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_portal_OldTown_TO_ForeverFoundation")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("qh_ForeveFoundation_01")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_Clinic_Decontamination")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_Clinic_MainDoors_gather")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_FakeDestination_DecontaminationRoom")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_Clinic_MainDoor")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_Clinic_MainDoors")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_fake_goto_LabRoom_C")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_fake_goto_LabRoom_D")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("m_ForeverFundation")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("Craftplan_ToxicReaper_beforeDeleted")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("CIN27_Camden_after_03")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("CIN27_Camden_after_02")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("CIN27_Camden_after_04")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("CIN27_Camden_after_01")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("cin_camdensamples_MovieCenter")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("sp_Clinic_01")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MAIN_LEVEL_POSITION_DO_NOT_MOVE")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MAIN_LEVEL_POSITION_DO_NOT_MOVE")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MAIN_LEVEL_POSITION_DO_NOT_MOVE_RESCUE")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MAIN_LEVEL_POSITION_DO_NOT_MOVE")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MAIN_LEVEL_POSITION_DO_NOT_MOVE")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+SpawnPoint("MAIN_LEVEL_POSITION_DO_NOT_MOVE_RESCUE")
+{
+    LocationName("forever_foundation")
+    LocationPicture("save_picture_forever_foundation")
+}
+
+MapPortal("portal_ForeverFoundation_TO_OldTown")
+{
+    Position(92.863792, 36.538734, 18.180573)
+    TargetSpawnPoint("sp_portal_ForeverFoundation_TO_OldTown")
+}
+

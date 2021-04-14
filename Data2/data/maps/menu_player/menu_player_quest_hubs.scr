@@ -1,0 +1,17 @@
+!QuestHub(s)        //name              
+!NotPresentOnMap()                      
+!Position(f, f, f)  //position (x,y,z)  
+!Dir(f, f, f)       //dir (x,y,z)       
+!SpawnerName(s)     //spawner_name      
+!Description(s)     //description       
+!Image(s)           //image             
+!SaveGames()
+!FastTravel()
+!Respawn()
+!Join()
+!DLCDependency(i)
+!InitialAvailability()
+!SpawnPoint(s)
+!LocationName(s)
+!LocationPicture(s)
+

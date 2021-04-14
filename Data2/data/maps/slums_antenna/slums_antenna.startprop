@@ -1,0 +1,29 @@
+!include("startprop.def")
+!include("musicpresets_loading.scr")
+
+Map("slums_antenna")
+{
+    ParentMap("slums")
+    AvailableAlwaysAfterUnlock()
+
+    LevelName("&Slums_Antenna_Name&")
+    LoadingMusic(LOADING_MUSIC_SLUMS_ANTENNA)
+    LoadingBackground("loading_02c", 1024, 1024)
+    LoadingMaterial("loadingscreen.mat")
+//  StartWeapon("Melee_Fists")            
+    Exploration()
+    XlastId(CONTEXT_SP_MAP_SLUMS_ANTENNA)
+    MapInfo("slums_antenna_map.dds", 4096, 4096, 512, 512, "", 1, 2) 
+    MapExtents(-187.135498, 147.615952, 306.151154, 444.650391, 271.628357, 859.665405)
+    Texts("SlumsTexts.bin")
+    CrossLevelPack("common_slums", "")
+    CrossLevelPack("common_launch_0",  "")
+    CrossLevelPack("common_launch_1",  "")
+    CrossLevelPack("common_launch_2",  "")
+    CrossLevelPack("common_textures_0",  "")
+    CrossLevelPack("common_textures_1",  "")
+    CrossLevelPack("common_textures_2",  "")
+    CrossLevelPack("common_textures_3",  "")
+    CrossLevelPack("common_textures_4",  "")
+
+}

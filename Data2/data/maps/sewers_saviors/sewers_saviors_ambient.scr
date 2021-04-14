@@ -1,0 +1,33 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+// Align      |                                     |                                           |  |     |   |    |   |  |
+
+// Track 0 - Ambiences, Room Tones
+
+AmbientSound( "Sewers",                             "ambience_sewers_corridor_loop.ogg",        0, 0100, -1, 1.0, 01, 04 )
+AmbientSound( "Sewer_Corridor",                     "ambience_sewers_global.ogg",               0, 0200, -1, 1.0, 01, 04 )
+AmbientSound( "Sewer_Hall",                         "ambience_sewers_hall.ogg",                 0, 0200, -1, 1.0, 01, 04 )
+AmbientSound( "OpenArea",                           "ambience_slums_global_day_loop.ogg",       0, 0300, -1, 1.0, 01, 04 )
+AmbientSound( "Courtyard",                          "ambience_ot_courtyard.ogg",                0, 0300, -1, 1.0, 01, 04 )
+AmbientSound( "Balcony_Day",                        "ambience_ot_global_day.ogg",               0, 0300, -1, 1.0, 01, 04 )
+AmbientSound( "Balcony_Night",                      "ambience_ot_global_night.ogg",             0, 0300, -1, 1.0, 01, 04 )
+AmbientSound( "Pipe",                               "ambience_sewers_pipe_loop.ogg",            0, 0400, -1, 0.3, 01, 04 )
+AmbientSound( "Underwater",                         "ambience_sewers_underwater.ogg",           0, 0500, -1, 1.0, 01, 04 )
+AmbientSound( "Room",                               "ambience_ot_int_room.ogg",                 0, 0500, -1, 1.0, 01, 04 )
+AmbientSound( "Pipe_Underwater",                    "ambience_sewers_pipe_underwater.ogg",      0, 0600, -1, 1.0, 01, 04 )
+AmbientSound( "Corridor",                           "ambience_ot_int_corridor_windy.ogg",       0, 0600, -1, 1.0, 01, 04 )
+AmbientSound( "Staircase",                          "ambience_ot_int_corridor_windy.ogg",       0, 0700, -1, 1.0, 01, 04 )
+
+AmbientSound( "OpenAreaAdditional",                 "ambience_slums_day_street.ogg",            1, 0100, -1, 1.0, 01, 04 )
+
+AmbientSound( "Arcades",                            "ambience_ot_patio_loop.ogg",               0, 0600, -1, 1.00, 1,  5  )
+AmbientSound( "Patio_Close",                      	"ambience_ot_patio_loop.ogg",               0, 0600, -1, 1.00, 1,  5  )
+AmbientSound( "Room_Office",                        "ambience_ot_int_office_room_small_loop.ogg",	0, 0700, -1, 1.00, 1,  5  )

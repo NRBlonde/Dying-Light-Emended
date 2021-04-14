@@ -1,0 +1,17 @@
+//Override(MapName)
+//{
+//	DecalPLS(MeshName, SkinName, OverrideSkinName);
+//}
+
+//Gather(MapName)
+//{
+//	Skin(MeshName, SkinName);
+//}
+
+
+sub main()
+{
+
+
+
+}

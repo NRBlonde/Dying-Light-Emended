@@ -1,0 +1,21 @@
+!include("AmbientSounds.def")
+!AmbientVolume(fMasterVolume, fTrack00Volume, fTrack01Volume, fTrack02Volume)
+!AmbientSound(sId, sFileName, nTrack, nPriority, nLoops, fVolume, fFadeIn, fFadeOut) // note - you can use tracks numbers from 0 to 2, as default priority use 100
+
+//do not remove lines above
+
+
+//test values below
+AmbientVolume(1, 1, 1, 1)
+
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_AMBIENT_DAY",           "ambience_slums_highrise_corridor.ogg",       0, 100, -1, 0.5, 3, 3 )
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_AMBIENT_NIGHT",         "ambience_slums_highrise_corridor.ogg",       0, 100, -1, 0.5, 3, 3 )
+
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_STRONG_WIND",           "noise_wind_ambient_02_long.ogg",             1, 100, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_STRONGER_WIND",         "06_wind_strong.ogg",                         1, 100, -1, 0.8, 3, 3 )
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_STRONGER_WIND_MEDIUM",  "06_wind_strong.ogg",                         1, 100, -1, 0.4, 3, 3 )
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_STRONGER_WIND_QUIET",   "06_wind_strong.ogg",                         1, 100, -1, 0.2, 3, 3 )
+AmbientSound( "DW_SLUMS_INT_LJ_HUB_HERCULES",              "airplane_hercules_interior_shakes.wav",  	 1, 100,  1, 1.0, 3, 3 )
+
+AmbientSound( "DW_SLUMS_HIGRISE_ROOM",              "ambience_slums_highrise_room.ogg",  1, 100,  1, 1.0, 3, 3 )
+AmbientSound( "DW_SLUMS_HIGRISE_BASEMENT",              "ambience_slums_highrise_basement.ogg",  1, 100,  -1, 1.0, 3, 3 )

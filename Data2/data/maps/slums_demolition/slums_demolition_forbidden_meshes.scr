@@ -1,0 +1,7 @@
+sub main()
+{
+    mesh("zombie_a.msh");
+    mesh("npc_woman_a.msh");
+    mesh("zombie_screamer.msh");
+    mesh("armored.msh");
+}
