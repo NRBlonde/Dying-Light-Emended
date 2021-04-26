@@ -1215,15 +1215,10 @@ VarFloat("f_btz_throw_gnome_on_zombie_min_hits", 1.0)
 VarFloat("f_btz_throw_gnome_on_zombie_max_hits", 1.0)
 VarFloat("f_btz_throw_gnome_on_zombie_damage_for_min", 150.0)
 VarFloat("f_btz_throw_gnome_on_zombie_damage_for_max", 40.0)
-
-//zombie thrower////
 VarFloat("f_btz_throw_thrower_on_zombie_min_hits", 4.0)
 VarFloat("f_btz_throw_thrower_on_zombie_max_hits", 12.0)
 VarFloat("f_btz_throw_thrower_on_zombie_damage_for_min", 500.0)
 VarFloat("f_btz_throw_thrower_on_zombie_damage_for_max", 80.0)
-
-
-//zombie grenade//// // there is some special type of grenade that has a strainge damage type so it just uses the item name as the look up
 VarFloat("f_btz_grenade_on_zombie_min_hits", 2.0)
 VarFloat("f_btz_grenade_on_zombie_max_hits", 2.0)
 VarFloat("f_btz_grenade_on_zombie_damage_for_min", 120.0)
