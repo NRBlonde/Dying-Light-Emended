@@ -5,7 +5,7 @@
 ###
 
 ## Languages
-  `English` 
+  `English`
   `Español`
   `Français`
   `Português` *Europeu e Brasileiro*
@@ -22,7 +22,7 @@
   `日本語 | Nihongo`
   `한국어 | Hangug-eo`
   `ไทย | Thiy`
-## 
+##
 
 # English
 *Dying Light Emdended is a version of [Dying Light](https://dyinglightgame.com/dyinglight/) [made by Techland](https://techland.net/).*
@@ -91,8 +91,8 @@ _DLE is ontworpen vor [Proton](https://www.github.com/ValveSoftware/Proton/). Ma
 #
 
 # Türkçe
-*Dying Light Emended, [Techland tarafından yapılan](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/)'ın bir versiyonudur.*
-_DLE, [Proton](https://www.github.com/ValveSoftware/Proton/) için tasarlanmıştır. Ancak Proton'u (*Windows*) çalıştıramayan işletim sistemleri yine de [DXVK](https://www.github.com/doitsujin/dxvk/) kullanabilir._
+
+*Dying Light Emended,[Techland tarafından yapılan](https://www.tecland.net)[Dying Light](https://www.dyinglightgame.com/dyinglight/)'ın bir versiyonudur.* _DLE, [Proton](https://www.github.com/ValveSoftware/Proton/) için tasarlanmıştır. Ancak Proton'u çalıştıramayan (Windows) işletim sistemleri yine de [DXVK](https://www.github.com/doitsujin/dxvk/) kullanabilir._
 #
 
 # 中文(简体) | Zhoungwén (Jianti)
@@ -102,7 +102,7 @@ _DLE是由[Proton](https://www.github.com/ValveSoftware/Proton/)设计的。但�
 
 # 日本語 | Nihongo
 *Dying Light Emendedは、[Techland社が制作した](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) のバージョンです。*
-_DLEは[Proton]用に設計されています。 しかし、Proton（*Windows*）を実行できないOSでも、[DXVK](https://www.github.com/doitsujin/dxvk/)を使用することができます。_ | *Dying Light Emended wa, [Techland-sha ga seisaku shita](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) no baajondesu.* _DLE wa [Proton](https://www.github.com/ValveSoftware/Proton/)-yoo ni sekkei sa rete imasu. Shikashi, Proton (*Windows*) o jikkou dekinai OS demo, [DXVK](https://www.github.com/doitsujin/dxvk/) o shiyoo suru koto ga dekimasu._ 
+_DLEは[Proton]用に設計されています。 しかし、Proton（*Windows*）を実行できないOSでも、[DXVK](https://www.github.com/doitsujin/dxvk/)を使用することができます。_ | *Dying Light Emended wa, [Techland-sha ga seisaku shita](https://www.techland.net/) [Dying Light](https://www.dyinglightgame.com/dyinglight/) no baajondesu.* _DLE wa [Proton](https://www.github.com/ValveSoftware/Proton/)-yoo ni sekkei sa rete imasu. Shikashi, Proton (*Windows*) o jikkou dekinai OS demo, [DXVK](https://www.github.com/doitsujin/dxvk/) o shiyoo suru koto ga dekimasu._
 #
 
 # 한국어 | Hangug-eo
