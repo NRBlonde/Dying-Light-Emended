@@ -1,18 +1,16 @@
 !include("varlist_be_the_zombie_damage_mapping.scr")
-VarFloat("f_btz_zombie_respawn_delay_rb_min_1_human", 15.0)
-VarFloat("f_btz_zombie_respawn_delay_rb_max_1_human", 15.0)
-VarFloat("f_btz_zombie_respawn_delay_1_human",  15.0)
-VarFloat("f_btz_human_respawn_delay_rb_min_1_human", 6.0)
-VarFloat("f_btz_human_respawn_delay_rb_max_1_human", 6.0)
-VarFloat("f_btz_human_respawn_delay_1_human",   6.0)
-
-VarFloat("f_btz_zombie_respawn_delay_rb_min_2_human", 14.0)
-VarFloat("f_btz_zombie_respawn_delay_rb_max_2_human", 14.0)
-VarFloat("f_btz_zombie_respawn_delay_2_human",  14.0)
-VarFloat("f_btz_human_respawn_delay_rb_min_2_human", 12.0)
-VarFloat("f_btz_human_respawn_delay_rb_max_2_human", 12.0)
-VarFloat("f_btz_human_respawn_delay_2_human",   12.0)
-
+VarFloat("f_btz_zombie_respawn_delay_rb_min_1_human",15.0)
+VarFloat("f_btz_zombie_respawn_delay_rb_max_1_human",15.0)
+VarFloat("f_btz_zombie_respawn_delay_1_human",15.0)
+VarFloat("f_btz_human_respawn_delay_rb_min_1_human",6.0)
+VarFloat("f_btz_human_respawn_delay_rb_max_1_human",6.0)
+VarFloat("f_btz_human_respawn_delay_1_human",6.0)
+VarFloat("f_btz_zombie_respawn_delay_rb_min_2_human",14.0)
+VarFloat("f_btz_zombie_respawn_delay_rb_max_2_human",14.0)
+VarFloat("f_btz_zombie_respawn_delay_2_human",14.0)
+VarFloat("f_btz_human_respawn_delay_rb_min_2_human",12.0)
+VarFloat("f_btz_human_respawn_delay_rb_max_2_human",12.0)
+VarFloat("f_btz_human_respawn_delay_2_human",12.0)
 VarFloat("f_btz_zombie_respawn_delay_rb_min_3_human", 12.0)
 VarFloat("f_btz_zombie_respawn_delay_rb_max_3_human", 12.0)
 VarFloat("f_btz_zombie_respawn_delay_3_human",  12.0)
@@ -26,9 +24,7 @@ VarFloat("f_btz_zombie_respawn_delay_4_human",  11.0)
 VarFloat("f_btz_human_respawn_delay_rb_min_4_human", 17.0)
 VarFloat("f_btz_human_respawn_delay_rb_max_4_human", 17.0)
 VarFloat("f_btz_human_respawn_delay_4_human",   17.0)
-
-// Human player mini map HUD
-VarFloat("f_btz_human_minimap_zombie_noise_display_time", 0.9) // How long the Hunter target indicator will be shown on the mini map after Hunter makes noise
+VarFloat("f_btz_human_minimap_zombie_noise_display_time", 0.9)
 VarVec4("v4_btz_human_minimap_zombie_noise_color", [1.0, 0.0, 0.0, 1.0])
 
 // Actions for which the Hunter should make noise (which shows it on the mini map) and maximum distances at which that noise can be heard.
@@ -130,136 +126,65 @@ VarFloat("f_btz_flashlight_cone_angle_factor_1_human", 1.0)
 VarFloat("f_btz_flashlight_cone_angle_factor_2_human", 1.0)
 VarFloat("f_btz_flashlight_cone_angle_factor_3_human", 1.0)
 VarFloat("f_btz_flashlight_cone_angle_factor_4_human", 1.0)
-
-//World Light damage. Ex. around Hubs have light damage volumes protecting them
 VarFloat("f_btz_zombie_world_light_burn_duration", 0.25)
 VarFloat("f_btz_zombie_world_light_damage_percent", 0.05)
 VarFloat("f_btz_zombie_world_light_damage_percent_hub", 0.075)
-
-//how long the zombie will keep playing reaction animation after no longer in a light source
-VarFloat("f_btz_zombie_light_reaction_duration", 0.01)
-VarFloat("f_btz_zombie_light_reaction_sound_min_distance", 8.0)
-VarFloat("f_btz_zombie_light_reaction_sound_max_distance", 200.0)
-
-VarFloat("f_btz_human_ropeloco_max_energy", 1.5)
-
-// Distance representing how far the player can look away from the last valid position where the rope is attached before
-// that position dissapears (i.e. the rope attachment position will "stick" as long as the player is not looking further
-// than this distance). This distance also defines the distance at which the rope target position will jump to a nearby
-// edge and stick to it.
-VarFloat("f_btz_zombie_ropeloco_default_sticky_reticule_distance_max", 1.0)
-VarFloat("f_btz_zombie_ropeloco_hook_sticky_reticule_distance_max", 0.75)
-
-// Hunter's ropeloco fitness cost (fraction of max fitness expended per second while in connected mode)
-VarFloat("f_btz_zombie_ropeloco_fitness_cost_while_active", 0.0)
-VarFloat("f_btz_zombie_ropeloco_fitness_connection_cost", 0.0)
-
-// Multiplier applied to Hunter's rope locomotion velocity when he is in water.
-VarFloat("f_btz_zombie_ropeloco_velocity_water_scale", 0.5)
-
-// The amount of time (in seconds) Hunter will stay connected to and pull on the rope during rope locomotion
-// if the input is tapped instead of being held.
+VarFloat("f_btz_zombie_light_reaction_duration",0.01)
+VarFloat("f_btz_zombie_light_reaction_sound_min_distance",8.0)
+VarFloat("f_btz_zombie_light_reaction_sound_max_distance",200.0)
+VarFloat("f_btz_human_ropeloco_max_energy",1.5)
+VarFloat("f_btz_zombie_ropeloco_default_sticky_reticule_distance_max",1.0)
+VarFloat("f_btz_zombie_ropeloco_hook_sticky_reticule_distance_max",0.75)
+VarFloat("f_btz_zombie_ropeloco_fitness_cost_while_active",0.0)
+VarFloat("f_btz_zombie_ropeloco_fitness_connection_cost",0.0)
+VarFloat("f_btz_zombie_ropeloco_velocity_water_scale",0.5)
 VarFloat("f_btz_zombie_ropeloco_connection_time_on_tap", 0.3)
-
-// When rope locomoting, if the angle of the rope is below the specified low angle or above the specified high angle, Hunter will play a different (more suitable) attach, connect and detach animation.
-VarFloat("f_btz_zombie_rope_loco_angle_low", -35.0)
-VarFloat("f_btz_zombie_rope_loco_angle_high", 35.0)
-
-// When landing on a wall with rope locomotion (i.e. holding the rope locomotion button all the way to the destination),
-// this variable defines the angle to the wall past which the zombie player will no longer rotate to face the wall.
-// For example, if set to 60, at an wall approach angle of 45 the player will rotate, at and angle of 71 he will not.
+VarFloat("f_btz_zombie_rope_loco_angle_high",35.0)
 VarFloat("f_btz_zombie_rope_loco_wall_landing_sharp_angle", 60.0)
-
 VarFloat("f_btz_zombie_ropeloco_in_air_grace_time", -1.0)
-
 VarFloat("f_btz_zombie_ropeloco_max_input_speed", 6.0)
 VarFloat("f_btz_zombie_ropeloco_max_deceleration", 20.0)
 VarFloat("f_btz_zombie_ropeloco_min_deceleration", 6.0)
 VarFloat("f_btz_zombie_ropeloco_min_decel_fully_drained", 14.0)
 VarFloat("f_btz_zombie_ropeloco_acceleration", 5.0)
-
-
-// Rope locomotion vis
 VarVec4("v4_btz_zombie_rope_vis_flying_params", [0.1, 0.0, 1.0, 0.0])
-VarFloat("f_btz_zombie_rope_vis_flying_extra_time", 0.05)
-
-// The duration (in seconds) of the motion trail Hunter leaves behind. The larger the duration, the
-// longer the motion trail will be.
-VarFloat("f_btz_zombie_move_motion_trail_duration", 0.5)
-
-// Hunter's speed at which the motion trail will be at minimum and maximum strength values.
-VarFloat("f_btz_zombie_move_motion_trail_strength_min_speed", 0.0)
-VarFloat("f_btz_zombie_move_motion_trail_strength_max_speed", 2.0)
-
-// Alpha on the motion trail based on the hunter's current state.
-VarFloat("f_btz_zombie_move_motion_trail_strength_drained", 0.09)
-VarFloat("f_btz_zombie_move_motion_trail_strength_fully_drained", 0.5)
-VarFloat("f_btz_zombie_move_motion_trail_strength_uv_block", 0.05)
-
-// Targeting window for Hunter's pounce (how long a valid target remains valid)
-VarFloat("f_btz_zombie_grab_valid_target_grace_period", 0.25)
-
-VarFloat("f_btz_pvp_grab_sim_pos_angle_max_increase", 25.0)
-
-// The base pounce distance
-VarFloat("f_btz_zombie_grab_range", 10.0)
-VarFloat("f_btz_zombie_grab_range_velocity_factor", 0.25)
-VarFloat("f_btz_zombie_grab_angle_max", 45.0)
-
-//Human wrestling kick grab params
+VarFloat("f_btz_zombie_rope_vis_flying_extra_time",0.05)
+VarFloat("f_btz_zombie_move_motion_trail_duration",0.3)
+VarFloat("f_btz_zombie_move_motion_trail_strength_min_speed",0.0)
+VarFloat("f_btz_zombie_move_motion_trail_strength_max_speed",2.8)
+VarFloat("f_btz_zombie_move_motion_trail_strength_drained",1.5)
+VarFloat("f_btz_zombie_move_motion_trail_strength_fully_drained",0.0)
+VarFloat("f_btz_zombie_move_motion_trail_strength_uv_block",0.05)
+VarFloat("f_btz_zombie_grab_valid_target_grace_period",0.25)
+VarFloat("f_btz_pvp_grab_sim_pos_angle_max_increase",25.0)
+VarFloat("f_btz_zombie_grab_range",10.0)
+VarFloat("f_btz_zombie_grab_range_velocity_factor",0.25)
+VarFloat("f_btz_zombie_grab_angle_max",45.0)
 VarFloat("f_btz_wrestling_kick_range", 3.1)
 VarFloat("f_btz_wrestling_kick_range_velocity_factor", 0.0)
 VarFloat("f_btz_wrestling_kick_angle_max", 22.0)
 VarFloat("f_btz_human_wrestling_kick_damage", 30.0)
-
-//Human jump attack grab params
 VarFloat("f_btz_jump_attack_min_fall_speed", 11.0)
 VarFloat("f_btz_jump_attack_source_position_forward_offset", 0.5)
 VarFloat("f_btz_jump_attack_range", 0.5)
 VarFloat("f_btz_jump_attack_range_velocity_factor", 0.05)
-VarFloat("f_btz_jump_attack_angle_max", 89.0)
-
-VarFloat("f_btz_pvp_grab_above_angle_threshold", 20.0)
-VarFloat("f_btz_pvp_grab_below_angle_threshold", -50.0)
-
-// The range in which Hunter can pounce a human is defined by the numerical range 0 to 1 (0 being furthest from the human,
-// 1 being closest). These variables define where in that grab range the pounce will be considered a critical pounce.
-// So, the pounce range looks like this: [0 -> crit_min] is a regular pounce, [crit_min -> crit_max] is a critical
-// pounce, [crit_max -> 1] is a regular pounce.
-VarFloat("f_btz_zombie_grab_range_crit_min", 0.4)
-VarFloat("f_btz_zombie_grab_range_crit_max", 0.6)
-
-// In 1 on 1 gameplay human players can feel frustrated that once they are grabbed, there is nothing
-// they can do to free themselves. We prevent their frustration by killing them instantly every time.
-VarInt("i_btz_1on1_pounces_are_critical", 0)
-
-// Hunter succeeded in a grab and pays this cost in stamina
+VarFloat("f_btz_jump_attack_angle_max",89.0)
+VarFloat("f_btz_pvp_grab_above_angle_threshold",20.0)
+VarFloat("f_btz_pvp_grab_below_angle_threshold",-50.0)
+VarFloat("f_btz_zombie_grab_range_crit_min",0.4)
+VarFloat("f_btz_zombie_grab_range_crit_max",0.6)
+VarInt("i_btz_1on1_pounces_are_critical",0)
 VarFloat("f_btz_zombie_grab_succeeded_stamina_penalty", 0.0)
-
-// Hunter is interrupted by other player's while mid-grab
 VarFloat("f_btz_zombie_grab_interrupted_stamina_penalty", 0.1)
-
-// How far from the victim is Hunter snapped to
-VarFloat("f_btz_zombie_grab_position_distance_to_victim", 1.0)
-
-// Turns on critical pounces
-VarInt("f_btz_zombie_grab_critical_enabled", 0)
-// If disabled, will turn off the fight sequence so it just auto aborts
-VarInt("f_btz_zombie_grab_fight_enabled", 1)
-
-// Initial velocity bump when grabbing
-VarFloat("f_btz_zombie_grab_velocity_increase", 1.0)
-
-// Multiplier applied to Hunter and human velocities if the grab occurs in water.
-VarFloat("f_btz_zombie_grab_water_initial_velocity_scale", 0.05)
-
-// The maximum xz velocity players can travel at while grabbing under water, and the deceleration that will take players there. This is in meters per second.
-VarFloat("f_btz_zombie_grab_water_max_velocity_xz", 0.2)
-VarFloat("f_btz_zombie_grab_water_deceleration_xz", 1.0)
-
-// The maximum y velocity players can travel at while grabbing under water, and the deceleration that will take players there. This is in meters per second.
-VarFloat("f_btz_zombie_grab_water_max_velocity_y", -0.5)
-VarFloat("f_btz_zombie_grab_water_deceleration_y", 1.0)
+VarFloat("f_btz_zombie_grab_position_distance_to_victim",1.0)
+VarInt("f_btz_zombie_grab_critical_enabled",0)
+VarInt("f_btz_zombie_grab_fight_enabled",1)
+VarFloat("f_btz_zombie_grab_velocity_increase",1.0)
+VarFloat("f_btz_zombie_grab_water_initial_velocity_scale",0.05)
+VarFloat("f_btz_zombie_grab_water_max_velocity_xz",0.2)
+VarFloat("f_btz_zombie_grab_water_deceleration_xz",1.0)
+VarFloat("f_btz_zombie_grab_water_max_velocity_y",-0.5)
+VarFloat("f_btz_zombie_grab_water_deceleration_y",1.0)
 
 VarFloat("f_btz_invalid_brood_kill_time_out", 10.0)
 
