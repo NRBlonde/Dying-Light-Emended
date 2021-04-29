@@ -1,5 +1,3 @@
-// keep in sync with FMeshEntity
-
 export int NONE = 0;
 
 export int POS          = 0x0100;
