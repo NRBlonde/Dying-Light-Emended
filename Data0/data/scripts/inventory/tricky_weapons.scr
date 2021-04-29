@@ -4,6 +4,35 @@ sub main()
 {	
 	
 	/////////////////////////////////////////////////////
+	/////////////////// SHU WARRIOR  ////////////////////
+	/////////////////////////////////////////////////////
+	
+	Item("Melee_ShortAxe_Savvy")
+	{
+	    Trick("ConsecutiveHits", 3, 10.0)
+		{
+			DamageMultiplier(1.1);
+			IgnoreArmor(); 			
+			ForcePostHitFx("electric_short_axe_savvy_sequence.fx");
+			Elemental(Elemental_ShockElectricity, 3);
+			ResetParentOnDeactivate();
+		}
+	}
+	
+	Item("Melee_BigHammer_Savvy")
+	{
+	  Trick("ChargeAttack")
+		{
+			IgnoreArmor(); 
+			IgnoreMinHitsToKill();
+			IgnoreBulletProofVest();
+			DamageMultiplier(2.0);
+			Elemental(Elemental_ShockElectricity, 3);
+			ResetParentOnDeactivate();
+		}
+	}
+	
+	/////////////////////////////////////////////////////
 	//////////////////// OX WARRIOR /////////////////////
 	/////////////////////////////////////////////////////
 	

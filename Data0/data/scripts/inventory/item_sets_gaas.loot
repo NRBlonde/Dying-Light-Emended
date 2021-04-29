@@ -8,6 +8,14 @@ export int Lockpick = 7;
 export int Mods = 8;
 export int Other = 9;
 
+	sub RustCrossover_Scrap(float weight = 1.0, float prob = 1.0)
+    {
+        Set(CraftPart, weight, prob)
+        {
+            Item("Craft_RustyScrap_Event", 1.0);
+        }
+    }
+
      sub Items_Ammo_Subsonic(float weight = 1.0, float prob = 1.0)
     {
         Set(Weapon, weight, prob)

@@ -8,7 +8,103 @@ import "containers_object_type.def"
 //////////////////////////////////
 
 sub default()
-{
+{	
+	//////////////////////////
+	// RUST CROSSOVER EVENT //
+	//////////////////////////
+	
+	
+	
+	LootedObject("Loot_Bundle_Rust_C4_Elemental")
+    {
+        ColorSet(ColorSet_OrangeOnly);
+		
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Bundle_Rust_C4_Elemental", 1.0);
+        }
+	}
+	
+	LootedObject("DeadBody_RustScientist")
+    {
+        ColorSet(ColorSet_Default);
+        use RustCrossover_Scrap(weight = 3.0);
+    }
+	
+	// Golden variations of Free DLC items
+	
+	LootedObject("Loot_Craftplan_Rust_SalvagedCleaver_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Rust_SalvagedCleaver_Gold", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Rust_AssaultRifle_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Rust_AssaultRifle_Gold", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Rust_SubmachineGun_Gold")
+    {
+    	ColorSet(ColorSet_PlatinumOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Rust_SubmachineGun_Gold", 1.0);
+        }
+    }
+	
+	//C4 Elemental Variations
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Poison")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Poison", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Freeze")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Freeze", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Burning")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Burning", 1.0);
+        }
+    }
+	
+	LootedObject("Loot_Craftplan_Throwable_ExplosiveBomb_Bleeding")
+    {
+    	ColorSet(ColorSet_BlueOnly);
+
+		Set(Other, 1.0, 1.0)
+        {
+            Item("Craftplan_Throwable_ExplosiveBomb_Bleeding", 1.0);
+        }
+    }
+	
 	//ZOMBIE HUNT EVENT
 	
 	LootedObject("Loot_ZZZZ_Melee_BigHammer_Tactical_Gold")

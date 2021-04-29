@@ -8850,6 +8850,39 @@ sub main()
         Condition(50);
         GameVersion(33);
     }
+    
+    Item("Rust_bucket_biter_m", CategoryType_Throwable)
+    {
+        ItemType(ItemType_Fists);
+        Visibility(true);
+        Mesh("bucket_rust.msh");
+        Skin("Default");
+        DestroySound("blunt_metal_00.wav");
+        Condition(50);
+        GameVersion(41);
+    }
+
+    Item("Rust_bucket_biter_w", CategoryType_Throwable)
+    {
+        ItemType(ItemType_Fists);
+        Visibility(true);
+        Mesh("bucket_rust.msh");
+        Skin("Default");
+        DestroySound("blunt_metal_00.wav");
+        Condition(50);
+        GameVersion(41);
+    }
+
+    Item("Skeleton_Shield", CategoryType_Throwable)
+    {
+        ItemType(ItemType_Shield);
+        Visibility(true);
+        Mesh("wn_shield_c.msh");//wn_shield_viking_a
+        Skin("Hellraid_skeletons");
+        DestroySound("blunt_metal_00.wav");
+        Condition(900000);
+        GameVersion(41);
+    }
 
 	Item("Melee_ThugDoubleAxeBigMedium", CategoryType_Melee)
     {

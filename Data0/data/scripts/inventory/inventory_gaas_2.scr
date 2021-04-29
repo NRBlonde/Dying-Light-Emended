@@ -1945,7 +1945,7 @@ sub main()
     }
 
 	Item("Cons_Halva_Event", CategoryType_Valuable)
-   {
+    {
        ItemType(ItemType_QuestItem);
        Visibility(true);
        Price(100);
@@ -1957,7 +1957,7 @@ sub main()
        MaxStackCount(99);
        GenType(GenType_None);
        GameVersion(32);
-   }
+    }
     
     Item("ZZZZZ_DevCraft_ChickenStick_Anniversary5", CategoryType_Melee)
     {
