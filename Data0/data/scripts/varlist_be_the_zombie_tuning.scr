@@ -726,23 +726,8 @@ VarFloat("cam_spike_kill_prep_look_spring_end", 0.2)
 VarFloat("cam_spike_kill_prep_time_to_look_spring_end", 0.3)
 
 VarInt("cam_spike_kill_prep_set_camera_zoom", 0)
-//VarFloat("cam_spike_kill_prep_zoom_max", 8.0)
-//VarFloat("cam_spike_kill_prep_zoom_min", 1.1)
-//VarFloat("cam_spike_kill_prep_dist_for_zoom_max", 50.0)
-//VarFloat("cam_spike_kill_prep_dist_for_zoom_min", 3.0)
-//VarFloat("cam_spike_kill_prep_zoom_duration", 0.5)
-//VarFloat("cam_spike_kill_prep_zoom_in_time", 0.15)
-//VarFloat("cam_spike_kill_prep_zoom_out_time", 0.8)
-//VarFloat("cam_spike_kill_prep_zoom_delay", 0.15)
 
 VarInt("cam_spike_kill_prep_set_slow_mo", 0)
-//VarFloat("cam_spike_kill_prep_slow_mo_length", 0.8)
-//VarFloat("cam_spike_kill_prep_slow_mo_in", 0.7)
-//VarFloat("cam_spike_kill_prep_slow_mo_out", 0.1)
-//VarFloat("cam_spike_kill_prep_slow_mo_amount", 0.1)
-//End SPIKE_KILL_PREP_CAMERA //////////////
-
-// SPIKE_KILL_CAMERA /////////////
 VarFloat("cam_spike_kill_focus_duration", 0.2)
 VarString("cam_spike_kill_focus_bone", "SPINE3")
 VarInt("cam_spike_kill_control_body", 0)
@@ -767,27 +752,15 @@ VarFloat("cam_spike_kill_slow_mo_length", 0.4)
 VarFloat("cam_spike_kill_slow_mo_in", 0.2)
 VarFloat("cam_spike_kill_slow_mo_out", 0.2)
 VarFloat("cam_spike_kill_slow_mo_amount", 0.1)
-//End SPIKE_KILL_CAMERA //////////////
-
-// POUNCE_SLAM_CAMERA /////////////
 VarFloat("cam_pounce_slam_focus_duration", 2.0)
 VarString("cam_pounce_slam_focus_bone", "SPINE3")
 VarInt("cam_pounce_slam_control_body", 1)
-
 VarInt("cam_pounce_slam_set_look_spring", 1)
 VarFloat("cam_pounce_slam_look_spring_start", 0.5)
 VarFloat("cam_pounce_slam_look_spring_end", 0.1)
 VarFloat("cam_pounce_slam_time_to_look_spring_end", 0.04)
 
 VarInt("cam_pounce_slam_set_camera_zoom", 0)
-//VarFloat("cam_pounce_slam_zoom_max", 8.0)
-//VarFloat("cam_pounce_slam_zoom_min", 1.1)
-//VarFloat("cam_pounce_slam_dist_for_zoom_max", 50.0)
-//VarFloat("cam_pounce_slam_dist_for_zoom_min", 3.0)
-//VarFloat("cam_pounce_slam_zoom_duration", 0.4)
-//VarFloat("cam_pounce_slam_zoom_in_time", 0.1)
-//VarFloat("cam_pounce_slam_zoom_out_time", 0.8)
-//VarFloat("cam_pounce_slam_zoom_delay", 0.15)
 
 VarInt("cam_pounce_slam_set_slow_mo", 1)
 VarFloat("cam_pounce_slam_slow_mo_length", 0.8)
@@ -927,7 +900,7 @@ VarFloat("f_btz_buggy_physics_damage_from_groundpound", 40000.0)
 VarFloat("f_btz_buggy_damage_from_groundpound_y_dir", 0.8)
 VarFloat("f_btz_buggy_max_angular_vel_on_groundpound", 8.0)
 
-VarFloat("f_btz_buggy_human_damage_on_buggy_gp_charge_attacks", 0.05) //f_btz_in_vehicle_pvp_damage_mitigation will be applied to this
+VarFloat("f_btz_buggy_human_damage_on_buggy_gp_charge_attacks", 0.05)
 VarFloat("f_btz_in_vehicle_pvp_damage_mitigation", 0.5)
 
 VarFloat("f_btz_buggy_hunter_collision_impulse", 50000.0)
@@ -981,7 +954,7 @@ VarFloat("s_btz_buggy_occupied_prompt_show_time", 6.0)
 VarFloat("s_btz_buggy_respawn_point_search_radius", 15.0)
 VarFloat("s_btz_buggy_min_dist_for_respawn_prompt", 10.0)
 
-VarFloat("f_btz_mine_explode_dist_sqr", 2.25) // 1.5m
+VarFloat("f_btz_mine_explode_dist_sqr", 2.25)
 VarFloat("f_btz_mine_hud_display_dist", 4.0)
 
 VarInt("f_btz_buggy_grab_enable_ray_test", 1)
@@ -996,14 +969,5 @@ VarInt("i_btz_turn_detection_enabled", 0)
 VarFloat("f_btz_turn_detection_update_interval", 0.03)
 VarFloat("f_btz_turn_detection_time", 0.066)
 VarFloat("f_btz_turn_detection_update_angle_threshold", 180.0)
-VarFloat("f_btz_turn_detection_disable_sprint_time", 0.0)
-
-VarInt("i_btz_enable_dfa_in_water", 0)
-
-
-
-
-
-
-
-
+VarFloat("f_btz_turn_detection_disable_sprint_time",0.0)
+VarInt("i_btz_enable_dfa_in_water",0)
