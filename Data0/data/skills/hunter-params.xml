@@ -158,8 +158,7 @@
 
     <prop n="PVPKnockBackMelee" v="1"/>
     <prop n="ZombiePounceExplosionPhysicsDamage" v="1.5"/>
-
-    <prop n="ZombieMeleeKnockBackSpeed" v="5"/>
+    <prop n="ZombieMeleeKnockBackSpeed" v="4"/>
     <prop n="ZombieMeleeKnockBackDuration" v="0.1"/>
     <prop n="ZombieMeleeKnockup" v="0"/>
 
@@ -184,8 +183,6 @@
     <prop n="ZombieSpitLightDisableAmmoRegenTime3v1" v="40"/>
     <prop n="ZombieSpitLightDisableAmmoRegenTime4v1" v="30"/>
     <prop n="ZombieSpitLightDisableMaxAmmoCount" v="1"/>
-
-
     <prop n="ZombieDefensiveSmokeScreenEnabled" v="0"/>
     <prop n="ZombieSpitDefensiveSmokeSpawnAmmoCount" v="1"/>
     <prop n="ZombieSpitDefensiveSmokeAmmoRegenTime1v1" v="80"/>
@@ -194,12 +191,9 @@
     <prop n="ZombieSpitDefensiveSmokeAmmoRegenTime4v1" v="30"/>
     <prop n="ZombieSpitDefensiveSmokeMaxAmmoCount" v="1"/>
     <prop n="ZombieSpitDefensiveSmokeDurationMul" v="1"/>
-
     <prop n="CoolodownFailDisplayTime" v="1.5"/>
-
     <prop n="NightHordeSenseOnEnemyPlayerTime" v="20.0"/>
     <prop n="NaturalMovementDevelopmentLevel" v="0"/>
-
     <prop n="LookBackEnabled" v="0"/>
 
     <prop n="PVPKnockBackDamage_Speed" v="5.0"/>
