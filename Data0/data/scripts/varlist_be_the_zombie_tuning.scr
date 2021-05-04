@@ -11,7 +11,6 @@ VarFloat("f_btz_zombie_respawn_delay_2_human",  14.0)
 VarFloat("f_btz_human_respawn_delay_rb_min_2_human", 12.0)
 VarFloat("f_btz_human_respawn_delay_rb_max_2_human", 12.0)
 VarFloat("f_btz_human_respawn_delay_2_human",   12.0)
-
 VarFloat("f_btz_zombie_respawn_delay_rb_min_3_human", 12.0)
 VarFloat("f_btz_zombie_respawn_delay_rb_max_3_human", 12.0)
 VarFloat("f_btz_zombie_respawn_delay_3_human",  12.0)
@@ -25,8 +24,6 @@ VarFloat("f_btz_zombie_respawn_delay_4_human",  11.0)
 VarFloat("f_btz_human_respawn_delay_rb_min_4_human", 17.0)
 VarFloat("f_btz_human_respawn_delay_rb_max_4_human", 17.0)
 VarFloat("f_btz_human_respawn_delay_4_human",   17.0)
-
-// Human player mini map HUD
 VarFloat("f_btz_human_minimap_zombie_noise_display_time", 0.9) // How long the Hunter target indicator will be shown on the mini map after Hunter makes noise
 VarVec4("v4_btz_human_minimap_zombie_noise_color", [1.0, 0.0, 0.0, 1.0])
 
@@ -484,13 +481,6 @@ VarVec3("v3_btz_human_glow_color_camo_spit",   [0.784, 0.118, 0.0])
 VarFloat("f_btz_human_glow_close_intensity_under_duress", 0.7)
 VarFloat("f_btz_human_glow_far_intensity_under_duress", 1.0)
 
-// The UV overlays are displayed for FPP humans whenever the human hits the zombie player with a
-// UV flashlight (different overlay colors are shown depending on whether the zombie player has
-// UV block on or not, but the intensity rules are the same for both). The center and edge
-// intensities are multipliers applied based on how close the zombie player is to the center vs
-// the edge of the UV flashlight cone. The near, mid and far intensities are multipliers based
-// on how close the human player is to the zombie player (the associated distances are also
-// specified here). The results of the two intensities are multiplied and applied to the overlay.
 VarFloat("f_btz_human_uv_overlay_intensity_center", 0.3)
 VarFloat("f_btz_human_uv_overlay_intensity_edge", 0.03)
 
@@ -523,17 +513,11 @@ VarFloat("f_btz_pvpgrab_spikes_extra_raytrace_radius", 0.5)
 // a projectile path so they must be done is small segments).
 VarFloat("f_btz_pvpgrab_spikes_raytrace_time_slice", 0.05)
 
-// For how long (in terms of the player flying after being tackled) do we search for in-range
-// spikes (the longer we search for, the more expensive things get).
-VarFloat("f_btz_pvpgrab_spikes_search_time", 4.0)
+VarFloat("f_btz_pvpgrab_spikes_search_time", 3.0)
 VarFloat("f_btz_pvpgrab_spikes_interrupt_search_distance_xz", 6.0)
 
-// The minimum max distance from the player's path spike distances are compared against to check
-// whether they're close enough to the player's path to be considered.
 VarFloat("f_btz_pvpgrab_spikes_distance_to_path_max_min", 1.0)
 
-// The distance from the spikes at which we reenable the collision of a player that is travelling
-// towards them.
 VarFloat("f_btz_pvpgrab_spikes_collision_reenable_distance", 0.1)
 
 VarFloat("f_btz_dying_mini_game_min_speed", 0.3)
@@ -551,68 +535,51 @@ VarInt("i_btz_num_medkits_gifted_on_respawn", 3)
 
 VarFloat("f_btz_hunter_hud_inactive_time_out", 5.0)
 
-VarFloat("f_btz_min_playtime_for_disconnected_penalty", 30.0)
+VarFloat("f_btz_min_playtime_for_disconnected_penalty", 90.0)
 
 VarFloat("f_btz_human_fitness_usage_multiplier", 0.0)
 VarFloat("f_btz_human_stamina_usage_multiplier", 0.0)
 
-////////////////////////////////
-////////Camouflage Mapping ////
-//////////////////////////////
 VarFloat("f_btz_camouflage_duration_in_min", 0)
 VarFloat("f_btz_camouflage_duration_in_max", 90.0)
 VarFloat("f_btz_camouflage_duration_out_min", 0)
 VarFloat("f_btz_camouflage_duration_out_max", 90.0)
 
-////////Camera Presentation/////////
-/////////////////////////////
+VarFloat("cam_end_game_focus_duration",2.0)
+VarString("cam_end_game_focus_bone","SPINE3")
+VarInt("cam_end_game_control_body",0)
 
-// END_GAME_CAMERA /////////////
-VarFloat("cam_end_game_focus_duration", 5.0)
-VarString("cam_end_game_focus_bone", "SPINE3")
-VarInt("cam_end_game_control_body", 0)
-
-VarInt("cam_end_game_set_look_spring", 0)
-//VarFloat("cam_end_game_look_spring_start", 0.1)
-//VarFloat("cam_end_game_look_spring_end", 0.0)
-//VarFloat("cam_end_game_time_to_look_spring_end", 0.1)
-
-VarInt("cam_end_game_set_camera_zoom", 1)
-VarFloat("cam_end_game_zoom_max", 20.0)
-VarFloat("cam_end_game_zoom_min", 1.0)
-VarFloat("cam_end_game_dist_for_zoom_max", 60.0)
-VarFloat("cam_end_game_dist_for_zoom_min", 2.0)
-VarFloat("cam_end_game_zoom_duration", 5.0)
-VarFloat("cam_end_game_zoom_in_time", 1.0)
-VarFloat("cam_end_game_zoom_out_time", 0.0)
-VarFloat("cam_end_game_zoom_delay", 0.25)
-
-VarInt("cam_end_game_set_slow_mo", 1)
-VarFloat("cam_end_game_slow_mo_length", 5.0)
-VarFloat("cam_end_game_slow_mo_in", 1.5)
-VarFloat("cam_end_game_slow_mo_out", 0.0)
-VarFloat("cam_end_game_slow_mo_amount", 0.1)
-//End END_GAME_CAMERA //////////////
-
-
-// PLAYER_HIT_CAMERA /////////////
-VarFloat("cam_player_hit_focus_duration", 0.4)
-VarString("cam_player_hit_focus_bone", "SPINE3")
-VarInt("cam_player_hit_control_body", 0)
-
+VarInt("cam_end_game_set_look_spring",0)
+VarInt("cam_end_game_set_camera_zoom",1)
+VarFloat("cam_end_game_zoom_max",15.0)
+VarFloat("cam_end_game_zoom_min",1.0)
+VarFloat("cam_end_game_dist_for_zoom_max",60.0)
+VarFloat("cam_end_game_dist_for_zoom_min",2.0)
+VarFloat("cam_end_game_zoom_duration",5.0)
+VarFloat("cam_end_game_zoom_in_time",1.0)
+VarFloat("cam_end_game_zoom_out_time",0.0)
+VarFloat("cam_end_game_zoom_delay",0.25)
+VarInt("cam_end_game_set_slow_mo",1)
+VarFloat("cam_end_game_slow_mo_length",2.0)
+VarFloat("cam_end_game_slow_mo_in",1.5)
+VarFloat("cam_end_game_slow_mo_out",0.0)
+VarFloat("cam_end_game_slow_mo_amount",0.1)
+VarFloat("cam_player_hit_focus_duration",0.3)
+VarString("cam_player_hit_focus_bone","SPINE3")
+VarInt("cam_player_hit_control_body",0)
 VarInt("cam_player_hit_set_look_spring", 1)
 VarFloat("cam_player_hit_look_spring_start", 1.0)
 VarFloat("cam_player_hit_look_spring_end", 0.0)
-VarFloat("cam_player_hit_time_to_look_spring_end", 0.4)
+VarFloat("cam_player_hit_time_to_look_spring_end", 0.3)
 
 VarInt("cam_player_hit_set_camera_zoom", 1)
-VarFloat("cam_player_hit_zoom_max", 3.0)
+VarFloat("cam_player_hit_zoom_max", 2.0)
 VarFloat("cam_player_hit_zoom_min", 1.0)
 VarFloat("cam_player_hit_dist_for_zoom_max", 50.0)
 VarFloat("cam_player_hit_dist_for_zoom_min", 2.0)
-VarFloat("cam_player_hit_zoom_duration", 0.5)
-VarFloat("cam_player_hit_zoom_in_time", 0.6)
-VarFloat("cam_player_hit_zoom_out_time", 0.6)
+VarFloat("cam_player_hit_zoom_duration", 0.3)
+VarFloat("cam_player_hit_zoom_in_time", 0.5)
+VarFloat("cam_player_hit_zoom_out_time", 0.3)
 VarFloat("cam_player_hit_zoom_delay", 0.0)
 
 VarInt("cam_player_hit_set_slow_mo", 1)
@@ -620,27 +587,24 @@ VarFloat("cam_player_hit_slow_mo_length", 0.01)
 VarFloat("cam_player_hit_slow_mo_in", 0.1)
 VarFloat("cam_player_hit_slow_mo_out", 0.1)
 VarFloat("cam_player_hit_slow_mo_amount", 0.1)
-//End PLAYER_HIT_CAMERA //////////////
 
-
-// THIRD_PARTY_INTERRUPT_CAMERA /////////////
-VarFloat("cam_third_party_interrupt_focus_duration", 1.6)
+VarFloat("cam_third_party_interrupt_focus_duration", 0.6)
 VarString("cam_third_party_interrupt_focus_bone", "SPINE3")
 VarInt("cam_third_party_interrupt_control_body", 0)
 
 VarInt("cam_third_party_interrupt_set_look_spring", 1)
 VarFloat("cam_third_party_interrupt_look_spring_start", 1.0)
 VarFloat("cam_third_party_interrupt_look_spring_end", 0.1)
-VarFloat("cam_third_party_interrupt_time_to_look_spring_end", 0.3)
+VarFloat("cam_third_party_interrupt_time_to_look_spring_end", 0.2)
 
 VarInt("cam_third_party_interrupt_set_camera_zoom", 1)
-VarFloat("cam_third_party_interrupt_zoom_max", 8.0)
+VarFloat("cam_third_party_interrupt_zoom_max", 3.0)
 VarFloat("cam_third_party_interrupt_zoom_min", 1.0)
 VarFloat("cam_third_party_interrupt_dist_for_zoom_max", 50.0)
 VarFloat("cam_third_party_interrupt_dist_for_zoom_min", 2.0)
-VarFloat("cam_third_party_interrupt_zoom_duration", 1.3)
-VarFloat("cam_third_party_interrupt_zoom_in_time", 0.4)
-VarFloat("cam_third_party_interrupt_zoom_out_time", 0.6)
+VarFloat("cam_third_party_interrupt_zoom_duration", 0.3)
+VarFloat("cam_third_party_interrupt_zoom_in_time", 0.3)
+VarFloat("cam_third_party_interrupt_zoom_out_time", 0.3)
 VarFloat("cam_third_party_interrupt_zoom_delay", 0.2)
 
 VarInt("cam_third_party_interrupt_set_slow_mo", 1)
@@ -648,11 +612,8 @@ VarFloat("cam_third_party_interrupt_slow_mo_length", 1.0)
 VarFloat("cam_third_party_interrupt_slow_mo_in", 0.5)
 VarFloat("cam_third_party_interrupt_slow_mo_out", 0.5)
 VarFloat("cam_third_party_interrupt_slow_mo_amount", 0.1)
-//End THIRD_PARTY_INTERRUPT_CAMERA //////////////
 
-
-// DEATH_CAMERA /////////////
-VarFloat("cam_death_focus_duration", 3.0)
+VarFloat("cam_death_focus_duration", 1.0)
 VarString("cam_death_focus_bone", "SPINE3")
 VarInt("cam_death_control_body", 1)
 
@@ -662,26 +623,22 @@ VarFloat("cam_death_look_spring_end", 0.0)
 VarFloat("cam_death_time_to_look_spring_end", 0.2)
 
 VarInt("cam_death_set_camera_zoom", 0)
-VarFloat("cam_death_zoom_max", 3.0)
+VarFloat("cam_death_zoom_max", 2.0)
 VarFloat("cam_death_zoom_min", 1.0)
-VarFloat("cam_death_dist_for_zoom_max", 50.0)
-VarFloat("cam_death_dist_for_zoom_min", 2.0)
-VarFloat("cam_death_zoom_duration", 2.0)
+VarFloat("cam_death_dist_for_zoom_max",30.0)
+VarFloat("cam_death_dist_for_zoom_min",2.0)
+VarFloat("cam_death_zoom_duration", 1.0)
 VarFloat("cam_death_zoom_in_time", 1.0)
 VarFloat("cam_death_zoom_out_time", 1.0)
 VarFloat("cam_death_zoom_delay", 0.0)
 
 VarInt("cam_death_set_slow_mo", 1)
-VarFloat("cam_death_slow_mo_length", 1.0)
+VarFloat("cam_death_slow_mo_length", 0.5)
 VarFloat("cam_death_slow_mo_in", 0.3)
-VarFloat("cam_death_slow_mo_out", 0.4)
+VarFloat("cam_death_slow_mo_out", 0.3)
 VarFloat("cam_death_slow_mo_amount", 0.1)
-//End DEATH_CAMERA //////////////
 
-
-
-// KILL_CAMERA /////////////
-VarFloat("cam_pvp_kill_focus_duration", 1.0)
+VarFloat("cam_pvp_kill_focus_duration", 0.4)
 VarString("cam_pvp_kill_focus_bone", "SPINE3")
 VarInt("cam_pvp_kill_control_body", 0)
 
@@ -691,85 +648,68 @@ VarFloat("cam_pvp_kill_look_spring_end", 0.0)
 VarFloat("cam_pvp_kill_time_to_look_spring_end", 0.2)
 
 VarInt("cam_pvp_kill_set_camera_zoom", 1)
-VarFloat("cam_pvp_kill_zoom_max", 8.0)
+VarFloat("cam_pvp_kill_zoom_max", 4.0)
 VarFloat("cam_pvp_kill_zoom_min", 1.1)
-VarFloat("cam_pvp_kill_dist_for_zoom_max", 50.0)
+VarFloat("cam_pvp_kill_dist_for_zoom_max", 30.0)
 VarFloat("cam_pvp_kill_dist_for_zoom_min", 3.0)
-VarFloat("cam_pvp_kill_zoom_duration", 0.4)
+VarFloat("cam_pvp_kill_zoom_duration", 0.2)
 VarFloat("cam_pvp_kill_zoom_in_time", 0.1)
 VarFloat("cam_pvp_kill_zoom_out_time", 0.8)
 VarFloat("cam_pvp_kill_zoom_delay", 0.15)
-
 VarInt("cam_pvp_kill_set_slow_mo", 1)
 VarFloat("cam_pvp_kill_slow_mo_length", 1.0)
 VarFloat("cam_pvp_kill_slow_mo_in", 0.3)
 VarFloat("cam_pvp_kill_slow_mo_out", 0.4)
 VarFloat("cam_pvp_kill_slow_mo_amount", 0.1)
-//End KILL_CAMERA //////////////
-
-
-// SPIKE_KILL_PREP_CAMERA /////////////
-VarFloat("cam_spike_kill_prep_focus_duration", 3.0)
+VarFloat("cam_spike_kill_prep_focus_duration",0.5)
 VarString("cam_spike_kill_prep_focus_bone", "SPINE3")
 VarInt("cam_spike_kill_prep_control_body", 0)
-
 VarInt("cam_spike_kill_prep_set_look_spring", 1)
-VarFloat("cam_spike_kill_prep_look_spring_start", 0.5)
+VarFloat("cam_spike_kill_prep_look_spring_start", 0.3)
 VarFloat("cam_spike_kill_prep_look_spring_end", 0.2)
 VarFloat("cam_spike_kill_prep_time_to_look_spring_end", 0.3)
-
 VarInt("cam_spike_kill_prep_set_camera_zoom", 0)
-
 VarInt("cam_spike_kill_prep_set_slow_mo", 0)
-VarFloat("cam_spike_kill_focus_duration", 0.2)
+VarFloat("cam_spike_kill_focus_duration", 0.1)
 VarString("cam_spike_kill_focus_bone", "SPINE3")
 VarInt("cam_spike_kill_control_body", 0)
-
 VarInt("cam_spike_kill_set_look_spring", 1)
 VarFloat("cam_spike_kill_look_spring_start", 0.2)
 VarFloat("cam_spike_kill_look_spring_end", 0.0)
 VarFloat("cam_spike_kill_time_to_look_spring_end", 0.2)
-
 VarInt("cam_spike_kill_set_camera_zoom", 1)
-VarFloat("cam_spike_kill_zoom_max", 8.0)
-VarFloat("cam_spike_kill_zoom_min", 1.1)
-VarFloat("cam_spike_kill_dist_for_zoom_max", 50.0)
-VarFloat("cam_spike_kill_dist_for_zoom_min", 3.0)
-VarFloat("cam_spike_kill_zoom_duration", 0.5)
-VarFloat("cam_spike_kill_zoom_in_time", 0.2)
-VarFloat("cam_spike_kill_zoom_out_time", 0.4)
-VarFloat("cam_spike_kill_zoom_delay", 0.0)
-
+VarFloat("cam_spike_kill_zoom_max",3.0)
+VarFloat("cam_spike_kill_zoom_min",1.1)
+VarFloat("cam_spike_kill_dist_for_zoom_max",20.0)
+VarFloat("cam_spike_kill_dist_for_zoom_min",3.0)
+VarFloat("cam_spike_kill_zoom_duration",0.2)
+VarFloat("cam_spike_kill_zoom_in_time",0.2)
+VarFloat("cam_spike_kill_zoom_out_time",0.4)
+VarFloat("cam_spike_kill_zoom_delay",0.0)
 VarInt("cam_spike_kill_set_slow_mo", 1)
-VarFloat("cam_spike_kill_slow_mo_length", 0.4)
-VarFloat("cam_spike_kill_slow_mo_in", 0.2)
-VarFloat("cam_spike_kill_slow_mo_out", 0.2)
+VarFloat("cam_spike_kill_slow_mo_length", 0.1)
+VarFloat("cam_spike_kill_slow_mo_in", 0.1)
+VarFloat("cam_spike_kill_slow_mo_out", 0.1)
 VarFloat("cam_spike_kill_slow_mo_amount", 0.1)
 VarFloat("cam_pounce_slam_focus_duration", 2.0)
 VarString("cam_pounce_slam_focus_bone", "SPINE3")
 VarInt("cam_pounce_slam_control_body", 1)
 VarInt("cam_pounce_slam_set_look_spring", 1)
-VarFloat("cam_pounce_slam_look_spring_start", 0.5)
+VarFloat("cam_pounce_slam_look_spring_start", 0.3)
 VarFloat("cam_pounce_slam_look_spring_end", 0.1)
 VarFloat("cam_pounce_slam_time_to_look_spring_end", 0.04)
 
 VarInt("cam_pounce_slam_set_camera_zoom", 0)
 
 VarInt("cam_pounce_slam_set_slow_mo", 1)
-VarFloat("cam_pounce_slam_slow_mo_length", 0.8)
+VarFloat("cam_pounce_slam_slow_mo_length", 0.3)
 VarFloat("cam_pounce_slam_slow_mo_in", 0.0)
 VarFloat("cam_pounce_slam_slow_mo_out", 0.6)
 VarFloat("cam_pounce_slam_slow_mo_amount", 0.1)
-//End POUNCE_SLAM_CAMERA //////////////
 
 VarString("s_btz_human_victory_chatter_group", "NightHunterDefeatedAYO")
 VarFloat("f_btz_human_victory_chatter_delay", 1.5)
-
-// The curve using which the human player's XP is adjusted (multiplied) when the human player
-// wins the match.
 VarString("s_btz_human_match_win_xp_curve_name", "enc_airdrop_status_points_multiplier_per_level")
-
-// Additional XP to be handed to human players for killing a zombie player at a specific prestige level.
 VarInt("f_btz_human_zombie_player_killed_bonus_xp_prestige_level_0", 0)
 VarInt("f_btz_human_zombie_player_killed_bonus_xp_prestige_level_1", 50)
 VarInt("f_btz_human_zombie_player_killed_bonus_xp_prestige_level_2", 100)
