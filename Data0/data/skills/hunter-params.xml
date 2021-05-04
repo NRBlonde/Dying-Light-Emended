@@ -33,8 +33,8 @@
 <prop n="AmortizedLethalHeight" v="300.0"/>
 <prop n="JumpSoundProb" v="1.0"/>
 <prop n="RangeMeleeMul" v="1.0"/>
-    <prop n="MaxVerticalAngleForRangeMeleeCorrection" v="0.0"/>
-    <prop n="DoubleJumpInOverAndOn" v="1"/>
+<prop n="MaxVerticalAngleForRangeMeleeCorrection" v="0.0"/>
+<prop n="DoubleJumpInOverAndOn" v="1"/>
     <prop n="AutoJumpLowObstacles" v="1"/>
     <prop n="MeeleFistStaminaUsageMul" v="-1.0"/>
     <prop n="LowStaminaAttackEnabled" v="0"/>
@@ -143,27 +143,27 @@
     <prop n="ZombieSpitControlTheHordeAmmoRegenTime3v1" v="65"/>
     <prop n="ZombieSpitControlTheHordeAmmoRegenTime4v1" v="60"/>
     <prop n="ZombieSpitControlTheHordeMaxAmmoCount" v="1"/>
-    <prop n="ZombieSpitLightDisableEnabled" v="0"/>
-    <prop n="ZombieSpitLightDisableUpgraded" v="0"/>
-    <prop n="ZombieSpitLightDisableSpawnAmmoCount" v="1"/>
-    <prop n="ZombieSpitLightDisableAmmoRegenTime1v1" v="75"/>
-    <prop n="ZombieSpitLightDisableAmmoRegenTime2v1" v="70"/>
-    <prop n="ZombieSpitLightDisableAmmoRegenTime3v1" v="65"/>
-    <prop n="ZombieSpitLightDisableAmmoRegenTime4v1" v="60"/>
-    <prop n="ZombieSpitLightDisableMaxAmmoCount" v="1"/>
-    <prop n="ZombieDefensiveSmokeScreenEnabled" v="0"/>
-    <prop n="ZombieSpitDefensiveSmokeSpawnAmmoCount" v="1"/>
-    <prop n="ZombieSpitDefensiveSmokeAmmoRegenTime1v1" v="75"/>
-    <prop n="ZombieSpitDefensiveSmokeAmmoRegenTime2v1" v="70"/>
-    <prop n="ZombieSpitDefensiveSmokeAmmoRegenTime3v1" v="65"/>
-    <prop n="ZombieSpitDefensiveSmokeAmmoRegenTime4v1" v="60"/>
-    <prop n="ZombieSpitDefensiveSmokeMaxAmmoCount" v="1"/>
-    <prop n="ZombieSpitDefensiveSmokeDurationMul" v="1"/>
-    <prop n="CoolodownFailDisplayTime" v="1.5"/>
-    <prop n="NightHordeSenseOnEnemyPlayerTime" v="20.0"/>
-    <prop n="NaturalMovementDevelopmentLevel" v="5"/>
-    <prop n="LookBackEnabled" v="0"/>
-    <prop n="PVPKnockBackDamage_Speed" v="5.0"/>
+<prop n="ZombieSpitLightDisableEnabled" v="0"/>
+<prop n="ZombieSpitLightDisableUpgraded" v="0"/>
+<prop n="ZombieSpitLightDisableSpawnAmmoCount" v="1"/>
+<prop n="ZombieSpitLightDisableAmmoRegenTime1v1" v="75"/>
+<prop n="ZombieSpitLightDisableAmmoRegenTime2v1" v="70"/>
+<prop n="ZombieSpitLightDisableAmmoRegenTime3v1" v="65"/>
+<prop n="ZombieSpitLightDisableAmmoRegenTime4v1" v="60"/>
+<prop n="ZombieSpitLightDisableMaxAmmoCount" v="1"/>
+<prop n="ZombieDefensiveSmokeScreenEnabled" v="0"/>
+<prop n="ZombieSpitDefensiveSmokeSpawnAmmoCount" v="1"/>
+<prop n="ZombieSpitDefensiveSmokeAmmoRegenTime1v1" v="75"/>
+<prop n="ZombieSpitDefensiveSmokeAmmoRegenTime2v1" v="70"/>
+<prop n="ZombieSpitDefensiveSmokeAmmoRegenTime3v1" v="65"/>
+<prop n="ZombieSpitDefensiveSmokeAmmoRegenTime4v1" v="60"/>
+<prop n="ZombieSpitDefensiveSmokeMaxAmmoCount" v="1"/>
+<prop n="ZombieSpitDefensiveSmokeDurationMul" v="1"/>
+<prop n="CoolodownFailDisplayTime" v="1.5"/>
+<prop n="NightHordeSenseOnEnemyPlayerTime" v="20.0"/>
+<prop n="NaturalMovementDevelopmentLevel" v="5"/>
+<prop n="LookBackEnabled" v="0"/>
+<prop n="PVPKnockBackDamage_Speed" v="5.0"/>
 <prop n="TurnSpeedAirMovementFactor_MinTurn" v="90.0"/>
 <prop n="TurnSpeedAirMovementFactor_MaxTurn" v="200.0"/>
 <prop n="TurnSpeedAirMovementFactorMax" v="0.25"/>
