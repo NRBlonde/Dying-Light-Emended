@@ -5,7 +5,6 @@ VarFloat("f_btz_zombie_respawn_delay_1_human",  15.0)
 VarFloat("f_btz_human_respawn_delay_rb_min_1_human", 6.0)
 VarFloat("f_btz_human_respawn_delay_rb_max_1_human", 6.0)
 VarFloat("f_btz_human_respawn_delay_1_human",   6.0)
-
 VarFloat("f_btz_zombie_respawn_delay_rb_min_2_human", 14.0)
 VarFloat("f_btz_zombie_respawn_delay_rb_max_2_human", 14.0)
 VarFloat("f_btz_zombie_respawn_delay_2_human",  14.0)
@@ -43,9 +42,6 @@ VarFloat("f_btz_zombie_noise_distance_max_marked_by_sonar_pulse", 70.0) // At wh
 VarInt("f_btz_zombie_noise_rope_loco_attaching_enabled", 0)
 VarInt("f_btz_zombie_noise_rope_loco_connected_enabled", 0)
 VarInt("f_btz_zombie_noise_rope_loco_detaching_enabled", 0)
-
-// The minimum interval (in seconds) at which noises made by the Hunter show up on the mini map. The overall interval applies to all noises and then
-// individual noises can specify their own intervals (though the overall minimum interval takes precedence)
 VarFloat("f_btz_zombie_noise_interval_min", 0.4)
 VarFloat("f_btz_zombie_noise_interval_min_howl", 0.0)
 VarFloat("f_btz_zombie_noise_interval_min_rope_loco_attaching", 0.0)
