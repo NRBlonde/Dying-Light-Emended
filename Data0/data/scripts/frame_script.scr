@@ -293,8 +293,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
 	float f_pp_heat = f_heat_strength * (1.0 - clamp(f_pp_rain * 1000000.0));
 	Set("f_pp_heat", f_pp_heat);
 
-	//motion blur
-	//Disable blur motion while oculus rift is enabled
 	extern int i_pp_OculusEnable;
 	extern int i_menu_option_mb;
 	extern float f_blur_motion_object;
@@ -336,7 +334,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     Set("v_pp_levels_rgb_out_white", v_levels_rgb_out_white);
     Set("f_pp_levels", f_levels);
 
-    //flashlight
     extern vec3 v_flashlight_color;
     extern float f_flashlight_pos_x;
     extern float f_flashlight_pos_y;
@@ -348,8 +345,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     Set("f_pp_flashlight_pos_y", f_flashlight_pos_y);
     Set("f_pp_flashlight_range", f_flashlight_range);
     Set("f_pp_flashlight_scale", f_flashlight_scale);
-
-    //Blur radial mask
     extern float f_blur_mask_radial_opacity;
     extern float f_blur_mask_radial_bias;
     extern float f_blur_mask_radial_scale;
@@ -366,10 +361,9 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     Set("f_pp_blur_mask_radial_scale_x", f_blur_mask_radial_scale_x);
     Set("f_pp_blur_mask_radial_scale_y", f_blur_mask_radial_scale_y);
 
-    //blur camera motion
-    extern float f_blur_camera_motion_factor;
-	extern float f_game_player_camera_motion_blur;
-	Set("f_pp_blur_camera_motion_factor", max(f_blur_camera_motion_factor, f_game_player_camera_motion_blur));
+extern float f_blur_camera_motion_factor;
+extern float f_game_player_camera_motion_blur;
+Set("f_pp_blur_camera_motion_factor", max(f_blur_camera_motion_factor, f_game_player_camera_motion_blur));
 
 	extern float f_blur_camera_motion_near;
 	extern float f_game_player_camera_motion_blur_near;
@@ -692,7 +686,7 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     extern int i_shadows_sun_on;
 	extern float f_pp_rain;
 
-    int i_pp_outdoor_on = clamp(1 - i_indoor_on);//i_indoor_on must be greater or equal 1, to disable lighting
+    int i_pp_outdoor_on = clamp(1 - i_indoor_on);
     Set("i_pp_outdoor_on", i_pp_outdoor_on);
 
     int i_pp_lighting_sun_on = i_lighting_sun_on * i_pp_outdoor_on;
@@ -704,7 +698,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
 
     Set("i_pp_stencil_sun_on", i_pp_outdoor_on);
 
-    //pp curves on/off
 	extern float f_pp_curves_sensor;
 	extern float f_pp_curves_effect_0;
 	extern float f_pp_curves_effect_1;
@@ -721,7 +714,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     float f_pp_curves_edit = float(i_pp_curves_edit);
 
 	Set("f_pp_curves", max(f_pp_curves_edit, f_curves * clamp(f_curves + f_pp_curves_sensor + f_pp_curves_effect_0 + f_pp_curves_effect_1 + f_pp_curves_effect_2 + f_pp_curves_effect_3 + f_pp_curves_effect_4 + f_pp_curves_effect_5 + f_pp_curves_effect_6 + f_pp_curves_effect_7 + f_pp_curves_effect_8)));
-    //direct rendering - pc only
     extern int i_out_buffer_on;
     extern int fullscreen;
 	Set("i_pp_direct_on", (SHADER_PATH == 10) ? 0 : min(fullscreen, 1-i_out_buffer_on)); //HACK
@@ -736,14 +728,14 @@ Set("f_pp_row_per_mat", f_row_per_mat);
 	Set("f_pp_hdr_intensity_shading_sun", f_pp_hdr_intensity_shading_sun);
 
 	extern float f_pp_hdr_intensity_ambient;
-	float f_pp_hdr_intensity_ambient = pow(f_pp_hdr_intensity_ambient, 2.2);
+	float f_pp_hdr_intensity_ambient = pow(f_pp_hdr_intensity_ambient, 0.0);
 	Set("f_pp_hdr_intensity_ambient", f_pp_hdr_intensity_ambient);
 
 	extern float f_pp_hdr_intensity_fx_lerp;
 	Set("f_pp_hdr_intensity_fx_lerp", f_pp_hdr_intensity_fx_lerp);
 
 	extern float f_pp_hdr_intensity_fx_add;
-	Set("f_pp_hdr_intensity_fx_add", pow(f_pp_hdr_intensity_fx_add, 2.2));
+	Set("f_pp_hdr_intensity_fx_add", pow(f_pp_hdr_intensity_fx_add, 0.0));
 
 	extern float f_pp_hdr_intensity_shading_lights;
 	Set("f_pp_hdr_intensity_shading_lights", pow(f_pp_hdr_intensity_shading_lights, 2.2));
@@ -816,11 +808,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     extern float f_pp_flashlight_range;
     Set("f_pp_flashlight_on", clamp((v_pp_flashlight_color.x + v_pp_flashlight_color.y + v_pp_flashlight_color.z) * f_pp_flashlight_scale * f_pp_flashlight_range));
 
-	//sky_color
-	// extern float f_pp_hdr_intensity_sky;
-	// extern vec3 v_sky_color;
-	// Set("v_pp_sky_color", pow(v_sky_color, 2.2) * f_pp_hdr_intensity_sky);
-
 	//highlight color
 	extern vec3 v_pp_highlight;
 	Set("v_pp_highlight", pow(v_pp_highlight * f_pp_hdr_intensity_helpers, 2.2));
@@ -833,7 +820,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
 
 	Set("f_pp_sun_glow_on", clamp(f_sun_glow_radius * f_sun_glow_range * max(max(v_sun_glow_color.x, v_sun_glow_color.y), v_sun_glow_color.z)) * (1.0 - f_underwater));
 
-	//clouds
     extern float f_clouds_opacity;
 	Set("f_pp_clouds_opacity", f_clouds_opacity);
 
@@ -856,22 +842,19 @@ Set("f_pp_row_per_mat", f_row_per_mat);
     extern float f_clouds_speed;
     Set("f_pp_clouds_speed", f_clouds_speed);
 
-	// camera motion blur limit
 	extern float f_pp_blur_camera_motion_factor;
 	extern float f_blur_camera_motion_max;
-	Set("f_pp_blur_camera_motion_factor", min(f_pp_blur_camera_motion_factor, f_blur_camera_motion_max));
+	Set("f_pp_blur_camera_motion_factor", min(f_pp_blur_camera_motion_factor,f_blur_camera_motion_max));
 
 	extern float f_pp_blur_motion_camera_near;
 	extern float f_pp_blur_motion_camera_far;
 
-	float cmb_mul = 1.0 / (f_pp_blur_motion_camera_far - f_pp_blur_motion_camera_near);
+	float cmb_mul = 1.0 * (f_pp_blur_motion_camera_far + f_pp_blur_motion_camera_near);
 	float cmb_add = -f_pp_blur_motion_camera_near * cmb_mul;
 
-	Set("f_pp_blur_motion_camera_mask_mul", cmb_mul);
-	Set("f_pp_blur_motion_camera_mask_add", cmb_add);
+	Set("f_pp_blur_motion_camera_mask_mul",cmb_mul);
+	Set("f_pp_blur_motion_camera_mask_add",cmb_add);
 
-
-    //set desaturate vars
     extern float f_pp_desaturate;
 	extern vec3 v_pp_desaturate_tint_masked;
 	Set("v_pp_desaturate_tint_masked", v_pp_desaturate_tint_masked * f_pp_desaturate);
@@ -889,7 +872,6 @@ Set("f_pp_row_per_mat", f_row_per_mat);
 
 	Set("i_nvidia_dof_on", i_nv_dof_on);
 	Set("i_nvidia_hbao_on", i_nv_hbao_on);
-	
 
 	extern float f_temporal_effect_on;
 	extern float f_smaa_tx2_on;
@@ -924,26 +906,4 @@ Set("f_pp_row_per_mat", f_row_per_mat);
 	Set("f_nvdof_bokeh_start_blur_radius", 1.0 - 1.0 / max(f_dof_far_min, f_div_delta));
 	Set("f_nvdof_bokeh_fade_in_radius", 1.0 - 1.0 / max(f_dof_far_max - f_dof_far_min, f_div_delta));
 
-// LDR
-	// Set("f_nvdof_reduce_energy_factor", 0.0);
-	// Set("f_nvdof_preblur_reduce_energy_factor", 0.0);
-	// Set("f_nvdof_luminance_min", 0.0);
-	// Set("f_nvdof_luminance_max", 1.0);
-	// Set("f_nvdof_coc_scale", 4.0);
-	// Set("f_nvdof_bokeh_size", 18.0);
-
-	// Set("f_nvdof_bokeh_out_max_luminance", 1.0);
-	// Set("f_nvdof_bokeh_out_color_saturation", 1.0);
-	// Set("f_nvdof_bokeh_max_blur_size", 1.0);
-	// Set("f_nvdof_bokeh_intensity", 1.0);
-	// Set("f_nvdof_bokeh_exp_falloff", 0.5);
-	// Set("f_nvdof_bokeh_area_factor", 1.0);
-
-    // extern float f_pp_blur_far_min;
-    // extern float f_pp_blur_far_max;
-	// Set("f_nvdof_bokeh_start_blur_radius", 1.0 - 1.0 / f_dof_far_min);
-	// Set("f_nvdof_bokeh_fade_in_radius", 1.0 - 1.0 / (f_dof_far_max - f_dof_far_min));
 }
-
-
-

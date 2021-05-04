@@ -2,8 +2,6 @@ import "logic_script_game.scr"
 
 sub main()
 {
-	// WIND ////////////////
-
 	extern float FPS;
 	extern float TIME;
 	extern float f_wind_power;
@@ -21,20 +19,20 @@ sub main()
 	Set("f_pp_omni_offset_blur", f_pp_omni_offset );
 	Set("f_pp_wind_noise_blur", f_pp_wind_noise );
 
-	float fps_inv = 1.0 / max(FPS, 0.0001);
+	float fps_inv = 1.0 / max(FPS,0.0001);
 
 	float wind_strength_min = 0.001;
 	float wind_strength_max = 1.0;
 	float wind_strength = wind_strength_min * (1.0 - f_game_weather) + wind_strength_max * f_game_weather;
-	float wind_strength = pow(wind_strength, 0.25);
+	float wind_strength = pow(wind_strength, 0.15);
 	float wind_power = wind_strength * f_wind_power;
 	Set("f_pp_wind_power", wind_power);
 
 	float wind_noise_max_s = clamp(wind_power);
-	float wind_noise_min_s = clamp(wind_power - 0.4);
+	float wind_noise_min_s = clamp(wind_power - 0.2);
 
 	float wntm = 1.5 ;
-	float wind_noise = (sin(f_pp_wind_offset * 1.56 * wntm) + sin(f_pp_wind_offset * 1.925 * wntm) + sin(f_pp_wind_offset * 1.131 * wntm) + sin(f_pp_wind_offset * 0.563 * wntm)) * 0.14 + 0.5;
+	float wind_noise = (sin(f_pp_wind_offset * 1.0 * wntm) + sin(f_pp_wind_offset * 2.0 * wntm) + sin(f_pp_wind_offset * 1.2 * wntm) + sin(f_pp_wind_offset * 1.0 * wntm)) + 0.5;
 	float wind_power_current = wind_noise * (wind_noise_max_s - wind_noise_min_s) + wind_noise_min_s;
 	float wind_offset = wind_power_current * fps_inv * f_wind_time_factor + f_pp_wind_offset;
 
@@ -49,20 +47,10 @@ sub main()
 	float wind_noise_power = pow(wind_power_current,0.5);
 	Set("f_pp_wind_direct_power", wind_direct_power);
 	Set("f_pp_wind_noise_power", wind_noise_power);
-
-	// POSTPROCESS /////////////////////////////////////
-
 	extern float f_pp_filmgrain_4_speed;
 	extern float f_pp_filmgrain_4_time;
-	extern float f_pp_filmgrain_8_speed;
-	extern float f_pp_filmgrain_8_time;
-	extern float f_pp_filmgrain_16_speed;
-	extern float f_pp_filmgrain_16_time;
 	Set("f_pp_filmgrain_4_time", (f_pp_filmgrain_4_speed * fps_inv) + f_pp_filmgrain_4_time);
-	Set("f_pp_filmgrain_8_time", (f_pp_filmgrain_8_speed * fps_inv) + f_pp_filmgrain_8_time);
-	Set("f_pp_filmgrain_16_time", (f_pp_filmgrain_16_speed * fps_inv) + f_pp_filmgrain_16_time);
 
-	// WEATHER START ///////////////////////////////////////////
 	extern float f_game_weather;
 
 	extern float f_weather_interior;
@@ -135,12 +123,9 @@ sub main()
 	float screen_drops_time_max = max(f_pp_screen_drops_time_max - screen_drops_time_delta_current, 0.0);
 
 	extern float f_pp_screen_drops_clear_on;
-	float screen_drops_time_clear = (f_pp_screen_drops_clear_on > 0.0) ? screen_drops_time_delta_current : screen_drops_time_max; 	//screen_drops_time_delta_current instead of 0.0 lets buffer to be cleared
-	float screen_drops_time_max = min(screen_drops_time_clear, screen_drops_time_max);
-
-	// Set("f_pp_screen_drops_time_max", screen_drops_time_max);
+	float screen_drops_time_clear = (f_pp_screen_drops_clear_on > 0.0) ? screen_drops_time_delta_current : screen_drops_time_max;
+float screen_drops_time_max = min(screen_drops_time_clear, screen_drops_time_max);
 extern float f_screen_drops_on;
-Set("f_pp_screen_drops_time_max", f_screen_drops_on); //always on - bo cos jest grubo zjebane w skryptach....
-
-	use game_modify();
+Set("f_pp_screen_drops_time_max", f_screen_drops_on);
+use game_modify();
 }
