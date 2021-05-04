@@ -20,9 +20,10 @@ sub game_modify()
 
 	float injured = clamp(f_game_player_state_injured);
 	float injured = max(injured, clamp(f_game_player_health));
+    //float injured = clamp(injured + f_game_player_heartbeat * 0.15);
 	float injured_shake = clamp(f_game_player_heartbeat);
-	float injured_desaturate = clamp(injured * 3.0) * 0.25;	// min: 0.0, max 0.666
-	float injured_radial = clamp((injured - 1.0) * 3.0);
+	float injured_desaturate = clamp(injured * 3.0 / 2.0) * 0.75;	// min: 0.0, max 0.666
+	float injured_radial = clamp((injured - 1.0 / 3.0) * 3.0);	// min: 0.333, max 0.666
 
 	extern float f_game_player_fatigue;
 	extern float f_game_player_state_exhausted;
@@ -58,6 +59,8 @@ sub game_modify()
 	extern float f_game_player_state_disguised;
 	float disguised = clamp(f_game_player_state_disguised);
 	float disguised = max(disguised, clamp(f_game_player_guts));
+	// float disguised_inv = 1.0 - disguised;
+
     extern float f_game_player_knockdown;
     extern float f_game_player_knockdown_lowhealth;
     float knockdown = clamp(max(f_game_player_knockdown, f_game_player_knockdown_lowhealth));
@@ -74,11 +77,11 @@ sub game_modify()
 
 	extern float f_game_player_gre;
 	float gre = clamp(f_game_player_gre);
-
+	
 	extern float f_game_player_cureaura;
 	float cureaura = clamp(f_game_player_cureaura);
 	float cureaura_inv = 1 - cureaura;
-
+	
 	extern float f_game_player_cureaura_strong;
 	float cureaura_strong = clamp(f_game_player_cureaura_strong);
 	float cureaura_strong_inv = 1 - cureaura_strong;
@@ -193,12 +196,12 @@ sub game_modify()
 	extern float f_game_player_flash;
 	float flash = clamp(f_game_player_flash);
 	float flash_inv = 1.0 - flash;
+	
 
-
-
+	
     extern float f_game_postprocess_effect_5;
     extern float f_game_postprocess_effect_7;
-
+	
     extern float f_lockpicking_minigame;
     extern float f_ui_ingame_blur;
     extern float f_menu_desaturate;
@@ -240,7 +243,7 @@ sub game_modify()
     float f_pp_shake_scale = max(f_pp_shake_scale, 0.05 * cureaura);
 	float f_pp_shake_strength = max(f_pp_shake_strength, 0.5 * cureaura);
 	float f_pp_shake_speed = max(f_pp_shake_speed, 15.0 * cureaura);
-
+	
 	float f_pp_shake_scale = max(f_pp_shake_scale, 0.25 * cureaura_strong);
 	float f_pp_shake_strength = max(f_pp_shake_strength, 1.0 * cureaura_strong);
 	float f_pp_shake_speed = max(f_pp_shake_speed, 15.0 * cureaura_strong);
@@ -248,14 +251,16 @@ sub game_modify()
 	Set("f_pp_shake_scale", f_pp_shake_scale);
     Set("f_pp_shake_speed", f_pp_shake_speed);
     Set("f_pp_shake_strength", f_pp_shake_strength);
+
+    //blur
     extern float f_pp_blur;
 	float f_pp_blur = max(f_pp_blur, f_lockpicking_minigame);
 	float f_pp_blur = max(f_pp_blur, collided);
 	float f_pp_blur = max(f_pp_blur, dazed);
 	float f_pp_blur = max(f_pp_blur, noire * 0.175);
-	float f_pp_blur = max(f_pp_blur, f_ui_ingame_blur * 0.7);
+	float f_pp_blur = max(f_pp_blur, f_ui_ingame_blur * 0.9);
     float f_pp_blur = max(f_pp_blur, knockdown);
-	float f_pp_blur = max(f_pp_blur, 0.2);
+	float f_pp_blur = max(f_pp_blur, damage * 0.2);
 	float f_pp_blur = max(f_pp_blur, menu_blur);
 	float f_pp_blur = max(f_pp_blur, cureaura_strong  * cur_var * 0.02);
     Set("f_pp_blur", f_pp_blur);
@@ -281,19 +286,20 @@ sub game_modify()
     float f_pp_blur_far_min = min(f_pp_blur_far_min, player_dof_far_1by * player_dof_far_min);
     float f_pp_blur_far_max = min(f_pp_blur_far_max, player_dof_far_1by * player_dof_far_max);
     float f_pp_blur_far = max(f_pp_blur_far, player_dof_far);
-
-    float f_pp_blur_far_min = min(f_pp_blur_far_min, poisoned_1by * 3.0);
-    float f_pp_blur_far_max = min(f_pp_blur_far_max, poisoned_1by * 10.0);
+	
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, poisoned_1by * 5.0);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, poisoned_1by * 20.0);
     float f_pp_blur_far = max(f_pp_blur_far, poisoned);
 
-    float f_pp_blur_far_min = min(f_pp_blur_far_min, dream_1by * 10.0);
-    float f_pp_blur_far_max = min(f_pp_blur_far_max, dream_1by * 155.0);
+    float f_pp_blur_far_min = min(f_pp_blur_far_min, dream_1by * 15.0);
+    float f_pp_blur_far_max = min(f_pp_blur_far_max, dream_1by * 175.0);
     float f_pp_blur_far = max(f_pp_blur_far, dream);
 
     float f_pp_blur_far_min = min(f_pp_blur_far_min, tahir_fight_1by * 2.0);
     float f_pp_blur_far_max = min(f_pp_blur_far_max, tahir_fight_1by * 12.0);
     float f_pp_blur_far = max(f_pp_blur_far, tahir_fight);
 
+    //DOF - set variables and disable in oculus rift mode
     Set("f_pp_blur_near", f_pp_blur_near * oculus_enable_inv);
     Set("f_pp_blur_near_min", f_pp_blur_near_min * oculus_enable_inv);
     Set("f_pp_blur_near_max", f_pp_blur_near_max * oculus_enable_inv);
@@ -316,15 +322,15 @@ sub game_modify()
 	extern float f_pp_prv_add;
 	float prv_add = f_pp_prv_add;
 	float prv_add = max(prv_add, flashbang_time * flashbang_prv_copy_inv);
-	float prv_add = max(prv_add, damage_motion_blur);
-	float prv_add = max(prv_add, poisoned * 0.1);
+	float prv_add = max(prv_add, damage_motion_blur * 0.1);
+	float prv_add = max(prv_add, poisoned * 0.2);
 	float prv_add = max(prv_add, cureaura * 0.15);
 	float prv_add = max(prv_add, cureaura_strong * 0.5 * cur_var);
 	float prv_add = max(prv_add, dream * 0.15);
 	Set("f_pp_prv_add", prv_add);
 
-
-  extern float f_prv_lrp;
+    //motion blur
+    extern float f_prv_lrp;
 	float f_prv_lrp = max(f_prv_lrp, tahir_fight * 0.3);
     Set("f_pp_prv_lrp", f_prv_lrp);
 
@@ -344,7 +350,7 @@ sub game_modify()
 	float saturation = min(saturation, 1.0 - noire_desaturate * noire_red_inv);
 	Set("f_pp_saturation", saturation);
 
-
+    //desaturation
     extern float f_pp_desaturate;
 
 	float f_pp_desaturate = max(f_pp_desaturate, injured_desaturate);
@@ -383,7 +389,7 @@ sub game_modify()
     extern float f_pp_blur_mask_radial_opacity;
     extern float f_pp_blur_mask_radial_scale_y;
     extern float f_pp_blur_mask_radial_scale_x;
-
+	
     float f_pp_blur_mask_radial_bias = min(f_pp_blur_mask_radial_bias, -sprint * 1.0);
     float f_pp_blur_mask_radial_scale = max(f_pp_blur_mask_radial_scale, sprint * 2.0);
     float f_pp_blur_mask_radial_opacity = max(f_pp_blur_mask_radial_opacity, sprint);
@@ -405,13 +411,13 @@ sub game_modify()
     float f_pp_blur_mask_radial_opacity = max(f_pp_blur_mask_radial_opacity, f_game_postprocess_effect_5);
     float f_pp_blur_mask_radial_scale_x = min(f_pp_blur_mask_radial_scale_x,1- f_game_postprocess_effect_5);
     float f_pp_blur_mask_radial_scale_y = max(f_pp_blur_mask_radial_scale_y, f_game_postprocess_effect_5);
-
+	
 	float f_pp_blur_mask_radial_bias = max(f_pp_blur_mask_radial_bias, f_game_postprocess_effect_7 * 0.2);
 	float f_pp_blur_mask_radial_scale = max(f_pp_blur_mask_radial_scale, f_game_postprocess_effect_7 * 0.2);
     float f_pp_blur_mask_radial_opacity = max(f_pp_blur_mask_radial_opacity, f_game_postprocess_effect_7* 0.5);
     float f_pp_blur_mask_radial_scale_x = max(f_pp_blur_mask_radial_scale_x,f_game_postprocess_effect_7);
     float f_pp_blur_mask_radial_scale_y = max(f_pp_blur_mask_radial_scale_y, f_game_postprocess_effect_7);
-
+	
     Set("f_pp_blur_mask_radial_bias", f_pp_blur_mask_radial_bias);
     Set("f_pp_blur_mask_radial_scale", f_pp_blur_mask_radial_scale);
     Set("f_pp_blur_mask_radial_opacity", f_pp_blur_mask_radial_opacity);
@@ -432,10 +438,10 @@ sub game_modify()
 
 	float f_pp_blur_radial_mask_scale = f_pp_blur_radial_mask_scale * zombie_vision_inv + 0.4 * zombie_vision;
 	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, zombie_vision);
-	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, zombie_vision * (1.0 + zombie_vision_ring_scale_inv));
-	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, zombie_vision * (0.1 + zombie_vision_ring_scale_inv));
-	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x + f_game_zombie_vision_ring_x * zombie_vision * 0.3;
-	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y - f_game_zombie_vision_ring_y * zombie_vision * 0.3;
+	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, zombie_vision * (1.0 + zombie_vision_ring_scale_inv * 4.0));
+	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, zombie_vision * (0.1 + zombie_vision_ring_scale_inv * 0.1));
+	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x + f_game_zombie_vision_ring_x * zombie_vision * 0.5;
+	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y - f_game_zombie_vision_ring_y * zombie_vision * 0.5;
 
 	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, dream * 1.0);
 	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, dream * 0.65);
@@ -448,17 +454,17 @@ sub game_modify()
 	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, poisoned * clamp(sin(TIME * 3.23) * 0.5 + 0.5));
 	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, poisoned * 0.75);
 	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, poisoned * 0.3);
-	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x + sin(TIME * 0.73) * poisoned * 0.2;
-	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y + sin(TIME * 1.37) * poisoned * 0.2;
-
-
+	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x + sin(TIME * 0.73) * poisoned * 0.4;
+	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y + sin(TIME * 1.37) * poisoned * 0.4;
+	
+	
 	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, cureaura * 0.01);
 	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, cureaura * cur_var);
 	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, cureaura * 0.6);
 	float f_pp_blur_radial_range = max(f_pp_blur_radial_range, cureaura * 0.2);
 	float f_pp_blur_radial_center_x = f_pp_blur_radial_center_x + sin(TIME * 2.73) * cureaura * 0.2;
 	float f_pp_blur_radial_center_y = f_pp_blur_radial_center_y + sin(TIME * 1.37) * cureaura * 0.2;
-
+	
 	float f_pp_blur_radial_mask_scale = max(f_pp_blur_radial_mask_scale, cureaura_strong * 0.01);
 	float f_pp_blur_radial_mask_opacity = max(f_pp_blur_radial_mask_opacity, cureaura_strong * cur_var * 0.3);
 	float f_pp_blur_radial_power = max(f_pp_blur_radial_power, cureaura_strong );
@@ -485,15 +491,15 @@ sub game_modify()
 	float f_pp_lum_pm = max(f_pp_lum_pm, flash * 0.8);
     vec3 v_pp_lum_pm_factors = [1.0, 1.0, 1.0] * flash + v_pp_lum_pm_factors * flash_inv;
     float f_pp_lum_pm_weights_factor = 10.0 * flash + f_pp_lum_pm_weights_factor * flash_inv;
-
+	
 	float f_pp_lum_pm = max(f_pp_lum_pm, cureaura *  clamp( (sin(TIME * 1.33) + sin(TIME * 2.43) + sin(TIME * 3.23))  * 0.5* 0.333 + 0.5  ));
 	vec3 v_pp_lum_pm_factors = [1.0, 1.0, 1.0] * cureaura + v_pp_lum_pm_factors * cureaura_inv;
     float f_pp_lum_pm_weights_factor = 10.0 * cureaura + f_pp_lum_pm_weights_factor * cureaura_inv;
-
+	
 	float f_pp_lum_pm = max(f_pp_lum_pm, cureaura_strong *  cur_var);
 	vec3 v_pp_lum_pm_factors = [1.0, 1.0, 1.0] * cureaura_strong + v_pp_lum_pm_factors * cureaura_strong_inv;
     float f_pp_lum_pm_weights_factor = 10.0 * cureaura_strong + f_pp_lum_pm_weights_factor * cureaura_strong_inv;
-
+	
 
     Set("f_pp_lum_pm", f_pp_lum_pm);
     Set("v_pp_lum_pm_factors", v_pp_lum_pm_factors);
@@ -519,11 +525,11 @@ sub game_modify()
 	vec3 levels_out_white = v_pp_levels_rgb_out_white;
 	float levels = f_pp_levels;
 
-	vec3 levels_in_gamma = levels_in_gamma * night_level_gain_inv + 1.5 * night_level_gain;
-	float levels = levels * night_level_gain_inv + night_level_gain;
+	vec3 levels_in_gamma = levels_in_gamma * night_level_gain_inv + 1.15 * night_level_gain;
+	float levels = levels * night_level_gain_inv + night_level_gain; // * 1.0
 
 	vec3 levels_in_gamma = levels_in_gamma * zombie_killed_inv + f_game_zombie_killed_gamma * zombie_killed;
-	float levels = levels * zombie_killed_inv + zombie_killed;
+	float levels = levels * zombie_killed_inv + zombie_killed; // * 1.0
 
 	Set("v_pp_levels_rgb_in_black", levels_in_black);
 	Set("v_pp_levels_rgb_in_gamma", levels_in_gamma);
@@ -549,18 +555,19 @@ sub game_modify()
 	extern float f_pp_filmgrain_8_speed;
 
 	float filmgrain_8 = f_pp_filmgrain_8;
-	float filmgrain_8 = max(filmgrain_8, zombie_vision * 0.0);
+	float filmgrain_8 = max(filmgrain_8, zombie_vision * 0.005);
 
 	float filmgrain_8_color = f_pp_filmgrain_8_color;
 	float filmgrain_8_color = max(filmgrain_8_color, zombie_vision);
 
 	float filmgrain_8_speed = f_pp_filmgrain_8_speed;
-	float filmgrain_8_speed = max(filmgrain_8_speed, zombie_vision * 0.5);
+	float filmgrain_8_speed = max(filmgrain_8_speed, zombie_vision * 1.5);
 
 	Set("f_pp_filmgrain_8", filmgrain_8);
 	Set("f_pp_filmgrain_8_color", filmgrain_8_color);
 	Set("f_pp_filmgrain_8_speed", filmgrain_8_speed);
 
+	//ZOMBIE VISION
 	float exposure_white_zombie_vision = 0.1;
 	float exposure_white_zombie_vision_inv_sqr = 1.0 / (exposure_white_zombie_vision * exposure_white_zombie_vision);
 	float game_zombie_vision_weight = zombie_vision * zombie_vision;
@@ -568,31 +575,31 @@ sub game_modify()
 	float auto_exposure_white_inv_sqr = exposure_white_zombie_vision_inv_sqr * game_zombie_vision_weight + f_pp_auto_exposure_white_inv_sqr * (1.0 - game_zombie_vision_weight);
 	Set("f_pp_auto_exposure_white_inv_sqr", auto_exposure_white_inv_sqr);
 
-	Set("f_pp_curves_effect_0_v", 110.0);
+	Set("f_pp_curves_effect_0_v", 129.0);
 	Set("f_pp_curves_effect_0", zombie_vision);
 
-	Set("f_pp_curves_effect_1_v", 110.0);
+	Set("f_pp_curves_effect_1_v", 132.0);
 	Set("f_pp_curves_effect_1", disguised);
 
-	Set("f_pp_curves_effect_2_v", 110.0);
+	Set("f_pp_curves_effect_2_v", 133.0);
 	Set("f_pp_curves_effect_2", poisoned);
 
-	Set("f_pp_curves_effect_3_v", 110.0);
+	Set("f_pp_curves_effect_3_v", 145.0);
 	Set("f_pp_curves_effect_3", dream);
 
-	Set("f_pp_curves_effect_4_v", 110.0);
+	Set("f_pp_curves_effect_4_v", 135.0); //obsolete
 	Set("f_pp_curves_effect_4", duv);
 
-	Set("f_pp_curves_effect_5_v", 110.0);
+	Set("f_pp_curves_effect_5_v", 142.0);
 	Set("f_pp_curves_effect_5", buv);
 
-	Set("f_pp_curves_effect_6_v", 110.0);
+	Set("f_pp_curves_effect_6_v", 141.0);
 	Set("f_pp_curves_effect_6", gre);
 
-	Set("f_pp_curves_effect_7_v", 110.0);
+	Set("f_pp_curves_effect_7_v", 131.0);
 	Set("f_pp_curves_effect_7", damage);
 
-	Set("f_pp_curves_effect_8_v", 110.0);
+	Set("f_pp_curves_effect_8_v", 143.0);
 	Set("f_pp_curves_effect_8", hunter_drained);
 }
 
@@ -601,7 +608,8 @@ sub game_set()
 	extern float f_pp_game_player_blood;
 	extern float f_pp_game_player_blood_hit;
 	extern float f_pp_blur_on;
-	float f_pp_blur_on = max(f_pp_blur_on);
+	float f_pp_blur_on = max(f_pp_blur_on, f_pp_game_player_blood);
 	float f_pp_blur_on = max(f_pp_blur_on, f_pp_game_player_blood_hit);
 	Set("f_pp_blur_on", f_pp_blur_on);
 }
+
