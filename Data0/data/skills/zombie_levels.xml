@@ -94,8 +94,8 @@
 <prop n="MoveSprintSpeed" v="7.0"/>
 <prop n="ThrowHookRopeLength" v="31.0"/>
 <prop n="ZombiePounceEnabled" v="1"/>
-<prop n="RopeLocomotionVelocity" v="10.0"/>
-<prop n="RopeLocomotionAcceleration" v="55.0"/>
+<prop n="RopeLocomotionVelocity" v="13.0"/>
+<prop n="RopeLocomotionAcceleration" v="54.0"/>
 <prop n="ZombieMeleeEnabled" v="1"/>
 <prop n="ChargeAttack" v="0"/>
 <prop n="FistsBaseDamageMul" v="1"/>

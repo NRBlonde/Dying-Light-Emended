@@ -35,7 +35,7 @@
 <prop n="NightExpKillReward" v="20"/>
 <prop n="NightExpPbActivatedReward" v="50.0"/>
 <prop n="RopePullBackStaminaUsageFactor" v="0.0"/>
-<prop n="FovSprintModif" v="4.5"/>
+<prop n="FovSprintModif" v="0.0"/>
 <prop n="FovAmortizerModif" v="-3.0"/>
 <prop n="SplatsEnabled" v="1"/>
 <prop n="ExhastedPPEnabled" v="1"/>
@@ -47,7 +47,7 @@
 <prop n="SpeedPPEnabled" v="1"/>
 <prop n="ElementalTimeToDeathMaxHealt" v="3.0"/>
 <prop n="ElementalTimeDuration" v="0.25"/>
-<prop n="RunForYourLifeHealthPctThreshold" v="0.15"/>
+<prop n="RunForYourLifeHealthPctThreshold" v="0.0"/>
 <prop n="BackstabFast" v="1"/>
 <prop n="WrestlingKickFastStandUp" v="0"/>
 <prop n="CanUseStick2Heavy" v="1"/>
@@ -230,7 +230,7 @@
 <prop n="BaseMaxHealth" v="100"/>
 <prop n="HealthCriticalLevel" v="45"/>
 <prop n="HealthRegenerationMaxLevel" v="55"/>
-<prop n="LowHealthEffectThreshold" v="0.0"/>
+<prop n="LowHealthEffectThreshold" v="1.0"/>
 <prop n="HealthRegenerationDelay" v="3.0"/>
 <prop n="HealthRegenerationTimeToMax" v="7.0"/>
 <prop n="HealthPerSecond" v="0"/>
