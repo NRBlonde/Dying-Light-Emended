@@ -15,25 +15,39 @@ sub main()
 	// FEATURED
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	// Rust
+	DLC(1599030, "", "", "Bundle", "Free", true)
+    {
+        Image("dlc_new_section_rust");
+		Platforms(true, false, false, false);
+    }
+	
+	// Rust v2
+	DLC(1599030, "", "", "Bundle", "Free", true)
+    {
+        Image("dlc_new_section_rust_crossover");
+		//Platforms(true, false, false, false);
+    }
+
 	// Harran Tactical
-	DLC(1543420, "HARRANTACTICAL00", "", "Bundle", "Paid", true)
+	DLC(1543420, "HARRANTACTICAL00", "5a474e39-3046-3036-c037-48344d431700", "Bundle", "Paid", true)
     {
         Image("dlc_new_section_tactical_unit");
-		//Platforms(true, true, true, true);
+		Platforms(true, true, true, true);
     }
 
 	// Ox
-	DLC(1524890, "OXWARRIORBUNDLE0", "", "Bundle", "Free", true)
+	DLC(1524890, "OXWARRIORBUNDLE0", "464b4e39-4737-3048-c035-31334b531500", "Bundle", "Free", true)
     {
         Image("dlc_new_section_ox");
-		//Platforms(true, true, true, true);
+		Platforms(true, true, true, true);
     }
 	
 	// Viking
-	DLC(1498210, "VIKING0000000000", "", "Bundle", "Paid", true)
+	DLC(1498210, "VIKING0000000000", "34574e39-4251-304d-c048-473552474f00", "Bundle", "Paid", true)
     {
         Image("dlc_new_section_viking");
-		//Platforms(true, true, true, true);
+		Platforms(true, true, true, true);
     }
 
 	// Special agent
@@ -156,25 +170,32 @@ sub main()
 	// BUNDLE
 	//////////////////////////////////////////////////////////////////////////////////////////////////////
 
+	// Rust
+	DLC(1599030, "", "", "Bundle", "Free", false)
+    {
+        Image("dlc_new_section_rust");
+		Platforms(true, false, false, false);
+    }
+
 	// Harran Tactical
-	DLC(1543420, "HARRANTACTICAL00", "", "Bundle", "Paid", false)
+	DLC(1543420, "HARRANTACTICAL00", "5a474e39-3046-3036-c037-48344d431700", "Bundle", "Paid", false)
     {
         Image("dlc_new_section_tactical_unit");
-		//Platforms(true, true, true, true);
+		Platforms(true, true, true, true);
     }
 
 	// Ox
-	DLC(1524890, "OXWARRIORBUNDLE0", "", "Bundle", "Free", false)
+	DLC(1524890, "OXWARRIORBUNDLE0", "464b4e39-4737-3048-c035-31334b531500", "Bundle", "Free", false)
     {
         Image("dlc_new_section_ox");
-		//Platforms(true, true, true, true);
+		Platforms(true, true, true, true);
     }
 	
 	// Viking
-	DLC(1498210, "VIKING0000000000", "", "Bundle", "Paid", false)
+	DLC(1498210, "VIKING0000000000", "34574e39-4251-304d-c048-473552474f00", "Bundle", "Paid", false)
     {
         Image("dlc_new_section_viking");
-		//Platforms(true, true, true, true);
+		Platforms(true, true, true, true);
     }
 
 	// Special agent

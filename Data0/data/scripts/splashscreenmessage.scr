@@ -94,6 +94,8 @@ sub main()
 			Image("splashscreen_viking"); //Patch 1.38
 			Image("splashscreen_ox"); //Patch 1.38
 			Image("splashscreen_tactical_unit"); //Patch 1.39
+			Image("splashscreen_rust"); //Patch 1.41
+			Image("splashscreen_rust_crossover"); //Patch 1.41
 		}
 
 	} //Empty news for gathering 

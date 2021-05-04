@@ -63,7 +63,7 @@ sub main()
 	//Location("map_bomber_spawn_zone_df", "&MMap_LegendBomberSpawnZone&");
 	
 	//Gazis mother
-	Location("map_delivery_bounty_object", "&MMap_delivery_bounty_object&");
+	Location("map_delivery_bounty_object", "&MMap_delivery_bounty_object&", "none");
 	
 	//the following
 	Location("map_safe_zone_unpowered", "&MMap_SafeDestination_Inactive_NoElectricity&", "wasteland");

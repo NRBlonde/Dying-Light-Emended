@@ -3239,7 +3239,7 @@ SoundGroup("object_candle")
 
 	GroupProperties()
 	{
-		Volume(0.20)
+		Volume(0.07)
 		MinDistance(2.00)
 	}
 }
@@ -11736,6 +11736,36 @@ SoundGroup("shotgun_tails_reverb")
 	}
 }
 
+SoundGroup("rust_gun_tails")
+{
+	Sound("rust_rifle_tail_near_buildings_00")
+	Sound("rust_rifle_tail_open_area_00")
+	
+	Sound("rust_smg_tail_near_buildings_00")
+	Sound("rust_smg_tail_open_area_00")
+
+	GroupProperties()
+	{
+		Bus(13)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+	}
+}
+
+SoundGroup("rust_gun_tails_reverb")
+{
+	Sound("rust_rifle_tail_room_00")
+	Sound("rust_rifle_tail_hall_00")
+
+	Sound("rust_smg_tail_room_00")
+	Sound("rust_smg_tail_hall_00")
+
+	GroupProperties()
+	{
+		Bus(13)
+		MaxInstancesBehaviour(MI_STEAL_OLDEST)
+	}
+}
+
 SoundGroup("infected_spawn_manhole_hit")
 {
 	Sound("infected_spawn_manhole_hit")
@@ -20050,6 +20080,76 @@ SoundGroup("player_weapon_fireworks")
 	}
 }
 
+SoundGroup("rust_rifle_shot")
+{
+	Sound("rust_rifle_shot_00")
+
+	GroupProperties()
+	{
+		Volume(1.60)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+	}
+}
+
+SoundGroup("rust_smg_shot")
+{
+	Sound("rust_smg_shot_00")
+
+	GroupProperties()
+	{
+		Volume(1.60)
+		Bus(7)
+		MinDistance(3.00)
+		RollOff(0.5)
+		OcclusionFullImpact(0.6)
+		OcclusionPartialImpact(0)
+		AttenuationModel(5)
+		MaxDistance(100.00)
+		
+	}
+}
+
+SoundGroup("rust_weapon_empty")
+{
+	Sound("rust_weapon_empty")
+
+	GroupProperties()
+	{
+		Volume(1.00)
+		PitchRange(0.90, 1.00)
+		Bus(7)
+	}
+}
+
+SoundGroup("player_weapon_rust_cleaver_hit")
+{
+	Sound("hit_rust_cleaver_00")
+	Sound("hit_rust_cleaver_01")
+
+	GroupProperties()
+	{
+		Volume(1.00)
+		PitchRange(0.90, 1.00)
+		Bus(7)
+	}
+}
+
+SoundGroup("player_weapon_rust_cleaver_empty")
+{
+	Sound("empty_rust_cleaver_00")
+
+	GroupProperties()
+	{
+		Bus(7)
+	}
+}
+
 /////////////////////////////////////////////////
 ///////////////DLC49 HellRaid////////////////////
 /////////////////////////////////////////////////
@@ -20859,19 +20959,6 @@ SoundGroup("HR_cave_water_Ambients")
 		PitchRange (0.9, 1.1)
 		MaxInstances(10)
    }
-}
-
-SoundGroup("EXPL_fire_very small")
-{
-		Sound("fire_candle_loop_00")
-
-    GroupProperties()
-    {
-  		Volume(0.3)
-		MinDistance(0.80)
-		Bus(0)
-		MaxInstances(10)
-    }
 }
 
 SoundGroup("portals_open")
@@ -21729,21 +21816,20 @@ SoundGroup("interactive_doors")
 	sound("doors_metal_chain_pull_00")
 	sound("doors_metal_floor_grating_close")
 	sound("doors_metal_floor_grating_open")
-	sound("doors_metal_grating_door_fall")
 	sound("doors_metal_grating_door_open")
 	sound("doors_stone_pillar")
 	sound("metal_door_big_close_00")
 	sound("metal_door_big_open_00")
-
-
+	sound("hr_fence_metal_gate_opening_short")
+	sound("wooden_reel_turn_00")
+	
 	GroupProperties()
 	{
 		Volume(2.0)
 		MinDistance(4.50)
 		RollOff(0.70)
 		PitchRange(0.9, 1.1)
-		OcclusionFullImpact(0.7)
-		OcclusionPartialImpact(0.0)
+		OcclusionMode(0)
 	}
 }
 
@@ -21844,7 +21930,13 @@ SoundGroup("horror_ambience_accents_hellraid")
 
 	GroupProperties()
 	{
-		Volume(1.0)
+		Volume(0.05)
+		HDRWndMapping(0.05, 1.40)
+		MinDistance(3.00)
+		RollOff(0.70)
+		Bus(13)
+		SpreadStart(15.00)
+		SpreadEnd(7.00)
 	}
 }
 
@@ -22049,4 +22141,236 @@ SoundGroup("magic_cristal_tentacles_loop")
 		PitchRange(0.75, 1.25)
 		Bus(0)
     }
+}
+
+SoundGroup("object_fire_in_bowl")
+{
+	Sound("fire_in_bowl")
+
+	GroupProperties()
+	{
+		Volume(2)
+		MinDistance(2.00)
+	}
+}
+
+SoundGroup("object_ambience_lava_pool")
+{
+	Sound("ambience_lava_pool")
+
+	GroupProperties()
+	{
+		Volume(0.15)
+		HDRWndMapping(0.15, 1.00)
+		Bus(13)
+	}
+}
+
+SoundGroup("enemies_spawn")
+{
+	Sound("enemies_spawn_00")
+	Sound("enemies_spawn_01")
+	Sound("enemies_spawn_02")
+
+	GroupProperties()
+	{
+		Volume(1)
+		MinDistance(2.00)
+		ReverbSendLevel(2.00)
+		ReverbMinLevel(2.00)
+		SpreadStart(15.00)
+		SpreadEnd(7.00)
+		//HDRWndMapping(1.00, 0.90)
+	}
+}
+
+SoundGroup("fire_torch_loop")
+{
+	Sound("fire_torch_loop_00")
+
+	GroupProperties()
+	{
+		Volume(1.4)
+		Bus(0)
+		MinDistance(2.00)
+		PitchRange(0.75, 1.25)
+	}
+}
+
+SoundGroup("hr ambience_hdr")
+{
+	Sound("amb_arena_GR_flooded_main")
+	Sound("hell_ambient_loop_00")
+	Sound("amb_arena_GR_dungeon_corridor")
+	Sound("catacombs_02")
+	Sound("prison_ambient_main_loop_00")
+	Sound("dark_ambient_06")
+
+	GroupProperties()
+	{
+		Volume(0.05)
+		HDRWndMapping(0.05, 1.00)
+		Bus(13)
+	}
+}
+
+SoundGroup("dark_ritual_ambient_loop")
+{
+	Sound("dark_ritual_ambient_loop_00")
+
+
+	GroupProperties()
+	{
+		Volume(0.3)
+		//HDRWndMapping(0.05, 1.00)
+		Bus(13)
+	}
+}
+
+SoundGroup("hr_ambiece_scream")
+{
+	Sound("hr_ambiece_scream_a_00")
+	Sound("hr_ambiece_scream_a_02")
+	Sound("hr_ambiece_scream_a_03")
+	Sound("hr_ambiece_scream_a_04")
+	Sound("hr_ambiece_scream_b_00")
+	Sound("hr_ambiece_scream_b_01")
+	Sound("hr_ambiece_scream_b_02")
+	Sound("hr_ambiece_scream_b_03")
+	Sound("hr_ambiece_scream_b_04")
+	Sound("hr_ambiece_scream_b_05")
+	Sound("hr_ambiece_scream_b_06")
+	Sound("hr_ambiece_scream_b_07")
+	Sound("hr_ambiece_scream_b_08")
+	Sound("hr_ambiece_scream_b_09")
+	Sound("hr_ambiece_scream_b_10")
+	Sound("hr_ambiece_scream_c_00")
+	Sound("hr_ambiece_scream_c_01")
+	Sound("hr_ambiece_scream_c_02")
+	Sound("hr_ambiece_scream_c_03")
+	Sound("hr_ambiece_scream_c_04")
+	Sound("hr_ambiece_scream_c_05")
+	Sound("hr_ambiece_scream_c_06")
+	Sound("hr_ambiece_scream_c_07")
+	Sound("hr_ambiece_scream_d_00")
+	Sound("hr_ambiece_scream_d_01")
+	Sound("hr_ambiece_scream_d_02")
+	Sound("hr_ambiece_scream_d_03")
+	Sound("hr_ambiece_scream_d_04")
+	Sound("hr_ambiece_scream_d_05")
+	Sound("hr_ambiece_scream_d_06")
+	Sound("hr_ambiece_scream_d_07")
+
+	GroupProperties()
+	{
+		Volume(0.05)
+		HDRWndMapping(0.05, 1.0)
+		MinDistance(3.00)
+		RollOff(0.70)
+		Bus(13)
+		SpreadStart(15.00)
+		SpreadEnd(7.00)
+	}
+}
+
+SoundGroup("hr_minotaur_scream")
+{
+	Sound("hr_minotaur_scream_00")
+	Sound("hr_minotaur_scream_01")
+	Sound("hr_minotaur_scream_02")
+	Sound("hr_minotaur_scream_03")
+	Sound("hr_minotaur_scream_04")
+	Sound("hr_minotaur_scream_05")
+	Sound("hr_minotaur_scream_06")
+	Sound("hr_minotaur_scream_07")
+	Sound("hr_minotaur_scream_08")
+	Sound("hr_minotaur_scream_09")
+	Sound("hr_minotaur_scream_10")
+	Sound("hr_minotaur_scream_11")
+
+	GroupProperties()
+	{
+		Volume(0.05)
+		HDRWndMapping(0.05, 1.0)
+		MinDistance(3.00)
+		RollOff(0.70)
+		Bus(13)
+		SpreadStart(15.00)
+		SpreadEnd(7.00)
+	}
+}
+
+SoundGroup("enemy_latine_taunts")
+{
+	Sound("Priest_Mages_Taunt_Latin_00")
+	Sound("Priest_Mages_Taunt_Latin_01")
+	Sound("Priest_Mages_Taunt_Latin_02")
+	Sound("Priest_Mages_Taunt_Latin_03")
+	Sound("Priest_Mages_Taunt_Latin_04")
+	Sound("Recruit_Taunt_Latin_00")
+	Sound("Recruit_Taunt_Latin_01")
+	Sound("Recruit_Taunt_Latin_02")
+	Sound("Recruit_Taunt_Latin_03")
+	Sound("Recruit_Taunt_Latin_04")
+	Sound("Recruit_Taunt_Latin_05")
+	Sound("Recruit_Taunt_Latin_06")
+	Sound("Recruit_Taunt_Latin_07")
+	Sound("Recruit_Taunt_Latin_08")
+	Sound("Serf_Taunt_Latin_00")
+	Sound("Serf_Taunt_Latin_01")
+	Sound("Serf_Taunt_Latin_02")
+	Sound("Serf_Taunt_Latin_03")
+	Sound("Serf_Taunt_Latin_05")
+	Sound("Serf_Taunt_Latin_06")
+	Sound("Skeletons_Adept_Taunt_Latin_00")
+	Sound("Skeletons_Adept_Taunt_Latin_01")
+	Sound("Skeletons_Adept_Taunt_Latin_02")
+	Sound("Skeletons_Adept_Taunt_Latin_03")
+	Sound("Skeletons_Adept_Taunt_Latin_04")
+	Sound("Skeletons_Adept_Taunt_Latin_05")
+	Sound("Skeletons_commander_Taunt_Latin_00")
+	Sound("Skeletons_commander_Taunt_Latin_01")
+	Sound("Skeletons_commander_Taunt_Latin_02")
+	Sound("Skeletons_commander_Taunt_Latin_03")
+	Sound("Skeletons_commander_Taunt_Latin_04")
+	Sound("Skeletons_commander_Taunt_Latin_05")
+	Sound("Skeletons_Regular_Taunt_Latin_00")
+	Sound("Skeletons_Regular_Taunt_Latin_01")
+	Sound("Skeletons_Regular_Taunt_Latin_02")
+	Sound("Skeletons_Regular_Taunt_Latin_03")
+	Sound("Skeletons_Regular_Taunt_Latin_04")
+    
+	GroupProperties()
+    {
+        Volume(1)
+		HDROn(0)
+		MinDistance(5.00)
+		RollOff(0.50)
+		PitchRange(0.9, 1.1)
+		Bus(11)
+    }
+}
+
+SoundGroup("clavi_shrine_and_stone")
+{
+	Sound("clavi_shrine_begin_00")
+	Sound("clavi_shrine_end_00	")
+	Sound("clavi_stone_begin_00")
+	Sound("clavi_stone_end_00")
+	Sound("clavi_shrine_begin_00")
+
+	GroupProperties()
+	{
+		Volume(1.0)
+		ReverbMinLevel(1)
+		ReverbSendLevel(1)
+		PitchRange(0.90, 1.10)
+		MaxInstances(1)
+		//OcclusionMode(1)
+		MinDistance(7.00)
+		RollOff(0.5)
+		SpreadStart(10.00)
+		SpreadEnd(6.00)
+		Bus(11)
+	}
 }

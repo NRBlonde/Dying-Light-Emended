@@ -69,6 +69,7 @@ sub main()
         Filter("Evn_Quest")
         {
 			AllowAnyProgressPercentage();
+			MinimumProgressChange(0.49); //Min 0.49% change
         }
     }
         

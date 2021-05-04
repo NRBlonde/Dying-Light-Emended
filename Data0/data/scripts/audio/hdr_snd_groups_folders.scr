@@ -718,6 +718,8 @@ Folder("Guns")
 	Folder("M4")
 	Folder("Mosin")
 	Folder("Shotgun")
+	Folder("Rust_Rifle")
+	Folder("Rust_SMG")
 }
 
 Folder("Beretta")
@@ -746,6 +748,18 @@ Folder("Mosin")
 	SoundGroup("mosin_shot")
 	SoundGroup("mosin_tails")
 	SoundGroup("mosin_tails_reverb")
+}
+
+Folder("Rust_Rifle")
+{
+	SoundGroup("rust_rifle_shot")
+	SoundGroup("m4_tails")
+}
+
+Folder("Rust_SMG")
+{
+	SoundGroup("rust_smg_shot")
+	SoundGroup("submachinea_tails")
 }
 
 Folder("Bomb")
@@ -1227,6 +1241,12 @@ Folder("MaceHeavy")
 {
 	SoundGroup("player_weapon_mace_hit")
 	SoundGroup("player_weapon_mace_empty")
+}
+
+Folder("Rust_Cleaver")
+{
+	SoundGroup("player_weapon_rust_cleaver_hit")
+	SoundGroup("player_weapon_rust_cleaver_empty")
 }
 
 //HELLRAID 

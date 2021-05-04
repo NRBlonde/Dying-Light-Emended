@@ -415,7 +415,9 @@ sub main()
 	
 	Docket("G41")
     {
-		
+		Set("Liveops_Bundle_Rust_C4_Elemental_Craftplan",          "premium_dockets",   1, 1)
+        {
+        }
     }
 	
 	Docket("G42")
