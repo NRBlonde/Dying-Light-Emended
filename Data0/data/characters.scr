@@ -9,7 +9,7 @@ Character("PlayerMan1",   "Type;PlayerM1", "", "default_player_setup.scr", "")
    Campaign("dlc_test")
    Campaign("demo")
 
-   Cooperative()   
+   Cooperative()
    MenuTexturesShiftX(54, 61)
 }
 
@@ -21,7 +21,7 @@ Character("ZombiePlayer",   "Type;ZombiePlayer",   "zombie_levels.xml", "default
    Campaign("demo")
 
    Cooperative()
-   Zombie()   
+   Zombie()
    MenuTexturesShiftX(54, 61)
 }
 
@@ -34,4 +34,3 @@ Character("TutorialPlayer",   "Type;TutorialPlayer", "", "default_player_setup.s
    Cooperative()
    MenuTexturesShiftX(54, 61)
 }
-
