@@ -283,7 +283,7 @@
 <prop n="ChargeMoveBackwardMaxSpeed" v="2.3"/>
 <prop n="MoveStrafeMinSpeed" v="0.2"/>
 <prop n="MoveStrafeMaxSpeed" v="3.1"/>
-<prop n="MoveSprintSpeed" v="6.1"/>
+<prop n="MoveSprintSpeed" v="6.0"/>
 <prop n="MoveAcceleration" v="40.0"/>
 <prop n="MoveSprintAcceleration" v="10.0"/>
 <prop n="MoveDeceleration" v="40.0"/>
@@ -417,39 +417,39 @@
 <prop n="JumpAttackCoolDown" v="-1.0"/>
 <prop n="JumpAttackShockwaveRadius" v="3"/>
 <prop n="JumpAttackDmgFactor" v="3.0"/>
-    <prop n="DamageResAfterJumpAttack" v="0.2"/>
-    <prop n="DamageResAfterJumpAttackDuration" v="3.0"/>
-    <prop n="PVPGrabJumpReleaseHeight" v="2.0"/>
-    <prop n="JumpOverZombieVelocity" v="2"/>
-    <prop n="JumpOverZombieCooldown" v="-1.0"/>
-    <prop n="GrapplingHookCooldown" v="-1.0"/>
-    <prop n="ThrowHookFowardThrow" v="50.0"/>
-    <prop n="EnemyPullTimeWarpFactor" v="0.8"/>
-    <prop n="EnemyPullSlowmoDuration" v="0.7"/>
-	<prop n="ShieldEnabled" v="0"/>
-    <prop n="ShieldAttackStaminaUsage" v="0.1"/>
-    <prop n="StaminaCooldownAfterBlock" v="2.0"/>
-    <prop n="BlockStaminaUsageMul" v="0.0"/>
-    <prop n="BlockAggroFactorMul" v="15.0"/>
-    <prop n="NageWazaCooldown" v="-1.0"/>
-    <prop n="WhirlwindChargeCooldown" v="-1.0"/>
-    <prop n="SlideCooldown" v="0.5"/>
-    <prop n="SlideEndAfterFirstHit" v="0"/>
-    <prop n="ItemDrop" v=""/>
-    <prop n="FastGrabBreakCooldown" v="3.5"/>
-    <prop n="PoisonElementalReboundProb" v="0.1"/>                <!-- probability that a poisoned zombie will poison player with its attacks -->
-    <prop n="ManUpAvailable" v="0.0"/>                          <!-- is skill available -->
-    <prop n="ManUpCooldown" v="120.0"/>                         <!-- skill cooldown -->
-    <prop n="ManUpHealthRegenPercent" v="50.0"/>                <!-- percent of max health regeneration -->
-    <prop n="ManUpMinHealthPercentToUse" v="20.0"/>             <!-- percent of health to use skill -->
-    <prop n="ManUpHealthDropToMinTime" v="10.0"/>               <!-- Time needed to drop additional health -->
-    <prop n="ManUpHealthFreezeTime" v="5.0"/>                   <!-- Time after ManUp, when regeneration will be frozen -->
-    <prop n="ManUpCameraFlashEffectDuration" v="0.25"/>         <!-- Duration of CameraFlash effect -->
-    <prop n="ManUpDofEffectDuration" v="5.0"/>                  <!-- Duration of DOF effect -->
-    <prop n="SonarInvisibilityTime" v="4.0"/>
-    <prop n="SonarNoiseHideEnabled" v="0.0"/>
-    <prop n="SonarInvisibilityEnabled" v="0.0"/>
-    <prop n="SonarInvisibilityCooldown" v="20.0"/>
+<prop n="DamageResAfterJumpAttack" v="0.2"/>
+<prop n="DamageResAfterJumpAttackDuration" v="3.0"/>
+<prop n="PVPGrabJumpReleaseHeight" v="2.0"/>
+<prop n="JumpOverZombieVelocity" v="2"/>
+<prop n="JumpOverZombieCooldown" v="-1.0"/>
+<prop n="GrapplingHookCooldown" v="-1.0"/>
+<prop n="ThrowHookFowardThrow" v="50.0"/>
+<prop n="EnemyPullTimeWarpFactor" v="0.8"/>
+<prop n="EnemyPullSlowmoDuration" v="0.7"/>
+<prop n="ShieldEnabled" v="0"/>
+<prop n="ShieldAttackStaminaUsage" v="0.1"/>
+<prop n="StaminaCooldownAfterBlock" v="2.0"/>
+<prop n="BlockStaminaUsageMul" v="0.0"/>
+<prop n="BlockAggroFactorMul" v="15.0"/>
+<prop n="NageWazaCooldown" v="-1.0"/>
+<prop n="WhirlwindChargeCooldown" v="-1.0"/>
+<prop n="SlideCooldown" v="0.5"/>
+<prop n="SlideEndAfterFirstHit" v="0"/>
+<prop n="ItemDrop" v=""/>
+<prop n="FastGrabBreakCooldown" v="3.5"/>
+<prop n="PoisonElementalReboundProb" v="0.1"/>
+<prop n="ManUpAvailable" v="0.0"/>                          <!-- is skill available -->
+<prop n="ManUpCooldown" v="120.0"/>                         <!-- skill cooldown -->
+<prop n="ManUpHealthRegenPercent" v="50.0"/>                <!-- percent of max health regeneration -->
+<prop n="ManUpMinHealthPercentToUse" v="20.0"/>             <!-- percent of health to use skill -->
+<prop n="ManUpHealthDropToMinTime" v="10.0"/>               <!-- Time needed to drop additional health -->
+<prop n="ManUpHealthFreezeTime" v="5.0"/>                   <!-- Time after ManUp, when regeneration will be frozen -->
+<prop n="ManUpCameraFlashEffectDuration" v="0.25"/>         <!-- Duration of CameraFlash effect -->
+<prop n="ManUpDofEffectDuration" v="5.0"/>                  <!-- Duration of DOF effect -->
+<prop n="SonarInvisibilityTime" v="4.0"/>
+<prop n="SonarNoiseHideEnabled" v="0.0"/>
+<prop n="SonarInvisibilityEnabled" v="0.0"/>
+<prop n="SonarInvisibilityCooldown" v="20.0"/>
     <prop n="NightHordeSenseLevel" v="2"/>                    <!-- enables Sonar/Awareness (has 2 levels) -->
     <prop n="FinisherBackEnabled" v="0"/>                       <!--  enables backstab -->
     <prop n="FinisherBackHumanEnabled" v="0"/>
@@ -541,7 +541,6 @@
 <prop n="PVPAssistInputToleranceScalerHighInputMin" v="0.5"/>
 <prop n="PVPAssistInputToleranceScalerHighInputMax" v="1.5"/>
 <prop n="PVPAssistInputToleranceHighInputThreshold" v="0.4"/>
-
 <prop n="PVPAssistLowTargetSpeedCorrectionPercentage" v="0.8"/>
 <prop n="PVPAssistHighTargetSpeedCorrectionPercentage" v="0.95"/>
 <prop n="PVPAssistHighTargetSpeedInputPercentageThreshold" v="0.4"/>
