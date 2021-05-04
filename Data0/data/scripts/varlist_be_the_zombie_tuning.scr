@@ -1,7 +1,4 @@
 !include("varlist_be_the_zombie_damage_mapping.scr")
-
-// Respawn delays
-
 VarFloat("f_btz_zombie_respawn_delay_rb_min_1_human", 15.0)
 VarFloat("f_btz_zombie_respawn_delay_rb_max_1_human", 15.0)
 VarFloat("f_btz_zombie_respawn_delay_1_human",  15.0)
