@@ -17,7 +17,6 @@ VarFloat("f_btz_zombie_respawn_delay_3_human",  12.0)
 VarFloat("f_btz_human_respawn_delay_rb_min_3_human", 15.0)
 VarFloat("f_btz_human_respawn_delay_rb_max_3_human", 15.0)
 VarFloat("f_btz_human_respawn_delay_3_human",   15.0)
-
 VarFloat("f_btz_zombie_respawn_delay_rb_min_4_human", 11.0)
 VarFloat("f_btz_zombie_respawn_delay_rb_max_4_human", 11.0)
 VarFloat("f_btz_zombie_respawn_delay_4_human",  11.0)
@@ -178,11 +177,11 @@ VarFloat("f_btz_zombie_rope_vis_flying_extra_time", 0.05)
 
 // The duration (in seconds) of the motion trail Hunter leaves behind. The larger the duration, the
 // longer the motion trail will be.
-VarFloat("f_btz_zombie_move_motion_trail_duration", 0.5)
+VarFloat("f_btz_zombie_move_motion_trail_duration", 0.6)
 
 // Hunter's speed at which the motion trail will be at minimum and maximum strength values.
 VarFloat("f_btz_zombie_move_motion_trail_strength_min_speed", 0.0)
-VarFloat("f_btz_zombie_move_motion_trail_strength_max_speed", 2.0)
+VarFloat("f_btz_zombie_move_motion_trail_strength_max_speed", 3.0)
 
 // Alpha on the motion trail based on the hunter's current state.
 VarFloat("f_btz_zombie_move_motion_trail_strength_drained", 0.09)
@@ -200,20 +199,20 @@ VarFloat("f_btz_zombie_grab_range_velocity_factor", 0.25)
 VarFloat("f_btz_zombie_grab_angle_max", 45.0)
 
 //Human wrestling kick grab params
-VarFloat("f_btz_wrestling_kick_range", 3.1)
+VarFloat("f_btz_wrestling_kick_range", 3.0)
 VarFloat("f_btz_wrestling_kick_range_velocity_factor", 0.0)
 VarFloat("f_btz_wrestling_kick_angle_max", 22.0)
-VarFloat("f_btz_human_wrestling_kick_damage", 30.0)
+VarFloat("f_btz_human_wrestling_kick_damage", 41.0)
 
 //Human jump attack grab params
 VarFloat("f_btz_jump_attack_min_fall_speed", 11.0)
-VarFloat("f_btz_jump_attack_source_position_forward_offset", 0.5)
-VarFloat("f_btz_jump_attack_range", 0.5)
+VarFloat("f_btz_jump_attack_source_position_forward_offset", 0.3)
+VarFloat("f_btz_jump_attack_range", 0.4)
 VarFloat("f_btz_jump_attack_range_velocity_factor", 0.05)
-VarFloat("f_btz_jump_attack_angle_max", 89.0)
+VarFloat("f_btz_jump_attack_angle_max", 70.0)
 
-VarFloat("f_btz_pvp_grab_above_angle_threshold", 20.0)
-VarFloat("f_btz_pvp_grab_below_angle_threshold", -50.0)
+VarFloat("f_btz_pvp_grab_above_angle_threshold", 19.0)
+VarFloat("f_btz_pvp_grab_below_angle_threshold", -45.0)
 
 // The range in which Hunter can pounce a human is defined by the numerical range 0 to 1 (0 being furthest from the human,
 // 1 being closest). These variables define where in that grab range the pounce will be considered a critical pounce.
