@@ -1,132 +1,120 @@
-<level id="1">	
-
-	<prop n="MinTimeToGiveCollisionDamage" v="0.5"/>
-	<prop n="CanMeleeInAir" v="1"/>
-	<prop n="BowBeginDurationFactor" v="2.0"/>
-	<prop n="BowAccuracyFactor" v="1.0"/>
-	<prop n="BowMaxSpeedFactor" v="1.0"/>
-	<prop n="BowPenetrationAddMaxSpeed" v="1"/>
-	<prop n="MedkitCooldownInVehicle" v="0"/>
-	<prop n="WQ_Invert_CamoDelay" v="3.0"/>
-	<prop n="WQ_Invert_CamoDuration" v="15.0"/>
-	<prop n="WQ_Invert_Delay" v="10.0"/>
-	<prop n="WQ_Invert_Duration" v="15.0"/>
-
-	<prop n="WQ_SlowMo_CamoDelay" v="3.0"/>
-	<prop n="WQ_SlowMo_CamoDuration" v="20.0"/>
-	<prop n="WQ_SlowMo_Delay" v="15.0"/>
-	<prop n="WQ_SlowMo_Duration" v="20.0"/>
-
-	<prop n="WQ_Rot_CamoDelay" v="3.0"/>
-	<prop n="WQ_Rot_CamoDuration" v="27.0"/>
-	<prop n="WQ_Rot_Delay" v="20.0"/>
-	<prop n="WQ_Rot_Duration" v="25.0"/>
-    <prop n="MaxCarUpgradeQuality" v="-1.0"/>
-    <prop n="CarLuckyRepairChance" v="0.0"/>
-    <prop n="XpForCrowdKill" v="10.0"/>
-
-	<prop n="HitReactionSpeechProb" v="0.5"/>
-	<prop n="PursuitBreakerBlastDamage" v="1000"/>
-	<!-- Status Night Expieriance awards and requirements-->
-	<prop n="NightExpRequiredDistance" v="2.0"/>
-	<prop n="NightExpRequiredActions" v="3.0"/>	
-	<prop n="NightExpRequiredTime" v="4"/>
-	<prop n="NightExpSurvivalConstantAward" v="0"/>
-    
-    <prop n="DeathPenaltyOnFallMul" v="0.2"/>
-    <prop n="DeathPenaltyInChallengeMul" v="0"/>
-			
-	<prop n="NightExpActionsReward" v="1.0"/>
-	<prop n="NightExpLootedReward" v="5.0"/>
-	<prop n="NightExpUnspotedReward" v="1.7"/>	
-	<prop n="NightExpKillReward" v="20"/>
-	<prop n="NightExpPbActivatedReward" v="50.0"/>	
-	<prop n="RopePullBackStaminaUsageFactor" v="0.0"/>
-    
-    <!-- Simulation sickness test -->
-	<prop n="FovSprintModif" v="4.5"/>
-	<prop n="FovAmortizerModif" v="-3.0"/>	
-	<prop n="SplatsEnabled" v="1"/>
-	<prop n="ExhastedPPEnabled" v="1"/>	
-    <prop n="HeadBobFactor" v="1" />
-	<prop n="BrokenWeaponDamageMul" v="0.1" />
-
-	<prop n="AmortizerJumpExtraGravity" v="6.0"/>
-	<prop n="AmortizerJumpMaxInfluaceTime" v="0.2"/>	    
-	
-	<prop n="SpeedFxEnabled" v="1"/>
-	<prop n="SpeedPPEnabled" v="1"/>	
-	<prop n="ElementalTimeToDeathMaxHealt" v="3.0"/>	
-	<prop n="ElementalTimeDuration" v="0.25"/>
-	<prop n="RunForYourLifeHealthPctThreshold" v="0.15"/>
-    <prop n="BackstabFast" v="1"/>
-    <prop n="WrestlingKickFastStandUp" v="0"/>
-    <prop n="CanUseStick2Heavy" v="1"/>                         <!--  with new character development player is able to use any weapon -->
-    <prop n="CanUseFirearms" v="1"/>                            <!--  with new character development player is able to use any weapon -->
-    <prop n="HarvestingLevel" v="0"/>                           <!--  enables harvesting -->
-    <prop n="HarvestingLevelForMultipleItems" v="2"/>            <!-- since this level player will get multipple items -->
-    <prop n="HarvestingMultipleItemsCount" v="2"/>
-    <prop n="CrouchDampingWindowTime" v="1.0"/>                    <!--  player can amorize fall  -->	
-    <prop n="EnableFallHelperModule" v="1"/>
-    <prop n="SpawninInfectedFadeOut" v="10.0"/>
-    <prop n="NightHordeSenseCoolDown" v="0.0"/>
-    <prop n="NightHordeSenseRange" v="50.0"/>
-	<prop n="PlayerSonarRange" v="50.0"/>	
-    <prop n="NightHordeSenseRangeBtZ" v="70.0"/>
-    <prop n="NightHordeSenseTime" v="2.25"/>    
-	<prop n="NextNightHordeSenseTime" v="0.25"/>
-    <prop n="NightHordeSenseOnHunterTime" v="2.0"/>
-    <prop n="NightHordeSenseTimeBtZ" v="2.0"/>
-    <prop n="NightHordeSenseOnEnemyTime" v="10.0"/>
-    <prop n="NightHordeSenseOnEnemyPlayerTime" v="5"/>
-    <prop n="NightHordeSenseOnHiveTime" v="2"/> 
-    <prop n="MinTimeBetweenJumps" v="0.4"/>     
-    <prop n="Aiming" v="1"/>
-    <prop n="DoubleJumpInOverAndOn" v="1"/>
-	<prop n="DoubleJumpOverZombie" v="0"/>
-    <prop n="CoolodownFailDisplayTime" v="1.5"/>    
-    <prop n="WallStickExtraGravity" v="15.0"/>    
-	<prop n="SquirrelSuitExtraGravity" v="7.0"/>
-	<prop n="SquirrelSuitMoveSpeed" v="12.0"/>
-	<prop n="EmptySwingStaminaUsageMul" v="0.6"/>
-    <prop n="WallRunExtraGravity" v="9.5"/>    
-	<prop n="LogicJumpExtraGravity" v="0.0"/>
-	<prop n="LogicJumpExtraGravityTimeChange" v="1.5"/>
-	<prop n="LogicJumpAirControllFactor" v="0.22"/>
-    <prop n="WallJumpBackHeight" v="0.8"/>
-	<prop n="WallJumpingHeight" v="0.0"/>
-	<prop n="BoomerangThrow" v="0"/>		
-	<prop n="ThrowRopeLength" v="0.0"/>
-    <prop n="WallJumpBackSpeed" v="3.0"/>
-    <prop n="HookClimbingEnabled" v="1"/>
-    <prop n="GrabExpert" v="0"/>
-    <prop n="GroundPoundDamageMul" v="25"/>
-    <prop n="GroundPoundRangeMul" v="1"/>
-    <prop n="GroundPound" v="0"/>    
-    <prop n="SlideDamageFactor" v="0"/>	    
-    <prop n="JumpOverZombieDamage" v="2"/>
-    <prop n="FastGrabBreakLevel" v="0"/>    
-    <prop n="CamouflageEnabled" v="0"/>
-    <prop n="CamouflageDuration" v="30"/>
-    <prop n="CamouflageCanRun" v="1"/>
-    <prop n="CamouflageCanAttack" v="1"/>
-    <prop n="CamouflageCooldown" v="0"/>
-    <prop n="CamouflageDepletionAddRun" v="1"/>
-    <prop n="CamouflageDepletionAddFlashlightDay" v="0.0"/>
-    <prop n="CamouflageDepletionAddFlashlightNight" v="0.0"/>
-    <prop n="CamouflageDepletionAddClimbing" v="0.0"/>
-    <prop n="CamouflageDepletionAddInWater" v="30"/>
-    <prop n="CamouflageDepletionAddInAir" v="0.0"/>
+<level id="1">
+<prop n="MinTimeToGiveCollisionDamage" v="0.5"/>
+<prop n="CanMeleeInAir" v="1"/>
+<prop n="BowBeginDurationFactor" v="2.0"/>
+<prop n="BowAccuracyFactor" v="1.0"/>
+<prop n="BowMaxSpeedFactor" v="1.0"/>
+<prop n="BowPenetrationAddMaxSpeed" v="1"/>
+<prop n="MedkitCooldownInVehicle" v="0"/>
+<prop n="WQ_Invert_CamoDelay" v="3.0"/>
+<prop n="WQ_Invert_CamoDuration" v="15.0"/>
+<prop n="WQ_Invert_Delay" v="10.0"/>
+<prop n="WQ_Invert_Duration" v="15.0"/>
+<prop n="WQ_SlowMo_CamoDelay" v="3.0"/>
+<prop n="WQ_SlowMo_CamoDuration" v="20.0"/>
+<prop n="WQ_SlowMo_Delay" v="15.0"/>
+<prop n="WQ_SlowMo_Duration" v="20.0"/>
+<prop n="WQ_Rot_CamoDelay" v="3.0"/>
+<prop n="WQ_Rot_CamoDuration" v="27.0"/>
+<prop n="WQ_Rot_Delay" v="20.0"/>
+<prop n="WQ_Rot_Duration" v="25.0"/>
+<prop n="MaxCarUpgradeQuality" v="-1.0"/>
+<prop n="CarLuckyRepairChance" v="0.0"/>
+<prop n="XpForCrowdKill" v="10.0"/>
+<prop n="HitReactionSpeechProb" v="0.5"/>
+<prop n="PursuitBreakerBlastDamage" v="1000"/>
+<prop n="NightExpRequiredDistance" v="2.0"/>
+<prop n="NightExpRequiredActions" v="3.0"/>
+<prop n="NightExpRequiredTime" v="4"/>
+<prop n="NightExpSurvivalConstantAward" v="0"/>
+<prop n="DeathPenaltyOnFallMul" v="0.2"/>
+<prop n="DeathPenaltyInChallengeMul" v="0"/>
+<prop n="NightExpActionsReward" v="1.0"/>
+<prop n="NightExpLootedReward" v="5.0"/>
+<prop n="NightExpUnspotedReward" v="1.7"/>
+<prop n="NightExpKillReward" v="20"/>
+<prop n="NightExpPbActivatedReward" v="50.0"/>
+<prop n="RopePullBackStaminaUsageFactor" v="0.0"/>
+<prop n="FovSprintModif" v="4.5"/>
+<prop n="FovAmortizerModif" v="-3.0"/>
+<prop n="SplatsEnabled" v="1"/>
+<prop n="ExhastedPPEnabled" v="1"/>
+<prop n="HeadBobFactor" v="1" />
+<prop n="BrokenWeaponDamageMul" v="0.1" />
+<prop n="AmortizerJumpExtraGravity" v="6.0"/>
+<prop n="AmortizerJumpMaxInfluaceTime" v="0.2"/>
+<prop n="SpeedFxEnabled" v="1"/>
+<prop n="SpeedPPEnabled" v="1"/>
+<prop n="ElementalTimeToDeathMaxHealt" v="3.0"/>
+<prop n="ElementalTimeDuration" v="0.25"/>
+<prop n="RunForYourLifeHealthPctThreshold" v="0.15"/>
+<prop n="BackstabFast" v="1"/>
+<prop n="WrestlingKickFastStandUp" v="0"/>
+<prop n="CanUseStick2Heavy" v="1"/>                         <!--  with new character development player is able to use any weapon -->
+<prop n="CanUseFirearms" v="1"/>                            <!--  with new character development player is able to use any weapon -->
+<prop n="HarvestingLevel" v="0"/>                           <!--  enables harvesting -->
+<prop n="HarvestingLevelForMultipleItems" v="2"/>            <!-- since this level player will get multipple items -->
+<prop n="HarvestingMultipleItemsCount" v="2"/>
+<prop n="CrouchDampingWindowTime" v="1.0"/>                    <!--  player can amorize fall  -->
+<prop n="EnableFallHelperModule" v="1"/>
+<prop n="SpawninInfectedFadeOut" v="10.0"/>
+<prop n="NightHordeSenseCoolDown" v="0.0"/>
+<prop n="NightHordeSenseRange" v="50.0"/>
+<prop n="PlayerSonarRange" v="50.0"/>
+<prop n="NightHordeSenseRangeBtZ" v="70.0"/>
+<prop n="NightHordeSenseTime" v="2.25"/>
+<prop n="NextNightHordeSenseTime" v="0.25"/>
+<prop n="NightHordeSenseOnHunterTime" v="2.0"/>
+<prop n="NightHordeSenseTimeBtZ" v="2.0"/>
+<prop n="NightHordeSenseOnEnemyTime" v="10.0"/>
+<prop n="NightHordeSenseOnEnemyPlayerTime" v="5"/>
+<prop n="NightHordeSenseOnHiveTime" v="2"/>
+<prop n="MinTimeBetweenJumps" v="0.4"/>
+<prop n="Aiming" v="1"/>
+<prop n="DoubleJumpInOverAndOn" v="1"/>
+<prop n="DoubleJumpOverZombie" v="0"/>
+<prop n="CoolodownFailDisplayTime" v="1.5"/>
+<prop n="WallStickExtraGravity" v="15.0"/>
+<prop n="SquirrelSuitExtraGravity" v="7.0"/>
+<prop n="SquirrelSuitMoveSpeed" v="12.0"/>
+<prop n="EmptySwingStaminaUsageMul" v="0.6"/>
+<prop n="WallRunExtraGravity" v="9.5"/>
+<prop n="LogicJumpExtraGravity" v="0.0"/>
+<prop n="LogicJumpExtraGravityTimeChange" v="1.5"/>
+<prop n="LogicJumpAirControllFactor" v="0.22"/>
+<prop n="WallJumpBackHeight" v="0.8"/>
+<prop n="WallJumpingHeight" v="0.0"/>
+<prop n="BoomerangThrow" v="0"/>
+<prop n="ThrowRopeLength" v="0.0"/>
+<prop n="WallJumpBackSpeed" v="3.0"/>
+<prop n="HookClimbingEnabled" v="1"/>
+<prop n="GrabExpert" v="0"/>
+<prop n="GroundPoundDamageMul" v="25"/>
+<prop n="GroundPoundRangeMul" v="1"/>
+<prop n="GroundPound" v="0"/>
+<prop n="SlideDamageFactor" v="0"/>
+<prop n="JumpOverZombieDamage" v="2"/>
+<prop n="FastGrabBreakLevel" v="0"/>
+<prop n="CamouflageEnabled" v="0"/>
+<prop n="CamouflageDuration" v="30"/>
+<prop n="CamouflageCanRun" v="1"/>
+<prop n="CamouflageCanAttack" v="1"/>
+<prop n="CamouflageCooldown" v="0"/>
+<prop n="CamouflageDepletionAddRun" v="1"/>
+<prop n="CamouflageDepletionAddFlashlightDay" v="0.0"/>
+<prop n="CamouflageDepletionAddFlashlightNight" v="0.0"/>
+<prop n="CamouflageDepletionAddClimbing" v="0.0"/>
+<prop n="CamouflageDepletionAddInWater" v="30"/>
+<prop n="CamouflageDepletionAddInAir" v="0.0"/>
     <prop n="CamouflageLooseOnShoot" v="60.0"/>
     <prop n="CamouflageLooseOnGiveDamage" v="1.0"/>
     <prop n="CamouflageLooseBTZ" v="0.0"/>
-    <prop n="HarvestingEnabled" v="1"/>  
+    <prop n="HarvestingEnabled" v="1"/>
     <prop n="WalljumpMaxSequence" v="2"/>
     <prop n="JumpAttackHit" v="0"/>
     <prop n="ChargeLightCooldown" v="-1"/>
-    <prop n="JumpAttackRange" v="4"/>    
+    <prop n="JumpAttackRange" v="4"/>
 	<prop n="JumpOverZombieStunDuration" v="5.0"/>
-    <!-- STAMINA & FITNESS -->
     <prop n="MaxStamina" v="1.0"/>
     <prop n="MinStaminaLevelFromHit" v="0.33"/>
     <prop n="StaminaTimeToRegenerateOnEmpty" v="4.0"/>            <!-- time needed to fully restore stamina when completely depleted -->
@@ -137,10 +125,9 @@
     <prop n="CanUseHook" v="0"/>
 	<prop n="HookClimbingEnabled" v="1"/>
 	<prop n="GrapplingHookPullEnabled" v="0"/>
-	<prop n="GrapplingHookExtraGravityOnAttach" v="1"/>	
-	<prop n="GrapplingHookExtraGravityValue" v="10.0"/>	
+	<prop n="GrapplingHookExtraGravityOnAttach" v="1"/>
+	<prop n="GrapplingHookExtraGravityValue" v="10.0"/>
 	<prop n="ThrowHookCanUseInAir" v="1"/>
-    <!-- <prop n="MaxFitness" v="1.0"/> -->
 	<prop n="CanUseSonarInSprint" v="1"/>
 	<prop n="CanUseSonarInVehicle" v="1"/>
     <prop n="FitnessCriticalLevel" v="0.05"/>
@@ -161,35 +148,27 @@
 	<prop n="XrayEffectProbability" v="0.1"/>
 	<prop n="SlowMoProbability" v="0.2"/>
 	<prop n="SkipObstacleMechanimsOnEnemyProb" v="0.2"/>
-	
 	<prop n="AttackFromAirConfuseProb" v="0.1"/>
     <prop n="AttackFromAirDamageMul" v="0.3"/>
-	<prop n="AttackFromAirHeightHeavyReaction" v="2.0"/>	
+	<prop n="AttackFromAirHeightHeavyReaction" v="2.0"/>
 	<prop n="MomentumEnabled" v="0"/>
-	<prop n="CanThrowInLookback" v="0"/>	
-    
+	<prop n="CanThrowInLookback" v="0"/>
     <prop n="ChallengeStaminaDropMul" v="0.2"/>
     <prop n="ChallengeFitnessDropMul" v="0.3"/>
-    
     <prop n="ZipLineMinSpeed" v="9.0"/>
     <prop n="ZipLineMaxSpeed" v="15.0"/>
     <prop n="ExhaustedDamageMul" v="1.0"/>
-    <prop n="ExhaustedForceAndPhxMul" v="1.0"/>    
-    
+    <prop n="ExhaustedForceAndPhxMul" v="1.0"/>
     <prop n="FistsBaseDamageMul" v="1.0"/>
     <prop n="FistsBaseForceMul" v="1.0"/>
     <prop n="KickBaseDamageMul" v="1.0"/>
     <prop n="KickBaseForceMul" v="1.0"/>
-	<prop n="MeleeVerticalPhysicalDamageMul" v="0.5"/>	
-    <!-- KICK STAMINA USAGE -->
-    <prop n="KickStaminaUsage" v="0.0"/>
-
-    <!-- WRESTLING KICK -->    
+<prop n="MeleeVerticalPhysicalDamageMul" v="0.5"/>
+<prop n="KickStaminaUsage" v="0.0"/>
     <prop n="WrestlingKickPhysicsDamage" v="1.75"/>
     <prop n="WrestlingKickRangeMul" v="1.3"/>
     <prop n="WrestlingKickStaminaUsage" v="0.5"/>
-    <prop n="WrestlingKickCooldown" v="-1.0"/>   
-
+    <prop n="WrestlingKickCooldown" v="-1.0"/>
     <prop n="AirKickBaseDamageMul" v="1.5"/>
     <prop n="AirKickPhysicsDamage" v="2.0"/>
     <prop n="AirKickRangeMul" v="1.2"/>
@@ -202,87 +181,70 @@
     <prop n="AmortizedHarmfulHeight" v="6.5"/>
     <prop n="AmortizedLethalHeight" v="17.0"/>
 	<prop n="FallingHeightToRespawn" v="150"/>
-	
-    <prop n="KnockDownDmgResistance" v="0.8"/>                         <!-- Damage received while player is knocked down is reduced by this multiplier --> 
+    <prop n="KnockDownDmgResistance" v="0.8"/>                         <!-- Damage received while player is knocked down is reduced by this multiplier -->
     <prop n="KnockDownMinVertAngle" v="-15"/>
     <prop n="KnockDownMaxVertAngle" v="20"/>
     <prop n="KnockDownMinHorzAngle" v="-30"/>
     <prop n="KnockDownMaxHorzAngle" v="30"/>
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
-    
     <prop n="NearbyEnemiesSearchRange" v="7.0"/>
-	<prop n="SwimLookTimetMul" v="0.4"/>    
+	<prop n="SwimLookTimetMul" v="0.4"/>
     <prop n="LookVertSpeed_Pad" v="140.0"/>
     <prop n="LookHorzSpeed_Pad" v="260.0"/>
     <prop n="LookVertAcc_Pad" v="2500.0"/>
     <prop n="LookHorzAcc_Pad" v="2500.0"/>
     <prop n="LookVertDec_Pad" v="50000.0"/>
     <prop n="LookHorzDec_Pad" v="50000.0"/>
-    
     <prop n="LookAimVertSpeed_Pad" v="55.0"/>
     <prop n="LookAimHorzSpeed_Pad" v="105.0"/>
     <prop n="LookAimVertAcc_Pad" v="2500.0"/>
     <prop n="LookAimHorzAcc_Pad" v="2500.0"/>
     <prop n="LookAimVertDec_Pad" v="50000.0"/>
     <prop n="LookAimHorzDec_Pad" v="50000.0"/>
-
     <prop n="LookVertSpeed_Mouse" v="0.25"/>
     <prop n="LookHorzSpeed_Mouse" v="0.25"/>
     <prop n="LookVertAcc_Mouse" v="-1.0"/>
     <prop n="LookHorzAcc_Mouse" v="-1.0"/>
     <prop n="LookVertDec_Mouse" v="-1.0"/>
     <prop n="LookHorzDec_Mouse" v="-1.0"/>
-
     <prop n="LookAimVertSpeed_Mouse" v="0.125"/>
     <prop n="LookAimHorzSpeed_Mouse" v="0.125"/>
     <prop n="LookAimVertAcc_Mouse" v="-1.0"/>
     <prop n="LookAimHorzAcc_Mouse" v="-1.0"/>
     <prop n="LookAimVertDec_Mouse" v="-1.0"/>
     <prop n="LookAimHorzDec_Mouse" v="-1.0"/>
-    
-    <prop n="PenaltyOnDeath" v="0"/>                                    
+    <prop n="PenaltyOnDeath" v="0"/>
     <prop n="PenaltyOnDeathFactor" v="0"/>
-    
-    <prop n="DmgResAfterDeathDur" v= "5.0"/>            
-  
+    <prop n="DmgResAfterDeathDur" v= "5.0"/>
     <prop n="UseGPSNavigation" v="1"/>
-  
     <prop n="BulletPenetrationChance" v="0."/>
     <prop n="MoveWhenCarryMaxSpeedFactor" v="1.0"/>
     <prop n="MoveWhenCarryMinSpeedFactor" v="1.0"/>
     <prop n="DetectorEnabled" v="1"/>
-
     <prop n="ThrowMaxDist" v="15.0"/>
     <prop n="ThrowingStarFowardThrow" v="20.0"/>
-
-    <prop n="CameraDefaultFOV" v="52.0"/>
+    <prop n="CameraDefaultFOV" v="54.0"/>
     <prop n="BulletHitMissEffects" v="1.0"/>
     <prop n="HideWeaponsDuringSprint" v="0.0"/>
-    
-    <!-- HEALTH AND REGENERATION -->
     <prop n="MaxHealth" v="100"/>                               <!-- Amount of player health -->
     <prop n="BaseMaxHealth" v="100"/>                           <!-- DEPRECATED, TO BE REMOVED -->
-    <prop n="HealthCriticalLevel" v="25"/>                      
+    <prop n="HealthCriticalLevel" v="25"/>
     <prop n="HealthRegenerationMaxLevel" v="25"/>               <!-- Regenerates health up to this value. Post process depends on LowHealthEffectThreshold  -->
     <prop n="LowHealthEffectThreshold" v="1.0"/>                <!-- Defines the value of health when critical health post process is working, based on HealthCriticalLevel -->
     <prop n="HealthRegenerationDelay" v="4.0"/>                 <!-- Time after which player starts to regenerate, measured from last hit -->
     <prop n="HealthRegenerationTimeToMax" v="8.0"/>             <!-- Time needed to regenerate health up to HealthRegenerationMaxLevel -->
     <prop n="HealthPerSecond" v="0"/>                           <!-- Amount of health being regenerated each second, to be used as auto heal skill -->
-    
     <prop n="AfterDeathHealthRegenTime" v="240"/>               <!-- Time it takes to regenerate full health after respawn -->
     <prop n="AfterDeathHealthFactor" v="1.0"/>                 <!-- Part of MaxHealth restored after respawn -->
     <prop n="AfterDeathHealthFactorBtz" v="1.0"/>               <!-- Part of MaxHealth restored after respawn when playing BtZ -->
-    
     <prop n="FistsDamageMul" v="0"/>
     <prop n="FistsForceMul" v="0"/>
     <prop n="FistsAttackSpeedMul" v="0"/>
     <prop n="FistsCriticalChance" v="0"/>
     <prop n="FistsCriticalDmgMul" v="0"/>
-
     <prop n="MeeleDamageMul" v="0"/>
     <prop n="MeeleForceMul" v="0"/>
     <prop n="MeeleAttackSpeedMul" v="0"/>
-    
     <prop n="BluntDamageMul" v="0"/>
     <prop n="BluntForceMul" v="0"/>
     <prop n="BluntWpnDurabilityLoss" v="1.0"/>
@@ -290,7 +252,6 @@
     <prop n="BluntCriticalDmgMul" v="0"/>
     <prop n="BluntCritSevereLimbProb" v="0.2"/>
     <prop n="BluntAttackSpeedMul" v="0"/>
-    
     <prop n="CutDamageMul" v="0"/>
     <prop n="CutForceMul" v="0"/>
     <prop n="CutWpnDurabilityLoss" v="1.0"/>
@@ -298,43 +259,36 @@
     <prop n="CutCriticalDmgMul" v="0"/>
     <prop n="CutCritSevereLimbProb" v="0.2"/>
     <prop n="CutAttackSpeedMul" v="0"/>
-        
     <prop n="BulletDamageMul" v="0"/>
     <prop n="BulletForceMul" v="0"/>
     <prop n="BulletAccuracyFactor" v="1.0"/>
     <prop n="BulletCriticalChance" v="0"/>
     <prop n="BulletCriticalDmgMul" v="0"/>
     <prop n="BulletAttackSpeedMul" v="0"/>
-    
     <prop n="QuickSlotsCount" v="4"/>
     <prop n="InventorySize" v="4"/>
-    
     <prop n="SwimMoveSpeed" v="1.5"/>
     <prop n="SwimSprintSpeed" v="2.0"/>
     <prop n="SwimImpulsSpeed" v="35.0"/>
     <prop n="SwimStrafeSpeed" v="0.7"/>
     <prop n="SwimAcceleration" v="0.7"/>
-    
     <prop n="SwimJumpHeight" v="0.7"/>
     <prop n="SwimOxygenUsage" v="0.02"/>
-    <prop n="SwimInhaleIncrease" v="0.1"/>  
-    
+    <prop n="SwimInhaleIncrease" v="0.1"/>
     <prop n="MoveForwardMinSpeed" v="0.5"/>
     <prop n="MoveForwardMaxSpeed" v="3.5"/>
     <prop n="MoveBackwardMinSpeed" v="0.5"/>
     <prop n="MoveBackwardMaxSpeed" v="2.5"/>
 	<prop n="ChargeMoveBackwardMinSpeed" v="0.5"/>
-    <prop n="ChargeMoveBackwardMaxSpeed" v="2.0"/>   
+    <prop n="ChargeMoveBackwardMaxSpeed" v="2.0"/>
     <prop n="MoveStrafeMinSpeed" v="0.5"/>
     <prop n="MoveStrafeMaxSpeed" v="2.5"/>
     <prop n="MoveSprintSpeed" v="6.0"/>
     <prop n="MoveAcceleration" v="40.0"/>
     <prop n="MoveSprintAcceleration" v="10.0"/>
     <prop n="MoveDeceleration" v="40.0"/>
-    
     <prop n="ZombieChargeAttackImpulseMagnitude" v="12.0"/>
-    <prop n="ZombieChargeAttackImpulseVerticle" v="6.0"/>       
-    
+    <prop n="ZombieChargeAttackImpulseVerticle" v="6.0"/>
     <prop n="CrouchForwardMinSpeed" v="0.5"/>
     <prop n="CrouchForwardMaxSpeed" v="1.5"/>
     <prop n="CrouchBackwardMinSpeed" v="0.5"/>
@@ -343,43 +297,30 @@
     <prop n="CrouchStrafeMaxSpeed" v="1.5"/>
     <prop n="CrouchAcceleration" v="4.0"/>
     <prop n="CrouchDeceleration" v="10.0"/>
-
-    <!-- MUSIC SETUP -->
     <prop n="MusicRuningActivationTime" v="11.0"/>
     <prop n="MusicRuningFadeOutStartTime" v="5.0"/>
-        
-    <!-- CHARGE ATTACK COMMON -->
-    <prop n="ChargeSpreadProbability" v="0.0"/>     
-    <prop n="ChargeOverchargeDamage" v="0.0"/>  
-    
+    <prop n="ChargeSpreadProbability" v="0.0"/>
+    <prop n="ChargeOverchargeDamage" v="0.0"/>
     <prop n="ChargeStaminaDecreaseFactor" v="0"/>
-    <prop n="ChargeAutoReleaseTime" v="-1.0"/>  
-	<prop n="ChargeHoldDuration" v="0.5"/>  	
-    <prop n="ChargeWeaponDurabilityMul" v="2.0"/>   
-    
-
-    <!-- Stick -->
+    <prop n="ChargeAutoReleaseTime" v="-1.0"/>
+	<prop n="ChargeHoldDuration" v="0.5"/>
+    <prop n="ChargeWeaponDurabilityMul" v="2.0"/>
     <prop n="ThrowHookRopeLength" v="25.0"/>
     <prop n="ChargeStaminaStickCostMul" v="2.0"/>
     <prop n="ChargeStickBaseDamageMul" v="1.75"/>
     <prop n="ChargeStickCritChanceMul" v="1.0"/>
     <prop n="ChargeStickForceMul" v="0.1"/>
     <prop n="ChargeStickPhysicsDamageMul" v="1.5"/>
-    
-    <!-- Stick2Close -->
     <prop n="ChargeStaminaStick2CloseCostMul" v="4.5"/>
     <prop n="ChargeStick2CloseBaseDamageMul" v="1.75"/>
     <prop n="ChargeStick2CloseCritChanceMul" v="1.0"/>
     <prop n="ChargeStick2CloseForceMul" v="30.0"/>
     <prop n="ChargeStick2ClosePhysicsDamageMul" v="2.0"/>
-    
-    <!-- Stick2Heavy-->
     <prop n="ChargeStaminaStick2HeavyCostMul" v="1.5"/>
     <prop n="ChargeStick2HeavyBaseDamageMul" v="1.75"/>
     <prop n="ChargeStick2HeavyCritChanceMul" v="1.0"/>
     <prop n="ChargeStick2HeavyForceMul" v="10.0"/>
     <prop n="ChargeStick2HeavyPhysicsDamageMul" v="1.5"/>
-    
     <prop n="AimBackwardMaxSpeed" v="2.5"/>
     <prop n="AimBackwardMinSpeed" v="0.5"/>
     <prop n="AimForwardMaxSpeed" v="3.5"/>
@@ -388,7 +329,6 @@
     <prop n="AimStrafeMinSpeed" v="0.5"/>
     <prop n="AimAcceleration" v="7.0"/>
     <prop n="AimDeceleration" v="10.0"/>
-
     <prop n="AimCrouchBackwardMaxSpeed" v="1.5"/>
     <prop n="AimCrouchBackwardMinSpeed" v="0.5"/>
     <prop n="AimCrouchForwardMaxSpeed" v="1.5"/>
@@ -397,51 +337,36 @@
     <prop n="AimCrouchStrafeMinSpeed" v="0.5"/>
     <prop n="AimCrouchAcceleration" v="4.0"/>
     <prop n="AimCrouchDeceleration" v="10.0"/>
-
     <prop n="JumpStaminaCost" v="0.1"/>
     <prop n="JumpMaxHeight" v="1.01"/>
     <prop n="JumpMinHeight" v="1.01"/>
-    
-
-    
-    <prop n="EnemyGrabChance" v="1"/>   
-
-    <!-- FIREARMS -->   
-    <prop n="RangeMeleeMul" v="1.0"/> 
-    <prop n="MaxVerticalAngleForRangeMeleeCorrection" v="25.0"/>    
-    
+    <prop n="EnemyGrabChance" v="1"/>
+    <prop n="RangeMeleeMul" v="1.0"/>
+    <prop n="MaxVerticalAngleForRangeMeleeCorrection" v="25.0"/>
     <prop n="WeightCanCarry" v="100.0"/>
-
-    <prop n="MaxAmmoPistol" v="50"/>
-    <prop n="MaxAmmoRifle" v="120"/>
-    <prop n="MaxAmmoShotgun" v="20"/>
-        
-    <prop n="FirearmsPistolReloadTimeMul" v="1.0"/> 
-    <prop n="FirearmsRevolverReloadTimeMul" v="1.0"/>   
+    <prop n="MaxAmmoPistol" v="80"/>
+    <prop n="MaxAmmoRifle" v="200"/>
+    <prop n="MaxAmmoShotgun" v="80"/>
+    <prop n="FirearmsPistolReloadTimeMul" v="1.0"/>
+    <prop n="FirearmsRevolverReloadTimeMul" v="1.0"/>
     <prop n="FirearmsRifleReloadTimeMul" v="1.0"/>
-    <prop n="FirearmsShotgunReloadTimeMul" v="1.0"/>    
-        
-    <prop n="FirearmsPistolCritChanceMul" v="0.0"/> 
-    <prop n="FirearmsRevolverCritChanceMul" v="0.0"/>   
+    <prop n="FirearmsShotgunReloadTimeMul" v="1.0"/>
+    <prop n="FirearmsPistolCritChanceMul" v="0.0"/>
+    <prop n="FirearmsRevolverCritChanceMul" v="0.0"/>
     <prop n="FirearmsRifleCritChanceMul" v="0.0"/>
     <prop n="FirearmsShotgunCritChanceMul" v="0.0"/>
-    
-    <prop n="FirearmsPistolCritDamageMul" v="0.0"/> 
-    <prop n="FirearmsRevolverCritDamageMul" v="0.0"/>   
+    <prop n="FirearmsPistolCritDamageMul" v="0.0"/>
+    <prop n="FirearmsRevolverCritDamageMul" v="0.0"/>
     <prop n="FirearmsRifleCritDamageMul" v="0.0"/>
     <prop n="FirearmsShotgunCritDamageMul" v="0.0"/>
-      
-    <prop n="FirearmsPistolAccuracyFactor" v="1.0"/> 
-    <prop n="FirearmsRevolverAccuracyFactor" v="1.0"/> 
-    <prop n="FirearmsRifleAccuracyFactor" v="1.0"/> 
-    <prop n="FirearmsShotgunAccuracyFactor" v="1.0"/> 
-        
-    <prop n="FirearmsPistolRecoilFactor" v="1.0"/> 
-    <prop n="FirearmsRevolverRecoilFactor" v="1.0"/> 
+    <prop n="FirearmsPistolAccuracyFactor" v="1.0"/>
+    <prop n="FirearmsRevolverAccuracyFactor" v="1.0"/>
+    <prop n="FirearmsRifleAccuracyFactor" v="1.0"/>
+    <prop n="FirearmsShotgunAccuracyFactor" v="1.0"/>
+    <prop n="FirearmsPistolRecoilFactor" v="1.0"/>
+    <prop n="FirearmsRevolverRecoilFactor" v="1.0"/>
     <prop n="FirearmsRifleRecoilFactor" v="1.0"/>
     <prop n="FirearmsShotgunRecoilFactor" v="1.0"/>
-
-    <!-- FURY -->
     <prop n="FuryAvailable" v="1"/>
     <prop n="FuryType" v="Berserker"/>
     <prop n="FuryPointsMinToActivate" v="0.25"/>
@@ -458,7 +383,6 @@
     <prop n="FuryEnemiesHitOnFinishRadius" v="5"/>
     <prop n="FuryAISpeedFactor" v="0.2"/>
     <prop n="FocusCooldown" v="10.0"/>
-    <!-- OTHER -->
     <prop n="ComboDamageMulPerStack" v="0.1"/>
     <prop n="ComboResetTime" v="5.0"/>
     <prop n="StompLevel" v="-1.0"/>                            <!-- enables stomper -->
@@ -473,143 +397,99 @@
     <prop n="JumpFromHangEnabled" v="1"/>
     <prop n="CraftItemsEnabled" v="1"/>
     <prop n="CraftWeaponsEnabled" v="1"/>
-
-    <!-- TACKLE -->    
     <prop n="AddTackleSpeed" v="6.0"/>
     <prop n="TackleStaminaUse" v="0.4"/>
     <prop n="TackleCoolDown" v="1.0"/>
     <prop n="TackleSprintMinDuration" v="0.125"/>
     <prop n="FocusKillsToActivate" v="2"/>
     <prop n="TackleLookMaxSpeed" v="180"/>
-    <prop n="MaxTackleInRow" v="0"/>    
+    <prop n="MaxTackleInRow" v="0"/>
     <prop n="TackleOverKillWindow" v="0.3"/>
     <prop n="TackleDamageFactor" v="0.0"/>
-    
-    <!-- Grappling hook in RopeLoco -->    
     <prop n="RopePullDamage" v="50.0"/>
     <prop n="RopePullPhysicsDamage" v="1.5"/>
-    <prop n="RopePullForce" v="1.5"/>	
+    <prop n="RopePullForce" v="1.5"/>
 	<prop n="RopeMaxEnergy" v="1.0"/>
-	<prop n="RopeEnergyRegenTime" v="10.0"/>		
-
+	<prop n="RopeEnergyRegenTime" v="10.0"/>
     <prop n="CanBeKnockedDownByTackle" v="1"/>
-
-    <!-- GROUND POUND -->
     <prop n="GroundPoundCooldown" v="-1.0"/>
-
-    <!-- JUMP ATTACK -->
     <prop n="JumpAttackStaminaUsage" v="0.5"/>
     <prop n="JumpAttackCoolDown" v="-1.0"/>
     <prop n="JumpAttackShockwaveRadius" v="3"/>
     <prop n="JumpAttackDmgFactor" v="3.0"/>
     <prop n="DamageResAfterJumpAttack" v="0.2"/>
     <prop n="DamageResAfterJumpAttackDuration" v="3.0"/>
-
     <prop n="PVPGrabJumpReleaseHeight" v="2.0"/>
-    
-    <!-- JUMP OVER ZOMBIE -->
     <prop n="JumpOverZombieVelocity" v="2"/>
     <prop n="JumpOverZombieCooldown" v="-1.0"/>
-
-    <!-- HOOK -->   
     <prop n="GrapplingHookCooldown" v="-1.0"/>
     <prop n="ThrowHookFowardThrow" v="50.0"/>
     <prop n="EnemyPullTimeWarpFactor" v="0.8"/>
     <prop n="EnemyPullSlowmoDuration" v="0.7"/>
-    
-    <!-- SHIELD -->	
 	<prop n="ShieldEnabled" v="0"/>
     <prop n="ShieldAttackStaminaUsage" v="0.1"/>
     <prop n="StaminaCooldownAfterBlock" v="2.0"/>
     <prop n="BlockStaminaUsageMul" v="0.0"/>
     <prop n="BlockAggroFactorMul" v="15.0"/>
-    
-    <!-- NAGE WAZA -->
     <prop n="NageWazaCooldown" v="-1.0"/>
-    
-    <!-- WHIRLWIND -->  
     <prop n="WhirlwindChargeCooldown" v="-1.0"/>
-    
-    <!-- SLIDE -->
     <prop n="SlideCooldown" v="0.5"/>
     <prop n="SlideEndAfterFirstHit" v="0"/>
-
     <prop n="ItemDrop" v=""/>
-        
-    <!-- FAST BREAK-->
-    <prop n="FastGrabBreakCooldown" v="3.5"/>      
-
-    <!-- ELEMENTALS -->
+    <prop n="FastGrabBreakCooldown" v="3.5"/>
     <prop n="PoisonElementalReboundProb" v="0.1"/>                <!-- probability that a poisoned zombie will poison player with its attacks -->
-    
-    <!--MAN UP -->
     <prop n="ManUpAvailable" v="0.0"/>                          <!-- is skill available -->
-    <prop n="ManUpCooldown" v="120.0"/>                         <!-- skill cooldown --> 
+    <prop n="ManUpCooldown" v="120.0"/>                         <!-- skill cooldown -->
     <prop n="ManUpHealthRegenPercent" v="50.0"/>                <!-- percent of max health regeneration -->
     <prop n="ManUpMinHealthPercentToUse" v="20.0"/>             <!-- percent of health to use skill -->
     <prop n="ManUpHealthDropToMinTime" v="10.0"/>               <!-- Time needed to drop additional health -->
     <prop n="ManUpHealthFreezeTime" v="5.0"/>                   <!-- Time after ManUp, when regeneration will be frozen -->
-    <prop n="ManUpCameraFlashEffectDuration" v="0.25"/>         <!-- Duration of CameraFlash effect -->    
-    <prop n="ManUpDofEffectDuration" v="5.0"/>                  <!-- Duration of DOF effect --> 
-        
-    <!--SONAR SKILLS -->
+    <prop n="ManUpCameraFlashEffectDuration" v="0.25"/>         <!-- Duration of CameraFlash effect -->
+    <prop n="ManUpDofEffectDuration" v="5.0"/>                  <!-- Duration of DOF effect -->
     <prop n="SonarInvisibilityTime" v="4.0"/>
     <prop n="SonarNoiseHideEnabled" v="0.0"/>
     <prop n="SonarInvisibilityEnabled" v="0.0"/>
     <prop n="SonarInvisibilityCooldown" v="20.0"/>
     <prop n="NightHordeSenseLevel" v="2"/>                    <!-- enables Sonar/Awareness (has 2 levels) -->
-    
-    <!--SILENT KILL (Finisher back) -->
-    <prop n="FinisherBackEnabled" v="0"/>                       <!--  enables backstab -->    
+    <prop n="FinisherBackEnabled" v="0"/>                       <!--  enables backstab -->
     <prop n="FinisherBackHumanEnabled" v="0"/>
     <prop n="FinisherBackCooldown" v="-1.0"/>
-    
-    <!-- THROWING SKILL - auto aim -->
-    <prop n="ThrowingAutoHitSkillEnabled" v="0"/> 
-    <prop n="ThrowingAutoHitSkillCooldown" v="-1.0"/> 
-    <prop n="ThrowingAutoHitSkillRange" v="40.0"/> 
-    <prop n="ThrowingAutoHitSkillAngle" v="15.0"/> 
-    <prop n="ThrowingAutoHitSkillDmgMul" v="3.0"/> 
-    
-    <!-- THROWING SKILL - multi -->
-    <prop n="ThrowingMultiSkillEnabled" v="0"/> 
-    <prop n="ThrowingMultiSkillCooldown" v="-1.0"/> 
+    <prop n="ThrowingAutoHitSkillEnabled" v="0"/>
+    <prop n="ThrowingAutoHitSkillCooldown" v="-1.0"/>
+    <prop n="ThrowingAutoHitSkillRange" v="40.0"/>
+    <prop n="ThrowingAutoHitSkillAngle" v="15.0"/>
+    <prop n="ThrowingAutoHitSkillDmgMul" v="3.0"/>
+    <prop n="ThrowingMultiSkillEnabled" v="0"/>
+    <prop n="ThrowingMultiSkillCooldown" v="-1.0"/>
     <prop n="ThrowingMultiSkillMarkingDelay" v="0.8"/>
-    <prop n="ThrowingMultiSkillMaxEnemies" v="3.05"/> 
-    <prop n="ThrowingMultiSkillRange" v="40.0"/> 
-    <prop n="ThrowingMultiSkillAutoAimAngle" v="4.0"/> 
+    <prop n="ThrowingMultiSkillMaxEnemies" v="3.05"/>
+    <prop n="ThrowingMultiSkillRange" v="40.0"/>
+    <prop n="ThrowingMultiSkillAutoAimAngle" v="4.0"/>
     <prop n="ThrowingMultiSkillTargetRetainTime" v="-1.0"/>
     <prop n="ThrowingMultiSkillTargetRetainWarningTime" v="-1.0"/>
-    <prop n="ThrowingMultiSkillDmgMul" v="1.0"/> 
-    <prop n="ThrowingMultiSkillTargetVisConeAngle" v="35.0"/>     
-
+    <prop n="ThrowingMultiSkillDmgMul" v="1.0"/>
+    <prop n="ThrowingMultiSkillTargetVisConeAngle" v="35.0"/>
     <prop n="HangingDamage" v="10.0"/>
-    
     <prop n="CraftItemsEnabled" v="1.0"/>
-	
 	<prop n="RunnerXPMinDistBetweenClimb" v="1.30"/>
 	<prop n="RunnerXPMinTimeBetweenClimb" v="5.00"/>
-	
 	<prop n="RunnerXPPursuitLvl1PerSec" v="1.00"/>
 	<prop n="RunnerXPPursuitLvl2PerSec" v="2.00"/>
 	<prop n="RunnerXPPursuitLvl3PerSec" v="3.00"/>
 	<prop n="RunnerXPPursuitLvl4PerSec" v="4.00"/>
-	
 	<prop n="DriverXPPursuitLvl1PerSec" v="2.00"/>
 	<prop n="DriverXPPursuitLvl2PerSec" v="3.00"/>
 	<prop n="DriverXPPursuitLvl3PerSec" v="4.00"/>
 	<prop n="DriverXPPursuitLvl4PerSec" v="5.00"/>
-	
-	<prop n="RunnerXPRunningPerSec" v="0.0"/>	
+	<prop n="RunnerXPRunningPerSec" v="0.0"/>
     <prop n="RunnerXPClimbShimmyUp" v="5.0"/>
 	<prop n="RunnerXPClimbEdgeGrab" v="25.0"/>
 	<prop n="RunnerXPClimbJump180" v="10.0"/>
 	<prop n="RunnerXPClimbFromBottom" v="15.0"/>
 	<prop n="RunnerXPClimbFromTop" v="5.0"/>
 	<prop n="RunnerXPJumpOn" v="10.0"/>
-	<prop n="RunnerXPFactor" v="1.0"/>	
-	
-    <prop n="RunnerXPSkillSlide" v="20.0"/>    
+	<prop n="RunnerXPFactor" v="1.0"/>
+    <prop n="RunnerXPSkillSlide" v="20.0"/>
     <prop n="RunnerXPSkillTackle" v="20.0"/>
     <prop n="RunnerXPSkillLanding" v="20.0"/>
     <prop n="RunnerXPSkillJumpOverZombie" v="20.0"/>
@@ -623,23 +503,23 @@
 	<prop n="RunnerXPSkillFastBreak" v="20.0"/>
 	<prop n="RunnerXPDodgedAttack" v="20.0"/>
 	<prop n="RunnerXPSkillWrestleKick" v="20.0"/>
-	
-	<prop n="RunnerXPNightFactor" v="2.0"/>	
-	<prop n="FighterXPNightFactor" v="2.0"/>	
+
+	<prop n="RunnerXPNightFactor" v="2.0"/>
+	<prop n="FighterXPNightFactor" v="2.0"/>
 	<prop n="SurvivorXPNightFactor" v="1.0"/>
 	<prop n="DriverXpNightFactor" v="2.0"/>
-	
+
     <prop n="FighterXPSkillCharge" v="10.0"/>
     <prop n="FighterXPSkillWhirlwind" v="20.0"/>
-    <prop n="FighterXPSkillGroundPound" v="20.0"/>        
+    <prop n="FighterXPSkillGroundPound" v="20.0"/>
     <prop n="FighterXPSkillBackKill" v="20.0"/>
     <prop n="FighterXPSkillJumpAttack" v="25.0"/>
     <prop n="FighterXPSkillFootballKick" v="20.0"/>
-    <prop n="FighterXPSkillFronKill" v="20.0"/>	
+    <prop n="FighterXPSkillFronKill" v="20.0"/>
 	<prop n="FighterXPFirearmDamageFactor" v="0.1"/>
-	
+
     <prop n="LimbCutOforDestrXP" v="0.0"/>
-    <prop n="FighterXPFactorOnCriticalStamina" v="0.5"/>    
+    <prop n="FighterXPFactorOnCriticalStamina" v="0.5"/>
     <prop n="DodgeSpeed" v="9"/>
     <prop n="DodgeJumpHeight" v="0.0"/>
     <prop n="DodgeJumpCooldown" v="0.75"/>
@@ -648,11 +528,11 @@
 	<prop n="LookBackEnabled" v="1"/>
 	<prop n="SonarHighlightRange" v="8.5"/>
 	<prop n="SonarHighlightDuration" v="5.0"/>
-	
+
 	<prop n="CraftDismantleEnabled" v="1"/>
 	<prop n="CraftDismantleCraftPartRecoverProb" v="0.75"/>
 	<prop n="CanDismantleWeapons" v="1"/>
-    
+
     <prop n="PVPKnockBackDamage_Speed" v="10.0"/>
     <prop n="PVPKnockBackDamage_Duration" v="0.5"/>
     <prop n="PVPKnockBackDamage_Accel" v="10000.0"/>
@@ -806,7 +686,7 @@
 <level id="1"><prop n="KickBaseForceMul" v="1"/></level>
 <level id="1"><prop n="AirKickBaseDamageMul" v="1"/></level>
 <level id="1"><prop n="WrestlingKickBaseDamageMul" v="5"/></level>
-    
+
 <!-- SKILL POINTS FIGHTER-->
 <level id="1" type="Fighter"><prop n="SkillPointsFighter" v="0"/></level>
 <level id="2" type="Fighter"><prop n="SkillPointsFighter" v="1"/></level>
@@ -991,7 +871,7 @@
 <level id="12"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="92000"/></level> <!-- (+ 14000) -->
 <!-- PLAYER EXPERIENCE HELLRAID END-->
 
-<!-- SKILL POINTS LEGEND--> 
+<!-- SKILL POINTS LEGEND-->
 <level id="1" type="Legend"><prop n="SkillPointsLegend" v="0"/><prop n="LegendTier" v="0"/></level>
 <level id="2" type="Legend"><prop n="SkillPointsLegend" v="1"/><prop n="LegendTier" v="0"/></level>
 <level id="3" type="Legend"><prop n="SkillPointsLegend" v="2"/><prop n="LegendTier" v="0"/></level>
@@ -1574,7 +1454,7 @@
 <level id="23" type="Status"><prop n="SurvivalPenaltyOnDeathNight" v="-4200.0"/></level>
 <level id="24" type="Status"><prop n="SurvivalPenaltyOnDeathNight" v="-4400.0"/></level>
 	-->
-    
+
 <level id="1" type="Status"><prop n="NightExpTimeReward"  v="0.041666667"/></level>
 <level id="2" type="Status"><prop n="NightExpTimeReward"  v="0.135416667"/></level>
 <level id="3" type="Status"><prop n="NightExpTimeReward"  v="0.208333333"/></level>
@@ -1660,7 +1540,7 @@
     <prop n="NaturalMovementDevelopmentLevel" v="0"/>
 </level>
 
-<level id="1" type="Fighter">    
+<level id="1" type="Fighter">
     <prop n="MinTimeInRestToPerformAttack" v="0.0"/>
 </level>
 
