@@ -125,9 +125,7 @@
     <prop n="ZombieMeleeEnabled" v="1"/>
     <prop n="ChargeAttack" v="0"/>
     <prop n="FistsBaseDamageMul" v="1"/>
-    <prop n="RangeMeleeMul" v="1.25"/>
-
-     <!-- Charge Attack -->
+    <prop n="RangeMeleeMul" v="1.20"/>
     <prop n="ZombieChargeAttackEnabled" v="0"/>
     <prop n="ZombieChargeAttackDamage" v="0.34"/>
     <prop n="ZombieChargeAttackRange" v="5.0"/>
@@ -136,8 +134,6 @@
     <prop n="ZombieChargeAttackAiDamage" v="10"/>
     <prop n="ZombieChargeAttackAiForce" v="400"/>
     <prop n="ZombieChargeAttackAiPhxDmg" v="40"/>
-
-    <!-- Ground Pound -->
     <prop n="ZombieGroundPoundEnabled" v="1"/>
     <prop n="ZombieGroundPoundRange" v="5"/>
     <prop n="ZombieGroundPoundDamage" v="0.2"/>
@@ -147,25 +143,19 @@
     <prop n="ZombieGroundImpulseVertical" v="3"/>
     <prop n="ZombieGroundImpulseHorizontal" v="6"/>
     <prop n="ZombieGroundLightDisableDuration" v="0.0"/>
-
     <prop n="ZombieSpitGroundPoundEnabled" v="0"/>
-
     <prop n="ZombiePounceHighRageExplosionRange" v="5.0"/>
     <prop n="ZombieLeapfrogEnabled" v="0"/>
     <prop n="ZombiePounceSlamEnabled" v="0"/>
-
     <prop n="CanBeKnockedDownByTackle" v="0"/>
-
     <prop n="PVPKnockBackMelee" v="1"/>
     <prop n="ZombiePounceExplosionPhysicsDamage" v="1.5"/>
     <prop n="ZombieMeleeKnockBackSpeed" v="4"/>
     <prop n="ZombieMeleeKnockBackDuration" v="0.1"/>
     <prop n="ZombieMeleeKnockup" v="0"/>
-
     <prop n="UVHealEnabled" v="0"/>
     <prop n="ZombieSpitToxicEnabled" v="0"/>
     <prop n="ZombieSpitCamoEnabled" v="0"/>
-
     <prop n="ZombieSpitControlTheHordeEnabled" v="0"/>
     <prop n="ZombieSpitControlTheHordeUpgraded" v="0"/>
     <prop n="ZombieSpitControlTheHordeSpawnAmmoCount" v="1"/>
@@ -174,7 +164,6 @@
     <prop n="ZombieSpitControlTheHordeAmmoRegenTime3v1" v="40"/>
     <prop n="ZombieSpitControlTheHordeAmmoRegenTime4v1" v="30"/>
     <prop n="ZombieSpitControlTheHordeMaxAmmoCount" v="1"/>
-
     <prop n="ZombieSpitLightDisableEnabled" v="0"/>
     <prop n="ZombieSpitLightDisableUpgraded" v="0"/>
     <prop n="ZombieSpitLightDisableSpawnAmmoCount" v="1"/>
@@ -193,9 +182,8 @@
     <prop n="ZombieSpitDefensiveSmokeDurationMul" v="1"/>
     <prop n="CoolodownFailDisplayTime" v="1.5"/>
     <prop n="NightHordeSenseOnEnemyPlayerTime" v="20.0"/>
-    <prop n="NaturalMovementDevelopmentLevel" v="0"/>
+    <prop n="NaturalMovementDevelopmentLevel" v="5"/>
     <prop n="LookBackEnabled" v="0"/>
-
     <prop n="PVPKnockBackDamage_Speed" v="5.0"/>
 <prop n="TurnSpeedAirMovementFactor_MinTurn" v="90.0"/>
 <prop n="TurnSpeedAirMovementFactor_MaxTurn" v="200.0"/>
