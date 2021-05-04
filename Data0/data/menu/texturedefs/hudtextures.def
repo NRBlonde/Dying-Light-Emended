@@ -2854,6 +2854,26 @@ Texture("hint_Tutorial_TimeFreeze_Outfit_tactical_unit.dds", 512, 512)
     Whole("hint_Tutorial_TimeFreeze_Outfit_tactical_unit") // 512 x  512
 }
 
+Texture("hint_Tutorial_TimeFreeze_Livery_rust.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Livery_rust") //  512 x  512
+}
+
+Texture("hint_Tutorial_TimeFreeze_Outfit_rust.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Outfit_rust") // 512 x  512
+}
+
+Texture("hint_Tutorial_TimeFreeze_Livery_savvy.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Livery_savvy") //  512 x  512
+}
+
+Texture("hint_Tutorial_TimeFreeze_Outfit_savvy.dds", 512, 512)
+{
+    Whole("hint_Tutorial_TimeFreeze_Outfit_savvy") // 512 x  512
+}
+
 Texture("dlc_white_death_bundle.dds", 512, 512)
 {
     Whole("dlc_white_death_bundle") //  512 x  512
@@ -3081,6 +3101,16 @@ Texture("dlc_new_section_tactical_unit.dds", 1024, 1024)
     Whole("dlc_new_section_tactical_unit") //  1024 x  1024
 }
 
+Texture("dlc_new_section_rust.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_rust") //  1024 x  1024
+}
+
+Texture("dlc_new_section_rust_crossover.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_rust_crossover") //  1024 x  1024
+}
+
 // New dlc images black-white
 
 Texture("dlc_new_section_white_death_bundle_bw.dds", 1024, 1024)
@@ -3221,6 +3251,16 @@ Texture("dlc_new_section_viking_bw.dds", 1024, 1024)
 Texture("dlc_new_section_tactical_unit_bw.dds", 1024, 1024)
 {
     Whole("dlc_new_section_tactical_unit_bw") //  1024 x  1024
+}
+
+Texture("dlc_new_section_rust_bw.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_rust_bw") //  1024 x  1024
+}
+
+Texture("dlc_new_section_rust_crossover_bw.dds", 1024, 1024)
+{
+    Whole("dlc_new_section_rust_crossover_bw") //  1024 x  1024
 }
 
 //SplashScreenSTART
@@ -3427,6 +3467,16 @@ Texture("splashscreen_ox.dds", 1280, 480)
 Texture("splashscreen_tactical_unit.dds", 1280, 480)
 {
 	Whole("splashscreen_tactical_unit")
+}
+
+Texture("splashscreen_rust.dds", 1280, 480)
+{
+	Whole("splashscreen_rust")
+}
+
+Texture("splashscreen_rust_crossover.dds", 1280, 480)
+{
+	Whole("splashscreen_rust_crossover")
 }
 
 //SplashScreenEND
