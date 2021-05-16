@@ -1,10 +1,3 @@
-//nopreprocess
-
-
-
-/////////////////////////////////////////////
-
-
 public static string_dat clr_vrt_rgb = s_clr_vrt_rgb;
 public static string_dat clr_vrt_r = s_clr_vrt_r;
 public static string_dat clr_vrt_g = s_clr_vrt_g;
@@ -73,7 +66,7 @@ public static string_dat s_uv_coord_15 = "uv_coord_15";
 public static string_dat s_clr_usr_coord_0 = "clr_usr_coord_0";
 public static string_dat s_clr_usr_coord_1 = "clr_usr_coord_1";
 public static string_dat s_clr_usr_coord_2 = "clr_usr_coord_2";
-public static string_dat s_clr_usr_coord_3 = "clr_usr_coord_3";                                                
+public static string_dat s_clr_usr_coord_3 = "clr_usr_coord_3";
 
 public static string_dat s_clr_usr_texture_def = s_tex_def;
 public static string_dat s_clr_usr_offset_def = "v_clr_usr_attrib.x";
@@ -131,7 +124,7 @@ public static string_dat swizzle_a = "a";
 public static string_dat swizzle_rgb = "rgb";
 public static string_dat swizzle_rgba = "rgba";
 
-public static float_dat c_f1_cst_def = 0.0; 
+public static float_dat c_f1_cst_def = 0.0;
 public static vec3_dat c_v3_cst_def = vec(0.0, 0.0, 0.0);
 public static vec4_dat c_v4_cst_def = vec(0.0, 0.0, 0.0, 0.0);
 
@@ -174,7 +167,7 @@ public static int_dat FORCE_DEPTH_OFF = -1;
 
 
 public static int_dat e_lidx_tex_size_nrm_def = -1;
-                                              
+
 public string_dat morph_factor()
 {
     return GetMorphFactor();
@@ -197,7 +190,7 @@ public string_dat mwf_msk(string_dat _msk)
 
 public string_dat GetMorphFactorNoise(string_dat _noise)
 {
-    string_dat __lerp_morph_factor = GetMorphFactor();        
+    string_dat __lerp_morph_factor = GetMorphFactor();
     __lerp_morph_factor = If((_noise != __none) & (__lerp_morph_factor != "0.0"),
             "saturate(smoothstep(0, 1, saturate((( " + __lerp_morph_factor + " * " + __lerp_morph_factor  + " + (" + __lerp_morph_factor +  " > 0.0) * " + _noise + " * " + _noise + " ) * 2 ) - 1)))",
             __lerp_morph_factor );
@@ -213,23 +206,23 @@ public string_dat GetMorphFactorMskNoise(string_dat _msk, string_dat _noise)
     return __lerp_morph_factor;
 }
 
-public string_dat GetMorphFactor()     
+public string_dat GetMorphFactor()
 {
     int_dat MATERIAL_FLAGS = DeclareExtern_int("MATERIAL_FLAGS");
-    string_dat res = If(BitAND(MATERIAL_FLAGS, MF_MORPHING) != 0, "saturate(" + s_mph_y + ")", "0.0");        
+    string_dat res = If(BitAND(MATERIAL_FLAGS, MF_MORPHING) != 0, "saturate(" + s_mph_y + ")", "0.0");
     return res;
-} 
+}
 
 
-public string_dat GetMorphWFactor(string_dat _msk)     
+public string_dat GetMorphWFactor(string_dat _msk)
 {
     return "dot(CONST_4, " + _msk + ")";
-} 
-                                         
+}
+
 
 
 public string_dat adf( string_dat __msk, string_dat _min, string_dat _max)
-{           
+{
     return "saturate(((" + __msk + ") - (" + _min + ")) / ((" + _max + ") - (" + _min + ")))";
 }
 
@@ -247,13 +240,13 @@ public float_dat adf_min(float_dat _min, float_dat _max )
 
 public static string_dat AlphaDistanceField ( string_dat __msk, string_dat  cst_min, string_dat cst_max)
 {
-    return "saturate(" + __msk + " * " + cst_max + " + " + cst_min + ")";    
+    return "saturate(" + __msk + " * " + cst_max + " + " + cst_min + ")";
 }
 
 public string_dat NormalReconstruct(string_dat _normal_xy)
 {
     string_dat_F2 __nrm_ts_xy =  "(" + _normal_xy + " * 2.0 - 1.0)";
-    string_dat_F1 __nrm_ts_z = "sqrt(1.0 - dot(" + __nrm_ts_xy + ", " + __nrm_ts_xy + "))";   
+    string_dat_F1 __nrm_ts_z = "sqrt(1.0 - dot(" + __nrm_ts_xy + ", " + __nrm_ts_xy + "))";
     string_dat_F3 __nrm_ts = "half3(" +__nrm_ts_xy + ", " + __nrm_ts_z + ")";
     return __nrm_ts;
 }
@@ -272,26 +265,26 @@ public string_dat NormalReconstruct(string_dat _normal_xy, Const _nrm_scaling)
 
 public base_dat ValFromTab(int_dat _idx, base_dat[] _tab, int _length, base_dat _init_val)
 {
-    base_dat out_val = _init_val;      
-    
-    
+    base_dat out_val = _init_val;
+
+
     if(!_idx.IsExt)
-    {        
+    {
         int idx = (int)_idx.IntData;
         out_val = (idx >= 0 && idx < _length ) ? _tab[idx] : __none;
-    }   
-    
+    }
+
 
     if(_idx.IsExt)
-    {    
+    {
         for(int idx = 0; idx < _length; idx++)
         {
             out_val = If(_idx == idx, _tab[idx], out_val);
-        }                       
+        }
     }
-    
+
     return out_val;
-   
+
 }
 
 
@@ -299,37 +292,37 @@ public bool_dat ContainsStringScript(string_dat _pattern, params string_dat[] _c
 {
     bool_dat res = false;
     foreach(string_dat code in _code)
-    {        
-        res = res | substr(code,_pattern);                
+    {
+        res = res | substr(code,_pattern);
     }
-    
+
     return res;
 }
 
 
 public string_dat decal_offset()
-{    
+{
     string_dat_F3 __cam_dir_ws = "CAMERA_POS_WS.xyz - v_pos_ws.xyz";
     string_dat_F3 __cam_dir_n_ws = "normalize(" + __cam_dir_ws + ")";
     string_dat_F1 __cam_dir_length = "length(" + __cam_dir_ws + ")";
-    return "(saturate(" + __cam_dir_length  + " * 0.05) * v_nrm_ws * saturate(dot(" + __cam_dir_n_ws + ", v_nrm_ws)) + v_pos_ws.xyz)";    
-}      
+    return "(saturate(" + __cam_dir_length  + " * 0.05) * v_nrm_ws * saturate(dot(" + __cam_dir_n_ws + ", v_nrm_ws)) + v_pos_ws.xyz)";
+}
 
 
 public void CopyFields(object _src, object _dst)
-{   
-    System.Reflection.FieldInfo[] fis_src = _src.GetType().GetFields();      
+{
+    System.Reflection.FieldInfo[] fis_src = _src.GetType().GetFields();
 
     foreach(System.Reflection.FieldInfo fi in fis_src)
-    {     
+    {
         System.Reflection.FieldInfo fi_dst = _dst.GetType().GetField(fi.Name);
         if(fi_dst != null)
         {
-            object val_src =  fi.GetValue(_src);   
+            object val_src =  fi.GetValue(_src);
             fi_dst.SetValue(_dst, val_src);
         }
-    }    
-}    
+    }
+}
 
 
 public void MarkStencilDynamic()
@@ -369,98 +362,91 @@ public float_dat Gamma_Encode(float_dat _v)
 {
 	return pow(_v, 1.0 / 2.2);
 }
-
-
-////////////////////////////////////////////////////////////////////////////////////
-
 public void BeginTechNew()
-{    
+{
     SetShaderPathNew();
     SetShaderFlagsNew();
 }
 
 public void SetShaderPathNew()
 {
-    int_dat SHADER_PATH = DeclareExtern_int("SHADER_PATH");   
+    int_dat SHADER_PATH = DeclareExtern_int("SHADER_PATH");
 
-    if(SHADER_PATH == SM30) 
-    {        
-        Define( "SHADER_PATH_DX9", SHADER_PATH ); 
+    if(SHADER_PATH == SM30)
+    {
+        Define( "SHADER_PATH_DX9", SHADER_PATH );
     }
-    if(SHADER_PATH == SM31) 
-    {         
+    if(SHADER_PATH == SM31)
+    {
         Define( "SHADER_PATH_X360", SHADER_PATH );
     }
-    if(SHADER_PATH == SM32) 
-    {        
-        Define( "SHADER_PATH_PS3", SHADER_PATH );                   
-    }        
-    if(SHADER_PATH == SM40) 
-    { 
-        Define("SHADER_PATH_DX10", SHADER_PATH); 
+    if(SHADER_PATH == SM32)
+    {
+        Define( "SHADER_PATH_PS3", SHADER_PATH );
     }
-    if(SHADER_PATH == SM41) 
-    { 
-        Define("SHADER_PATH_WIIU", SHADER_PATH); 
+    if(SHADER_PATH == SM40)
+    {
+        Define("SHADER_PATH_DX10", SHADER_PATH);
     }
-    if(SHADER_PATH == SM50) 
-    { 
-        Define("SHADER_PATH_DX11", SHADER_PATH); 
+    if(SHADER_PATH == SM41)
+    {
+        Define("SHADER_PATH_WIIU", SHADER_PATH);
     }
-	if(SHADER_PATH == SM51) 
-    { 
-        Define("SHADER_PATH_ORBIS", SHADER_PATH); 
-		Define("SHADER_PATH_DX11", SHADER_PATH); 
+    if(SHADER_PATH == SM50)
+    {
+        Define("SHADER_PATH_DX11", SHADER_PATH);
     }
-	if(SHADER_PATH == SM52) 
-    { 
-        Define("SHADER_PATH_DURANGO", SHADER_PATH); 
-		Define("SHADER_PATH_DX11", SHADER_PATH); 
+	if(SHADER_PATH == SM51)
+    {
+        Define("SHADER_PATH_ORBIS", SHADER_PATH);
+		Define("SHADER_PATH_DX11", SHADER_PATH);
+    }
+	if(SHADER_PATH == SM52)
+    {
+        Define("SHADER_PATH_DURANGO", SHADER_PATH);
+		Define("SHADER_PATH_DX11", SHADER_PATH);
     }
 	if(SHADER_PATH == SM53)
 	{
-	    Define("SHADER_PATH_OPENGL", SHADER_PATH); 
+	    Define("SHADER_PATH_OPENGL", SHADER_PATH);
 	}
-}        
+}
 
 public void SetPS3Features()
-{   
-    int_dat MATERIAL_FLAGS = DeclareExtern_int("MATERIAL_FLAGS");   
-    int_dat SHADER_PATH = DeclareExtern_int("SHADER_PATH");   
-    
+{
+    int_dat MATERIAL_FLAGS = DeclareExtern_int("MATERIAL_FLAGS");
+    int_dat SHADER_PATH = DeclareExtern_int("SHADER_PATH");
+
     if(BitAND(MATERIAL_FLAGS, MF_MORPH_TARGETS) != 0)
     {
         features(FT_MORPH_TARGETS);
     }
-    
-    
-    if((BitAND(MATERIAL_FLAGS, MF_SKINNING) != 0) | (BitAND(MATERIAL_FLAGS, MF_SKINNING_ONE_BONE) != 0)) 
+
+
+    if((BitAND(MATERIAL_FLAGS, MF_SKINNING) != 0) | (BitAND(MATERIAL_FLAGS, MF_SKINNING_ONE_BONE) != 0))
     {
         features(FT_SKINNING);
-    }                   
-   
-    
-    //features(FT_MORPHING_PS);
-} 
+    }
+}
 
 public void SetShaderFlagsNew()
 {
-    int_dat MATERIAL_FLAGS = DeclareExtern_int("MATERIAL_FLAGS");   
+    int_dat MATERIAL_FLAGS = DeclareExtern_int("MATERIAL_FLAGS");
     int_dat SHADER_PATH = DeclareExtern_int("SHADER_PATH");
 
-    bool_dat PS3_SVP = (BitAND(MATERIAL_FLAGS, MF_SOFTWARE_VP) != 0) & (SHADER_PATH == SM32);        
+    bool_dat PS3_SVP = (BitAND(MATERIAL_FLAGS, MF_SOFTWARE_VP) != 0) & (SHADER_PATH == SM32);
 
     if(PS3_SVP)
     {
         Define("REQ_PS3_SVP", 1);
-    }    
-        
+    }
+
     if(BitAND(MATERIAL_FLAGS, MF_MORPH_TARGETS) != 0)
-    {            
+    {
         if((SHADER_PATH == SM31) | (SHADER_PATH == SM40) | (SHADER_PATH == SM50) | (SHADER_PATH == SM51) | (SHADER_PATH == SM52) | (SHADER_PATH == SM53))
         {
             Define( "REQ_MORPH_TARGETS", 1);
-            Define( "VERTEXMORPHING_CONSTNUM", iVertexMorphing_Const_Num); 
+            Define( "VERTEXMORPHING_CONSTNUM", iVertexMorphing_Const_Num);
 
 			if(SHADER_PATH != SM31)
 			{
@@ -468,47 +454,7 @@ public void SetShaderFlagsNew()
 				{
 					UserBuffer(0);
 				}
-			}        
+			}
         }
     }
-    
-    
-    if((BitAND(MATERIAL_FLAGS, MF_SKINNING) != 0) | (BitAND(MATERIAL_FLAGS, MF_SKINNING_ONE_BONE) != 0)) 
-    {
-        if(PS3_SVP)
-        {                
-            Define( "REQ_WORLD_SPACE", 1);    
-            Define( "VERTEXBLENDING_CONSTNUM", iVertexBlending_Const_Num);               
-            
-        }
-                
-    
-        if(!PS3_SVP)
-        {            
-            if(BitAND(MATERIAL_FLAGS, MF_SKINNING) != 0) 
-            {
-                Define( "REQ_SKINNING", 1);
-            }
-            
-            if(BitAND(MATERIAL_FLAGS, MF_SKINNING_ONE_BONE) != 0)
-            {
-                Define( "REQ_SKINNING_ONE_BONE", 1);
-            }            
-            
-            if((BitAND(MATERIAL_FLAGS, MF_MORPH_TARGETS) != 0) & (SHADER_PATH == SM31))
-            {                                 
-                Define( "VERTEXBLENDING_CONSTNUM", iVertexBlending_Const_Num - (iVertexMorphing_Const_Num * 2 + 1));                     
-            }                 
-            
-            if(!((BitAND(MATERIAL_FLAGS, MF_MORPH_TARGETS) != 0) & (SHADER_PATH == SM31)))
-            {
-                Define( "VERTEXBLENDING_CONSTNUM", iVertexBlending_Const_Num);
-            }
-        }            
-    }	
-
-}   
-
-
-  
-
+if((BitAND(MATERIAL_FLAGS,MF_SKINNING)!=0)|(BitAND(MATERIAL_FLAGS,MF_SKINNING_ONE_BONE)!=0)){}}
