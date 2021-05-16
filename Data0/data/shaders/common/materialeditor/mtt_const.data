@@ -266,15 +266,11 @@ public string_dat NormalReconstruct(string_dat _normal_xy, Const _nrm_scaling)
 public base_dat ValFromTab(int_dat _idx, base_dat[] _tab, int _length, base_dat _init_val)
 {
     base_dat out_val = _init_val;
-
-
     if(!_idx.IsExt)
     {
         int idx = (int)_idx.IntData;
         out_val = (idx >= 0 && idx < _length ) ? _tab[idx] : __none;
     }
-
-
     if(_idx.IsExt)
     {
         for(int idx = 0; idx < _length; idx++)
@@ -282,7 +278,6 @@ public base_dat ValFromTab(int_dat _idx, base_dat[] _tab, int _length, base_dat 
             out_val = If(_idx == idx, _tab[idx], out_val);
         }
     }
-
     return out_val;
 
 }
@@ -312,7 +307,6 @@ public string_dat decal_offset()
 public void CopyFields(object _src, object _dst)
 {
     System.Reflection.FieldInfo[] fis_src = _src.GetType().GetFields();
-
     foreach(System.Reflection.FieldInfo fi in fis_src)
     {
         System.Reflection.FieldInfo fi_dst = _dst.GetType().GetField(fi.Name);

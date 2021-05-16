@@ -91,10 +91,10 @@
 <prop n="FallHeightMedium" v="300.0"/>
 <prop n="FallHeightHigh" v="300.0"/>
 <prop n="SprintExhausted" v="0"/>
-<prop n="MoveSprintSpeed" v="7.2"/>
+<prop n="MoveSprintSpeed" v="7.0"/>
 <prop n="ThrowHookRopeLength" v="31.0"/>
 <prop n="ZombiePounceEnabled" v="1"/>
-<prop n="RopeLocomotionVelocity" v="15.0"/>
+<prop n="RopeLocomotionVelocity" v="14.0"/>
 <prop n="RopeLocomotionAcceleration" v="48.0"/>
 <prop n="ZombieMeleeEnabled" v="1"/>
 <prop n="ChargeAttack" v="0"/>
