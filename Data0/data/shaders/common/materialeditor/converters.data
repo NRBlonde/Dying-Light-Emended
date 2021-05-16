@@ -26,8 +26,6 @@ public class Shadow_Variants : IntVariantConv
     public static object[] Data = { "e_shadows_none", "e_shadows_on", "e_shadows_pp" };
 };
 
-// Surface type enumeration (for SurfaceID(..))
-// synchro ExportedEnums.h, Surface.def, Converters.data, EngineDefs.mth, Mesh.cpp
 public class SrfID_Variants : IntVariantConv
 {
     public static object[] Data = { "SRF_UNKNOWN", "SRF_FLEXIBLE", "SRF_FIRE", "SRF_WATER",
@@ -71,8 +69,6 @@ public class UVData_Variants : StringVariantConv
 public class UVInData_Variants : StringVariantConv
 {
 
-// surface flags (used by SurfaceFlag())
-// synchro ExportedEnums.h, Surface.def, Converters.data, EngineDefs.mth, Mesh.cpp
     public static object[] Data = { "s_uv_channel_0", "s_uv_channel_1", "s_uv_channel_2", "s_uv_channel_3",
                                     "s_uv_eye", "s_uv_world_top", "s_uv_world_front",
                                     "s_uv_world_side", "s_uv_world_user_top", "s_uv_world_user_front", "s_uv_world_user_side" };
