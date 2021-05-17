@@ -226,20 +226,9 @@ public vec4_dat Gamma_Encode(vec4_dat _v)
 	return pow(_v, 1.0 / 2.2);
 }
 
-public vec3_dat Gamma_Encode(vec3_dat _v)
-{
-	return pow(_v, 1.0 / 2.2);
-}
-
-public float_dat Gamma_Encode(float_dat _v)
-{
-	return pow(_v, 1.0 / 2.2);
-}
-public void BeginTechNew()
-{
-    SetShaderPathNew();
-    SetShaderFlagsNew();
-}
+public vec3_dat Gamma_Encode(vec3_dat _v){return pow(_v,1.0/2.2);}
+public float_dat Gamma_Encode(float_dat _v){return pow(_v,1.0/2.2);}
+public void BeginTechNew(){SetShaderPathNew();SetShaderFlagsNew();}
 public void SetShaderPathNew(){
 int_dat SHADER_PATH=DeclareExtern_int("SHADER_PATH");
 if(SHADER_PATH==SM30){Define("SHADER_PATH_DX9",SHADER_PATH);}

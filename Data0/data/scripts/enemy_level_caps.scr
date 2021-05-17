@@ -1,6 +1,4 @@
-// This is a file generated from DW Enemy Level Caps.xlsx. Do not edit directly!
-
-    LevelCaps(0, 11, "dream", 1, 100)
+LevelCaps(0, 11, "dream", 1, 100)
 
     LevelCaps(0, 11, "forever_foundation", 1, 100)
 
@@ -47,4 +45,3 @@
     LevelCaps(0, 11, "slums_cl_tunnel", 10, 15)
 
     LevelCaps(0, 11, "slums_cs", 1, 100)
-

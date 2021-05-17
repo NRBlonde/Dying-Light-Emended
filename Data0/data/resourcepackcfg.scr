@@ -1,10 +1,5 @@
-// platform configurations
-
 export string cfg_common = "common";
 export string cfg_PC = "PC";
-
-// resource types
-
 export int _MESH_ = 16;
 export int _SKIN_ = 18;
 export int _TEXTURE_ = 32;

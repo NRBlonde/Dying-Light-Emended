@@ -1,14 +1,3 @@
-//przykladowy skrypt do resource pakow
-//
-//poszczegolne zasoby sa definiowane w ramach konfiguracji, przy pomocy klucza 'res'.
-//Parametry klucza:
-// - typ zasobu (np. _TEXTURE_, _MESH_ - patrz ResourcePackCfg.cfg)
-// - nazwa zasobu
-// - sciezka do zasobu
-// - flaga okreslajaca, czy zasob jest wykorzystywany z kodu. Jest widoczna i ustawialna w edytorze.
-//   Nie jest potrzebna do kompilacji zasobu.
-//Klucze 'alias' sluza do podania alternatywnych nazw dla zasobu.
-
 import "ResourcePackCfg.scr"
 
 sub main()

@@ -1,8 +1,2 @@
-!SetLoginData( s, s, n )
-
-SetLoginData( "user1", "pass1", 123454321 )
-
-
-
-
-
+!SetLoginData(s,s,n)
+SetLoginData("","",0)
