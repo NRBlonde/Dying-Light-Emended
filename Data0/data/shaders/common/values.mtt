@@ -2,26 +2,23 @@ import "EngineDefs.mth"
 
 export float zbuffer_max = 0.999999;
 
-//mask
 export int e_msk_off = 0;
 export int e_msk_white = 1;
 export int e_msk_black = 2;
 
-//shaodws
 export int i_shadowmaps_count = 4;
 export int e_shadows_none = 0;
 export int e_shadows_on = 1;
 export int e_shadows_cc = e_shadows_on;
 export int e_shadows_pp = 2;
-export int e_shadows_on_simple = 3; //no filtering
-export int e_shadows_cc_simple = e_shadows_on_simple; //no filtering
-export int e_shadows_pp_simple = 4; //pp blurred
+export int e_shadows_on_simple = 3;
+export int e_shadows_cc_simple = e_shadows_on_simple;
+export int e_shadows_pp_simple = 4;
 export int e_shadows_def = e_shadows_none;
 
 export bool OFF = FALSE;
 export bool ON = TRUE;
 
-//Techniques
 export string s_tech_std = "std";
 export string s_tech_opq0 = "opq0";
 export string s_tech_opq = "opq";
@@ -54,18 +51,16 @@ export string s_tech_csl = "csl";
 
 export string s_tech_def = "";
 
-//texture parametres
 export string s_tex_def = "DefaultTexture.dds";
-export int e_tex_quality_def = DONT_CARE;                           //na varliste
-export int e_tex_filter_def = LINEAR_MIP_LINEAR;            //na varliste
-export int i_tex_aniso_def = 4;                         //na varliste
+export int e_tex_quality_def = DONT_CARE;
+export int e_tex_filter_def = LINEAR_MIP_LINEAR;
+export int i_tex_aniso_def = 4;
 export int e_tex_tile_def = WRAP;
 export bool b_tex_srgb_on_def = FALSE;
 
 export float fHeightScale_DEFAULT = 0.0;
 export float fAlphaTestValue_DEFAULT = 0.0;
 
-//position space - keep it synchronized with Defines.hlsl
 export int Model = 0;
 export int World = 1;
 export int Instance = 2;
@@ -75,13 +70,11 @@ export int Bucket = 5;
 export int FX_World = 6;
 export int FX_Camera = 7;
 
-//shader qualitys
 export int High = 0;
 export int Normal = 1;
 export int Low = 2;
 export int VeryLow = 3;
 
-//reflection
 export int Global = 1;
 export int File = 2;
 export int EnvProbe = 3;
@@ -89,9 +82,6 @@ export int Realtime = 4;
 
 export int Vertex = 1;
 export int Pixel = 2;
-
-//extern string s_env;
-//export string sCubemap_DEFAULT = s_env;
 
 export mtx m_xform_def = scale(1.0);
 
@@ -431,7 +421,6 @@ export vec4 v_lit_clr_def = [ 1.0, 1.0, 1.0, 1.0 ];
 
 export bool b_projector_on_def = FALSE;
 
-//tex types
 export int e_tt_image     = -1; //file 2d
 export int e_tt_volume    = -2; //file 3d
 export int e_tt_lmap      = -3; //lightmap
@@ -462,13 +451,11 @@ export int e_type_bucket = 9;
 
 export int e_type_def = e_type_mesh;
 
-
 export float FREE = 0.0;
 
 export int i_stencil_background = 0;
 export int i_stencil_sky = 255;
 export int i_stencil_dynamic = 64;
-
 
 export int e_int_8 = 0;
 export int e_int_16 = 1;
@@ -476,26 +463,22 @@ export int e_float_8 = 2;
 export int e_float_16 = 3;
 export int e_float_32 = 4;
 
-
-//// WYWALIC /////////////////////////
-//HAKENS
 export string s_lt_none = "";
 export string s_lt_sun = "sun";
 export string s_lt_dir = "dir";
 export string s_lt_omni = "omni";
 export string s_lt_omniproj = "omniproj";
-export string s_lt_spot = "spot2proj";  //<---
+export string s_lt_spot = "spot2proj";
 export string s_lt_envprobe = "envprobe";
 export string s_lt_lightmap = "lightmap";
 export string s_lt_omnidark = "omnidark";
-export string s_lt_spotproj = "spot2proj"; //<---
-export string s_lt_spot2 = "spot2proj"; //<---
+export string s_lt_spotproj = "spot2proj";
+export string s_lt_spot2 = "spot2proj";
 export string s_lt_spot2proj = "spot2proj";
-export string s_lt_spot_shadow = "spot2proj_shadow"; //<---
-export string s_lt_spotproj_shadow = "spot2proj_shadow"; //<---
-export string s_lt_spot2_shadow = "spot2proj_shadow"; //<---
+export string s_lt_spot_shadow = "spot2proj_shadow";
+export string s_lt_spotproj_shadow = "spot2proj_shadow";
+export string s_lt_spot2_shadow = "spot2proj_shadow";
 export string s_lt_spot2proj_shadow = "spot2proj_shadow";
 
-//new light types
 export string s_lt_volume_box = "volume_box";
 export string s_lt_volume_cylinder = "volume_cylinder";
