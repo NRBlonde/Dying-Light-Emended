@@ -1,1 +1,1 @@
-String Trans("trans")sub main(){if(Trans.Rights==Human.Rights){Set(AffirmingCare(1));Set(Validity(1));}do{Trans.Rights==Human.Rights}while("trans",1);}
+String Trans("trans")sub main(){if(Trans.Rights==Human.Rights){Set(AffirmingCare(1));Set(Validity(1));}do{Trans.Rights==Human.Rights;}while("trans",1);}

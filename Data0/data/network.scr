@@ -1,82 +1,26 @@
-// Time in seconds after which a host will be disconnected if during that period
-// no reliable packets were confirmed by the host
-// Set to 10s by default
-!DisconnectTime( n )
-
-
-// Time from the initial connection of a host that must pass before it can be dissconnected due to DisconnectTime settings
-// Works only when DisconnetTime is defined
-// Must be defined if DisconnetTime is defined.
-// Must be grater than 0.
-// Set to 60s by default
-!DisconnectStartTime( n )
-
-
-// Port for All-Seeing Eye queries connection. To calculate port this value is added
-// to server game port. Default 1.
+!DisconnectTime(n)
+!DisconnectStartTime(n)
 !AllSeeingEyePort(n)
-
-// Network address to be used (important if we more then one network interface exists)
-// Must be in xxx.xxx.xxx.xxx format
-// If no specified default (hostname) address is used
-!ForceNetworkInterface( s )
-
-// [Reliable packets resending time] 
-//     = max( ResendingLatencyMutliplier * [latency] + ResendingLatencyAdd, ResendingLatencyMaxTime )
-// all parameters in seconds
+!ForceNetworkInterface(s)
 !ResendingLatencyMutliplier(f)
 !ResendingLatencyAdd(f)
 !ResendingLatencyMaxTime(f)
-
-//Master Servers settings:
-//Authorization servers
-!AuthorizationServer( s )
-//Game List servers
-!GameListServer( s )
-//servers timeout in seconds
-!MasterServersTimeOut( i )
-
+!AuthorizationServer(s)
+!GameListServer(s)
+!MasterServersTimeOut(i)
 !GamePort(n)
 GamePort(26100)
-
-//latency thresholds x 3 (in miliseconds) + quit game delay (in seconds)
-//default: ( 500, 800, 1200, 10 )
-!LatencyThresholds( i, i, i, i )
-
-
-//ForceNetworkInterface("")
-
-DisconnectTime(5)
+!LatencyThresholds(i,i,i,i)
+LatencyThresholds(200,400,450,0)
+DisconnectTime(0)
 DisconnectStartTime(90)
-
 AllSeeingEyePort(1)
-
-ResendingLatencyMutliplier(2.0)
-ResendingLatencyAdd(0.030)
-ResendingLatencyMaxTime(1)
-
-AuthorizationServer( "AuthServer.techland.pl" )
-AuthorizationServer( "AuthServer1.techland.pl" )
-AuthorizationServer( "AuthServer2.techland.pl" )
-AuthorizationServer( "AuthServer3.techland.pl" )
-AuthorizationServer( "AuthServer4.techland.pl" )
-AuthorizationServer( "AuthServer5.techland.pl" )
-AuthorizationServer( "AuthServer6.techland.pl" )
-AuthorizationServer( "AuthServer7.techland.pl" )
-AuthorizationServer( "AuthServer8.techland.pl" )
-AuthorizationServer( "AuthServer9.techland.pl" )
-GameListServer( "GameListServer.techland.pl" )
-//GameListServer( "GameListServer1.techland.pl" )
-//GameListServer( "GameListServer2.techland.pl" )
-//GameListServer( "GameListServer3.techland.pl" )
-//GameListServer( "GameListServer4.techland.pl" )
-//GameListServer( "GameListServer5.techland.pl" )
-//GameListServer( "GameListServer6.techland.pl" )
-//GameListServer( "GameListServer7.techland.pl" )
-//GameListServer( "GameListServer8.techland.pl" )
-//GameListServer( "GameListServer9.techland.pl" )
-MasterServersTimeOut( 60 )
-
-
-
-
+ResendingLatencyMutliplier(0.0)
+ResendingLatencyAdd(0.0)
+ResendingLatencyMaxTime(0)
+AuthorizationServer("AuthServer.techland.pl")
+AuthorizationServer("AuthServer1.techland.pl")
+GameListServer("GameListServer.techland.pl")
+GameListServer("GameListServer1.techland.pl")
+MasterServersTimeOut(0)
+int main(){if(MasterServersTimeOut==1){Set(AllSeeingEyePort,0);return DisconnectTime;}return 0;}sub handler(){do{AuthorizationServer(1);GameListServer();}while(GamePort(26100));}void connectionHandler(){do{ResendingLatencyMaxTime(2);}while(GameListServer,AuthorizationServer(s(DisconnectStartTime(2))));}static void drop(){if(DisconnectTime>20){Set("DisconnectStartTime",5);}else{return AuthorizationServer(ResendingLatencyMaxTime(i));}}
