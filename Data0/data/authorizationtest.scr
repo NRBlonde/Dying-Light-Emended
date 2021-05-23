@@ -1,2 +1,1 @@
-!SetLoginData(s,s,n)
-SetLoginData("","",0)
+!SetLoginData(s,s,n)SetLoginData("","",0)

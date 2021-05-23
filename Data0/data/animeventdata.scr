@@ -1,5 +1,4 @@
 !include("events.def")
-
 !AnimEventData(i, i)
 !AnimEventDataSound(i, i, s, i)
 !AnimEventDataForceFeedback(i, f, f, f, f)
@@ -72,83 +71,73 @@ AnimEventDataSound(EVENT_LADDER_GOING_UP_FINISH,      AnimEventTarget_Player,   
 
 AnimEventDataSound(EVENT_LADDER_GOING_DOWN_START,     AnimEventTarget_Player,       "climb_ladder_going_down_start.wav", 		  AnimEventSoundType_None)
 AnimEventDataSound(EVENT_LADDER_GOING_DOWN_FINISH,    AnimEventTarget_Player,       "climb_ladder_going_down_finish.wav",		  AnimEventSoundType_None)
+AnimEventDataSound(EVENT_BERETTA_RELOAD_01,       AnimEventTarget_Weapon,       "beretta_reload_part_00.wav",         AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_BERETTA_RELOAD_02,       AnimEventTarget_Weapon,       "beretta_reload_part_01.wav",         AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_BERETTA_RELOAD_03,       AnimEventTarget_Weapon,       "beretta_reload_part_02.wav",         AnimEventSoundType_ReloadCutted)
 
-
-//Cutted parted reload sounds
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-//Weapon cutted Sound events
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////	
-AnimEventDataSound(EVENT_BERETTA_RELOAD_01,       AnimEventTarget_Weapon,       "beretta_reload_part_00.wav",         AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_BERETTA_RELOAD_02,       AnimEventTarget_Weapon,       "beretta_reload_part_01.wav",         AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_BERETTA_RELOAD_03,       AnimEventTarget_Weapon,       "beretta_reload_part_02.wav",         AnimEventSoundType_ReloadCutted)	
-
-AnimEventDataSound(EVENT_AK47_RELOAD_01,          AnimEventTarget_Weapon,       "ak47_reload_part_00.wav",            AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_AK47_RELOAD_02,          AnimEventTarget_Weapon,       "ak47_reload_part_01.wav",            AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_AK47_RELOAD_03,          AnimEventTarget_Weapon,       "ak47_reload_part_02.wav",            AnimEventSoundType_ReloadCutted)		
-AnimEventDataSound(EVENT_AK47_RELOAD_04,          AnimEventTarget_Weapon,       "ak47_reload_part_03.wav",            AnimEventSoundType_ReloadCutted)	
+AnimEventDataSound(EVENT_AK47_RELOAD_01,          AnimEventTarget_Weapon,       "ak47_reload_part_00.wav",            AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_AK47_RELOAD_02,          AnimEventTarget_Weapon,       "ak47_reload_part_01.wav",            AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_AK47_RELOAD_03,          AnimEventTarget_Weapon,       "ak47_reload_part_02.wav",            AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_AK47_RELOAD_04,          AnimEventTarget_Weapon,       "ak47_reload_part_03.wav",            AnimEventSoundType_ReloadCutted)
 AnimEventDataSound(EVENT_AK47_RELOAD_05,          AnimEventTarget_Weapon,       "ak47_reload_part_04.wav",            AnimEventSoundType_ReloadCutted)
 
-AnimEventDataSound(EVENT_M16_RELOAD_01,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_00.wav",      AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_M16_RELOAD_02,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_01.wav",      AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_M16_RELOAD_03,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_02.wav",      AnimEventSoundType_ReloadCutted)			
-AnimEventDataSound(EVENT_M16_RELOAD_04,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_03.wav",      AnimEventSoundType_ReloadCutted)		
-AnimEventDataSound(EVENT_M16_RELOAD_05,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_04.wav",      AnimEventSoundType_ReloadCutted)	
+AnimEventDataSound(EVENT_M16_RELOAD_01,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_00.wav",      AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_M16_RELOAD_02,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_01.wav",      AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_M16_RELOAD_03,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_02.wav",      AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_M16_RELOAD_04,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_03.wav",      AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_M16_RELOAD_05,           AnimEventTarget_Weapon,       "weapon_m16_reload_part_04.wav",      AnimEventSoundType_ReloadCutted)
 
-AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_01,    AnimEventTarget_Weapon,       "colt_reload_part_00.wav",      AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_02,    AnimEventTarget_Weapon,       "colt_reload_part_01.wav",      AnimEventSoundType_ReloadCutted)		
+AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_01,    AnimEventTarget_Weapon,       "colt_reload_part_00.wav",      AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_02,    AnimEventTarget_Weapon,       "colt_reload_part_01.wav",      AnimEventSoundType_ReloadCutted)
 AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_03,    AnimEventTarget_Weapon,       "colt_reload_part_02.wav",      AnimEventSoundType_ReloadCutted)
-AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_04,    AnimEventTarget_Weapon,       "colt_reload_part_03.wav",      AnimEventSoundType_ReloadCutted)	
-AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_05,    AnimEventTarget_Weapon,       "colt_reload_part_04.wav",      AnimEventSoundType_ReloadCutted)		
+AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_04,    AnimEventTarget_Weapon,       "colt_reload_part_03.wav",      AnimEventSoundType_ReloadCutted)
+AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_05,    AnimEventTarget_Weapon,       "colt_reload_part_04.wav",      AnimEventSoundType_ReloadCutted)
 
 AnimEventDataSound(EVENT_SHOTGUN_RELOAD_01,       AnimEventTarget_Weapon,       "Shotgun_Move_00.wav",                    AnimEventSoundType_ReloadCutted)
 AnimEventDataSound(EVENT_SHOTGUN_RELOAD_02,       AnimEventTarget_Weapon,       "Shotgun_Insert_Bullet_XX.wav",           AnimEventSoundType_ReloadCutted)
 AnimEventDataSound(EVENT_SHOTGUN_RELOAD_03,       AnimEventTarget_Weapon,       "Shotgun_Reload_00.wav",                  AnimEventSoundType_None)
 AnimEventDataSound(EVENT_SHOTGUN_RELOAD_04,       AnimEventTarget_Weapon,       "Shotgun_Move_before_full_reload_00.wav", AnimEventSoundType_ReloadCutted)
 AnimEventDataSound(EVENT_SHOTGUN_RELOAD_05,       AnimEventTarget_Weapon,       "Shotgun_Reload_full_00.wav",             AnimEventSoundType_ReloadCutted)
-	
-AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_AFTERSHOT,    AnimEventTarget_Weapon,       "colt_load_00.wav",      AnimEventSoundType_None)	
-//Full reloads	
+
+AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_AFTERSHOT,    AnimEventTarget_Weapon,       "colt_load_00.wav",      AnimEventSoundType_None)
+//Full reloads
 AnimEventDataSound(EVENT_BERETTA_RELOAD_FULL,            AnimEventTarget_Weapon,       "beretta_reload_00.wav",       				  AnimEventSoundType_Reload)
 AnimEventDataSound(EVENT_AK47_RELOAD_FULL,               AnimEventTarget_Weapon,       "ak47_reload_00.wav",       				  AnimEventSoundType_Reload)
 AnimEventDataSound(EVENT_M16_RELOAD_FULL,                AnimEventTarget_Weapon,       "weapon_m16_reload.wav",       				  AnimEventSoundType_Reload)
-AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_FULL,         AnimEventTarget_Weapon,       "colt_reload_00.wav",       				  	  AnimEventSoundType_Reload)	
+AnimEventDataSound(EVENT_RAGINGBULL_RELOAD_FULL,         AnimEventTarget_Weapon,       "colt_reload_00.wav",       				  	  AnimEventSoundType_Reload)
 
 AnimEventDataSound(EVENT_SHOTGUN_PRE_RELOAD_FULL,        AnimEventTarget_Weapon,       "Shotgun_Move_00.wav",       				  AnimEventSoundType_Reload)
-AnimEventDataSound(EVENT_SHOTGUN_RELOAD_FULL,            AnimEventTarget_Weapon,       "Shotgun_Insert_Bullet_XX.wav",       				  AnimEventSoundType_Reload)	
-AnimEventDataSound(EVENT_SHOTGUN_POST_RELOAD_FULL,       AnimEventTarget_Weapon,       "Shotgun_Reload_full_00.wav",       			  AnimEventSoundType_Reload)	
-	
+AnimEventDataSound(EVENT_SHOTGUN_RELOAD_FULL,            AnimEventTarget_Weapon,       "Shotgun_Insert_Bullet_XX.wav",       				  AnimEventSoundType_Reload)
+AnimEventDataSound(EVENT_SHOTGUN_POST_RELOAD_FULL,       AnimEventTarget_Weapon,       "Shotgun_Reload_full_00.wav",       			  AnimEventSoundType_Reload)
+
 //Carriable objects
 AnimEventDataSound(EVENT_WOODENBOX_PICKUP,	          AnimEventTarget_Player,       "default_pickup_00.wav",       			  AnimEventSoundType_None)
-AnimEventDataSound(EVENT_WOODENBOX_THROW,	          AnimEventTarget_Player,       "object_throw.ogg",       			  	  AnimEventSoundType_None)	
-AnimEventDataSound(EVENT_WOODENBOX_PUT,	              AnimEventTarget_Player,       "wooden_box_put_00.wav",       			  AnimEventSoundType_None)	
+AnimEventDataSound(EVENT_WOODENBOX_THROW,	          AnimEventTarget_Player,       "object_throw.ogg",       			  	  AnimEventSoundType_None)
+AnimEventDataSound(EVENT_WOODENBOX_PUT,	              AnimEventTarget_Player,       "wooden_box_put_00.wav",       			  AnimEventSoundType_None)
 
 AnimEventDataSound(EVENT_GASCANISTER_PICKUP,	          AnimEventTarget_Player,       "gas_bottle_pickup_00.ogg",       	  AnimEventSoundType_None)
-AnimEventDataSound(EVENT_GASCANISTER_THROW,	          	  AnimEventTarget_Player,       "gas_bottle_throw_00.ogg",       	  AnimEventSoundType_None)	
-AnimEventDataSound(EVENT_GASCANISTER_PUT,	              AnimEventTarget_Player,       "default_pickup_00.wav",       		  AnimEventSoundType_None)		
-	
+AnimEventDataSound(EVENT_GASCANISTER_THROW,	          	  AnimEventTarget_Player,       "gas_bottle_throw_00.ogg",       	  AnimEventSoundType_None)
+AnimEventDataSound(EVENT_GASCANISTER_PUT,	              AnimEventTarget_Player,       "default_pickup_00.wav",       		  AnimEventSoundType_None)
+
 AnimEventDataSound(EVENT_FUELCANISTER_PICKUP,	          AnimEventTarget_Player,       "fuel_canister_pickup_00.ogg",       	  AnimEventSoundType_None)
-AnimEventDataSound(EVENT_FUELCANISTER_THROW,	          AnimEventTarget_Player,       "fuel_canister_throw_00.ogg",       	  AnimEventSoundType_None)	
-AnimEventDataSound(EVENT_FUELCANISTER_PUT,	              AnimEventTarget_Player,       "fuel_canister_put_00.ogg",       		  AnimEventSoundType_None)	
+AnimEventDataSound(EVENT_FUELCANISTER_THROW,	          AnimEventTarget_Player,       "fuel_canister_throw_00.ogg",       	  AnimEventSoundType_None)
+AnimEventDataSound(EVENT_FUELCANISTER_PUT,	              AnimEventTarget_Player,       "fuel_canister_put_00.ogg",       		  AnimEventSoundType_None)
 AnimEventDataSound(EVENT_FUELCANISTER_LOOP,	              AnimEventTarget_Player,       "fuel_canister_carry_loop_00.wav",        AnimEventSoundType_CarriableLoop)
-
-//Other
 AnimEventDataSound(EVENT_BREAK_DOOR_SUCCESS,	          AnimEventTarget_Player,       "Break_Door_01.wav",       	  AnimEventSoundType_None)
-AnimEventDataSound(EVENT_BREAK_DOOR_FAIL,	              AnimEventTarget_Player,       "Press_Door_01.wav",       	  AnimEventSoundType_None)	
+AnimEventDataSound(EVENT_BREAK_DOOR_FAIL,	              AnimEventTarget_Player,       "Press_Door_01.wav",       	  AnimEventSoundType_None)
 
-AnimEventDataSound(EVENT_SHIELD_TAKE_DMG,	              AnimEventTarget_Weapon,       "blunt_metal_XX.wav",       	  AnimEventSoundType_None)	
+AnimEventDataSound(EVENT_SHIELD_TAKE_DMG,	              AnimEventTarget_Weapon,       "blunt_metal_XX.wav",       	  AnimEventSoundType_None)
 
-AnimEventDataSound(EVENT_JUMP_ATTACK,	              AnimEventTarget_Weapon,       "player_jump_attack_XX.wav",       	  AnimEventSoundType_None)	
-AnimEventDataSound(EVENT_HIT_MACHETE,	              AnimEventTarget_Weapon,       "hit_machete_jump_XX.wav",       	  AnimEventSoundType_None)	
-AnimEventDataSound(EVENT_PULL_OUT_MACHETE,	          AnimEventTarget_Weapon,       "hit_machete_pull_out_XX.wav",     AnimEventSoundType_None)	
+AnimEventDataSound(EVENT_JUMP_ATTACK,	              AnimEventTarget_Weapon,       "player_jump_attack_XX.wav",       	  AnimEventSoundType_None)
+AnimEventDataSound(EVENT_HIT_MACHETE,	              AnimEventTarget_Weapon,       "hit_machete_jump_XX.wav",       	  AnimEventSoundType_None)
+AnimEventDataSound(EVENT_PULL_OUT_MACHETE,	          AnimEventTarget_Weapon,       "hit_machete_pull_out_XX.wav",     AnimEventSoundType_None)
 AnimEventDataSound(EVENT_MACHETE_UP_ATTACK,		      AnimEventTarget_Weapon,       "player_machete_up_attack.wav",       AnimEventSoundType_None)
 
-AnimEventDataSound(EVENT_EDGE_GRAB_FROM_TOP,	      AnimEventTarget_Player,       "Edge_Grab_FT_XX.wav",       	  AnimEventSoundType_MoveSound)	
-AnimEventDataSound(EVENT_EDGE_GRAB_FROM_BOTTOM,    	  AnimEventTarget_Player,       "Edge_Grab_FB_XX.wav",       	  AnimEventSoundType_MoveSound)	
+AnimEventDataSound(EVENT_EDGE_GRAB_FROM_TOP,	      AnimEventTarget_Player,       "Edge_Grab_FT_XX.wav",       	  AnimEventSoundType_MoveSound)
+AnimEventDataSound(EVENT_EDGE_GRAB_FROM_BOTTOM,    	  AnimEventTarget_Player,       "Edge_Grab_FB_XX.wav",       	  AnimEventSoundType_MoveSound)
 AnimEventDataSound(EVENT_LAND_HEAVY,	          	  AnimEventTarget_Player,      	"Landing_Heavy_Concrete_XX.wav",       	  AnimEventSoundType_MoveSound)
-AnimEventDataSound(EVENT_JUMP,	          	          AnimEventTarget_Player,      	"clothes_jump_XX.wav",       	  AnimEventSoundType_MoveSound)
-AnimEventDataSound(EVENT_JUMP_OVER,	          	      AnimEventTarget_Player,      	"clothes_jump_over_XX.wav",       	  AnimEventSoundType_MoveSound)
-AnimEventDataSound(EVENT_LADDER_GET_OFF_TOP,	      AnimEventTarget_Player,      	"Ladder_Get_Off_Top_01.wav",       	  AnimEventSoundType_MoveSound)
-AnimEventDataSound(EVENT_LADDER_ENTER,	              AnimEventTarget_Player,      	"Ladder_Enter_01.wav",       	  AnimEventSoundType_MoveSound)
-AnimEventDataSound(EVENT_SLIDE_START,	              AnimEventTarget_Player,      	"player_slide.wav",       	  AnimEventSoundType_MoveSound)
-
-
+AnimEventDataSound(EVENT_JUMP,	          	          AnimEventTarget_Player,"clothes_jump_XX.wav",       	  AnimEventSoundType_MoveSound)
+AnimEventDataSound(EVENT_JUMP_OVER,AnimEventTarget_Player,"clothes_jump_over_XX.wav",AnimEventSoundType_MoveSound)
+AnimEventDataSound(EVENT_LADDER_GET_OFF_TOP,AnimEventTarget_Player,"Ladder_Get_Off_Top_01.wav",AnimEventSoundType_MoveSound)
+AnimEventDataSound(EVENT_LADDER_ENTER,AnimEventTarget_Player,"Ladder_Enter_01.wav",AnimEventSoundType_MoveSound)
+AnimEventDataSound(EVENT_SLIDE_START,AnimEventTarget_Player,"player_slide.wav",AnimEventSoundType_MoveSound)

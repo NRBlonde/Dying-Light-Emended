@@ -28,22 +28,16 @@ VarFloat("f_btz_blast_on_player_min_hits", 5.1)
 VarFloat("f_btz_blast_on_player_max_hits", 6.1)
 VarFloat("f_btz_blast_on_player_damage_for_min", 200.0)
 VarFloat("f_btz_blast_on_player_damage_for_max", 50.0)
-
-//player blast_lethal/////
 VarFloat("f_btz_blast_lethal_on_player_min_hits", 1.5)
 VarFloat("f_btz_blast_lethal_on_player_max_hits", 1.5)
 VarFloat("f_btz_blast_lethal_on_player_damage_for_min", 500.0)
 VarFloat("f_btz_blast_lethal_on_player_damage_for_max", 50.0)
-
-//player mine/////
 VarFloat("f_btz_mine_on_player_min_hits", 2.9) // 3 hits
 VarFloat("f_btz_mine_on_player_max_hits", 4.1) // 5 hits
 VarFloat("f_btz_mine_on_player_damage_for_min", 300.0)
 VarFloat("f_btz_mine_on_player_damage_for_max", 50.0)
-
-//player stick/////
-VarFloat("f_btz_stick_on_player_min_hits", 2.49) // 3 hits
-VarFloat("f_btz_stick_on_player_max_hits", 2.99) // 3 hits
+VarFloat("f_btz_stick_on_player_min_hits",4.49)
+VarFloat("f_btz_stick_on_player_max_hits",5.99)
 VarFloat("f_btz_stick_on_player_damage_for_min", 400.0)
 VarFloat("f_btz_stick_on_player_damage_for_max", 20.0)
 
