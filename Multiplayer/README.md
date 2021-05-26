@@ -5,6 +5,6 @@
 #
 
 # Türkçe
-*Text here*
+*Bu Dying Light Emended'in ayrı bir yapısıdır. Haksız avantajdan yoksun vanilya ile uyumlu olacak şekilde tasarlanmıştır.*
 #
 #
